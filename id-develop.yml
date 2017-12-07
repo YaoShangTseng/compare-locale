@@ -1,0 +1,1692 @@
+---
+id:
+  api:
+    v1:
+      application_messages:
+        bad_request: Permintaan Gagal
+        card_unavailable: Pembayaran kartu kredit tidak tersedia.
+        cash_order_size_exceeded: Jumlah total untuk pesanan dengan pembayaran tunai
+          harus kurang dari %{amount} (termasuk pesanan yang belum diproses).
+        cash_unavailable: Pembayaran tunai tidak tersedia. Silakan lakukan pembayaran
+          dengan kartu Visa / Mastercard.
+        conflict: Konflik
+        corporate_limit_exceeded: Anda telah mencapai batas kredit. Silakan kurangi
+          isi keranjang Anda untuk menyesuaikan dengan saldo tersisa.
+        corporate_payment_invalid: Jumlah yang dimasukkan melebihi saldo saat ini.
+          Silakan periksa lagi isiannya
+        duplicate_account: Tampaknya Anda memiliki akun terdaftar lainnya bersama
+          kami. Silakan masuk dengan akun terdaftar lain atau kontak tim Pelayan kami
+          untuk melanjutkan.
+        forbidden: victor blah blah
+        gone: Hilang
+        inactive_account: Akun pengguna dihapus
+        internal_server_error: Galat Server Internal
+        invalid_parameters: Parameter tak valid
+        missing_parameters: Parameter hilang
+        not_found: Tak ditemukan
+        not_implemented: Tidak diimplementasikan
+        ok: Oke
+        postal_code_not_serviced: Kode pos saat ini tidak dilayani
+        unauthorized: Akses Tak Berizin
+      checkout:
+        address_length_over_sixty: Setiap kolom alamat harus kurang dari 60 karakter.
+        authorization:
+          delivery_timeslot_not_available: Maaf, slot pengiriman yang Anda pilih telah
+            penuh. Silakan pilih tempat lainnya untuk melanjutkan.
+          invalid_account: Akun tidak valid
+          invalid_coupon: Kupon sudah tidak berlaku lagi dan telah dihapus dari keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+          invalid_shopping_cart: Keranjang tidak valid
+          missing_billing_address: Alamat penagihan hilang
+          missing_payment_method: Metode pembayaran tidak ditemukan
+          missing_shipping_address: Alamat pengiriman hilang
+          not_enough_bank_account_credits: Kredit akun bank tidak mencukupi
+          review_cart_changes: Terdapat pengubahan ketersediaan barang di keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+          review_delivery_fee_changes: Terdapat pengubahan ketersediaan barang di
+            keranjang Anda. Silakan periksa kembali pesanan Anda.
+          review_item_changes: Terdapat pengubahan ketersediaan barang di keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+        sign_user_authorization:
+          food:
+            delivery_timeslot_not_available: Restoran ini baru saja tutup. Harap memesan makanan dari restoran lain!
+            asap:
+              delivery_timeslot_not_available: Restoran ini baru saja tutup. Harap memesan makanan dari restoran lain!
+            scheduled:
+              delivery_timeslot_not_available: Kami mohon maaf, slot pengiriman yang Anda
+                pilih telah penuh. Silakan pilih posisi lainnya untuk melanjutkan.
+          delivery_timeslot_not_available: Kami mohon maaf, slot pengiriman yang Anda
+            pilih telah penuh. Silakan pilih posisi lainnya untuk melanjutkan.
+          invalid_delivery_type:
+            asap: Maaf, ini bukan Anda, melainkan kami. Mari kita coba lagi, silakan pilih ulang sesegera mungkin.
+            scheulded: Maaf, mari kita coba lagi. Silakan pilih ulang slot waktu berikut.
+            default: Maaf, kami mengalami kesulitan sambungan. Harap memilih ulang waktu penyerahan dan mencoba lagi.
+          invalid_quantity: "%{invalid_products} Harap sesuaikan jumlah barang di keranjang untuk melanjutkan."
+          invalid_quantity_products: "<b>%{title}</b> melebihi jumlah maks <b>%{max_quantity}</b><br/><br/>"
+          invalid_account: Akun tidak valid
+          invalid_shopping_cart: Keranjang tidak valid
+          missing_billing_address: Alamat penagihan hilang
+          missing_payment_method: Metode pembayaran tidak ditemukan
+          missing_shipping_address: Alamat pengiriman hilang
+          review_cart_changes: Terdapat pengubahan ketersediaan barang di keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+          review_delivery_fee_changes: Terdapat pengubahan ketersediaan barang di
+            keranjang Anda. Silakan periksa kembali pesanan Anda.
+          review_item_changes: Terdapat pengubahan ketersediaan barang di keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+        sign_user_auth_bypass_cybersource:
+          delivery_timeslot_not_available: Maaf, slot pengiriman yang Anda pilih telah
+            penuh. Silakan pilih tempat lainnya untuk melanjutkan.
+          invalid_account: Akun tidak valid
+          invalid_coupon: Kupon sudah tidak berlaku lagi dan telah dihapus dari keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+          invalid_shopping_cart: Keranjang tidak valid
+          missing_billing_address: Alamat penagihan hilang
+          missing_payment_method: Metode pembayaran tidak ditemukan
+          missing_shipping_address: Alamat pengiriman hilang
+          not_enough_bank_account_credits: Kredit akun bank tidak mencukupi
+          review_cart_changes: Terdapat pengubahan ketersediaan barang di keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+          review_delivery_fee_changes: Terdapat pengubahan ketersediaan barang di
+            keranjang Anda. Silakan periksa kembali pesanan Anda.
+          review_item_changes: Terdapat pengubahan ketersediaan barang di keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+      customer_acknowledgements:
+        create:
+          record_exists: Catatan sudah ada
+        update:
+          expiry_error: Maaf, tautan ini sudah tidak berlaku
+      payment_devices:
+        destroy:
+          payment_device_in_use: Anda dapat menghapus kartu ini 48 jam setelah menerima
+            tanda terima terakhir bagi pesanan Anda saat ini.
+    v2:
+      application_messages:
+        bad_request: Permintaan Gagal
+        cash_order_size_exceeded: Total untuk pesanan yang dibayar saat diantarkan
+          harus kurang dari %{amount} (termasuk pesanan yang belum dipenuhi). Silakan
+          periksa pesanan diproses dan keranjang belanja Anda.
+        cash_unavailable: Bayar saat diantarkan tidak tersedia. Anda dapat melakukan
+          pembayaran dengan kartu.
+        conflict: Konflik
+        corporate_limit_exceeded: Anda telah mencapai batas kredit. Silakan kurangi
+          isi keranjang Anda untuk menyesuaikan dengan saldo tersisa.
+        corporate_payment_invalid: Jumlah yang dimasukkan melebihi saldo saat ini.
+          Silakan periksa lagi isiannya
+        duplicate_account: Tampaknya Anda memiliki akun terdaftar lainnya bersama
+          kami. Silakan masuk dengan akun terdaftar lain atau kontak tim Pelayan kami
+          untuk melanjutkan.
+        forbidden: victor blah blah
+        gone: Hilang
+        inactive_account: Akun pengguna dihapus
+        internal_server_error: Galat Server Internal
+        invalid_parameters: Parameter tak valid
+        missing_parameters: Parameter hilang
+        not_found: Tak ditemukan
+        not_implemented: Tidak diimplementasikan
+        ok: Oke
+        postal_code_not_serviced: Kode pos saat ini tidak dilayani
+        unauthorized: Akses Tak Berizin
+      checkout:
+        authorization:
+          delivery_timeslot_not_available: Maaf, slot pengiriman yang Anda pilih telah
+            penuh. Silakan pilih tempat lainnya untuk melanjutkan.
+          invalid_account: Akun tidak valid
+          invalid_coupon: Kupon sudah tidak berlaku lagi dan telah dihapus dari keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+          invalid_shopping_cart: Keranjang tidak valid
+          missing_billing_address: Alamat penagihan hilang
+          missing_payment_method: Metode pembayaran tidak ditemukan
+          missing_shipping_address: Alamat pengiriman hilang
+          not_enough_bank_account_credits: Kredit akun bank tidak mencukupi
+          review_cart_changes: Terdapat pengubahan ketersediaan barang di keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+          review_delivery_fee_changes: Terdapat pengubahan ketersediaan barang di
+            keranjang Anda. Silakan periksa kembali pesanan Anda.
+          review_item_changes: Terdapat pengubahan ketersediaan barang di keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+        sign_user_authorization:
+          delivery_timeslot_not_available: Kami mohon maaf, slot pengiriman yang Anda
+            pilih telah penuh. Silakan pilih posisi lainnya untuk melanjutkan.
+          invalid_account: Akun tidak valid
+          invalid_shopping_cart: Keranjang tidak valid
+          missing_billing_address: Alamat penagihan hilang
+          missing_payment_method: Metode pembayaran tidak ditemukan
+          missing_shipping_address: Alamat pengiriman hilang
+          review_cart_changes: Terdapat pengubahan ketersediaan barang di keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+          review_delivery_fee_changes: Terdapat pengubahan ketersediaan barang di
+            keranjang Anda. Silakan periksa kembali pesanan Anda.
+          review_item_changes: Terdapat pengubahan ketersediaan barang di keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+        sign_user_auth_bypass_cybersource:
+          delivery_timeslot_not_available: Maaf, slot pengiriman yang Anda pilih telah
+            penuh. Silakan pilih tempat lainnya untuk melanjutkan.
+          invalid_account: Akun tidak valid
+          invalid_coupon: Kupon sudah tidak berlaku lagi dan telah dihapus dari keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+          invalid_shopping_cart: Keranjang tidak valid
+          missing_billing_address: Alamat penagihan hilang
+          missing_payment_method: Metode pembayaran tidak ditemukan
+          missing_shipping_address: Alamat pengiriman hilang
+          not_enough_bank_account_credits: Kredit akun bank tidak mencukupi
+          review_cart_changes: Terdapat pengubahan ketersediaan barang di keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+          review_delivery_fee_changes: Terdapat pengubahan ketersediaan barang di
+            keranjang Anda. Silakan periksa kembali pesanan Anda.
+          review_item_changes: Terdapat pengubahan ketersediaan barang di keranjang
+            Anda. Silakan periksa kembali pesanan Anda.
+      customer_acknowledgements:
+        update:
+          expiry_error: Maaf, tautan ini sudah tidak berlaku
+      payment_devices:
+        destroy:
+          payment_device_in_use: Anda dapat menghapus kartu ini 48 jam setelah menerima
+            tanda terima terakhir bagi pesanan Anda saat ini.
+        invalid_payment_info: 'Kami mengalami permasalahan dan tidak dapat memverifikasi
+          informasi pembayaran Anda. Kami sedang memperbaiki masalah ini. Silakan
+          coba lagi nanti. '
+      verification:
+        error_messages:
+          existing_verified_number: Nomor ini sudah terdaftar pada kami. Punya akun
+            dengan nomor lain? Masuk untuk terus menggunakan %{number} atau daftar
+            lagi menggunakan nomor lain.
+          invalid_country_code: Hmmm, tampaknya ini bukan kode negara yang valid.
+          invalid_number: Hmmm, sepertinya nomor telepon ini tidak valid.
+          limit_exceeded: Untuk alasan keamanan, kami hanya memperbolehkan tiga kali
+            percobaan. Silakan coba lagi setelah 1x24 jam.
+          sms_count_exceeded: Untuk alasan keamanan, kami hanya memperbolehkan tiga
+            kali percobaan. Silakan coba lagi setelah 1x24 jam.
+          token_expired: Kode verifikasi gagal digunakan. Pilih tombol "Kirim Ulang".
+            Pastikan Anda memasukkan kode dalam waktu 2 menit.
+          token_mismatch: Sepertinya kode ini salah. Silakan cek SMS dari kami.
+          verify_attempts_exceeded: Untuk alasan keamanan, kami hanya memperbolehkan
+            tiga kali percobaan. Silakan coba lagi setelah 1x24 jam.
+  beepay:
+    error_code:
+      '101': Tampaknya ada informasi yang hilang atau salah. Harap masukkan ulang
+        informasi pembayaran dan periksa ulang alamat penagihan. Atau gunakan kartu
+        lainnya.
+      '102': Terdapat informasi yang hilang atau salah. Harap masukkan ulang informasi
+        pembayaran dan periksa ulang alamat penagihan.
+      '104': Maaf, tampaknya Anda telah menggunakan kartu ini dalam 15 menit terakhir
+        dan tidak berhasil. Harap coba kembali nanti atau gunakan kartu lainnya.
+      '150': Maaf, transaksi gagal. Silakan coba metode pembayaran lain atau  hubungi
+        bank Anda.
+      '200': Maaf, tampaknya ada informasi yang salah. Harap masukkan ulang informasi
+        pembayaran dan periksa ulang alamat penagihan.
+      '201': Maaf, transaksi gagal. Silakan coba metode pembayaran lain atau  hubungi
+        bank Anda.
+      '202': Maaf, tampaknya kartu Anda sudah kedaluwarsa. Harap verifikasi informasi
+        kartu Anda lalu coba kembali. Atau gunakan kartu lainnya.
+      '203': Maaf, transaksi gagal. Silakan coba metode pembayaran lain atau  hubungi
+        bank Anda.
+      '204': Maaf, transaksi gagal. Silakan coba metode pembayaran lain atau  hubungi
+        bank Anda.
+      '205': Maaf, transaksi gagal. Silakan coba metode pembayaran lain atau  hubungi
+        bank Anda.
+      '207': Maaf, bank penerbit kartu Anda tak tersedia. Harap tunggu beberapa saat
+        lalu cobalah kembali.
+      '208': Maaf, transaksi gagal. Silakan coba metode pembayaran lain atau  hubungi
+        bank Anda.
+      '210': Maaf, transaksi gagal. Silakan coba metode pembayaran lain atau  hubungi
+        bank Anda.
+      '211': Maaf, transaksi gagal. Silakan coba metode pembayaran lain atau  hubungi
+        bank Anda.
+      '221': Maaf, kartu Anda ditolak. Mungkin Anda perlu menghubungi bank penerbit
+        kartu tersebut. Silakan gunakan kartu lain.
+      '222': Maaf, kartu Anda ditolak. Mungkin Anda perlu menghubungi bank penerbit
+        kartu tersebut. Silakan gunakan kartu lain.
+      '230': Maaf, rincian kartu Anda salah. Harap verifikasi lalu cobalah kembali.
+      '231': Maaf, kartu Anda tidak sah. Harap gunakan kartu lainnya.
+      '232': Maaf, kartu Anda tidak diterima oleh pemroses pembayaran. Harap gunakan
+        kartu lainnya.
+      '233': Maaf, kartu Anda ditolak. Mungkin Anda perlu menghubungi bank penerbit
+        kartu tersebut. Silakan gunakan kartu lain.
+      '234': Maaf, sistem kami tengah mengalami masalah dengan pemroses pembayaran.
+        Cobalah kembali nanti.
+      '236': Maaf, pemroses pembayaran tengah mengalami masalah. Cobalah kembali nanti.
+      '240': Maaf, tampaknya jenis kartu Anda tidak sesuai dengan nomor kartu. Tim
+        teknis kami telah diinformasikan tentang hal ini dan tengah menginvestigasi.
+        Cobalah kembali nanti atau gunakan kartu lainnya.
+      '475': Maaf, kami tak dapat mengautentikasi kartu Anda. Tim teknis kami telah
+        diinformasikan tentang hal ini dan tengah menginvestigasi.
+      '476': Maaf, tampaknya autentikasi Anda gagal. Tim teknis kami telah diinformasikan
+        tentang hal ini dan tengah menginvestigasi.
+      '520': Maaf, tampaknya kami tengah mengalami masalah dengan pemroses pembayaran.
+        Tim teknis kami telah diinformasikan tentang hal ini dan tengah menginvestigasi.
+  bee_rating:
+    damaged_items: Kondisi produk
+    driver_attitude: Sikap kurir
+    freshness: Kualitas produk
+    friendly_driver: Kurir ramah
+    late_delivery: Pengiriman tepat waktu
+    out_of_stock: Produk tersedia
+    packaging: Kemasan
+    slack_pretext: 'Kami memiliki penilaian baru untuk pengantaran pesanan %{service_type}
+      Anda <%{order_fulfillment_url}|#%{order_fulfillment_id}> - Nilai: %{rating}'
+    timely_delivery: Pengantaran tepat waktu
+    wrong_items: Ketepatan produk
+    zendesk_ticket_comment: 'Nilai Pengemudi: %{deliverer_rating}, Nilai Pembelanja:
+      %{shopper_rating}, Komentar: %{comment}, Tag: %{tags}'
+    zendesk_ticket_subject: 'Penilaian performa tim honestbee untuk pesanan #%{order_fulfillment_id}'
+  concerns:
+    parse_helpers:
+      customer_deliverer_message_complete: 'Yeay, order Anda dari toko %{brand_name}
+        telah berhasil. Apakah Anda senang dengan pengalaman belanja Anda? Buka aplikasi
+        untuk memberikan rating :tada:'
+      customer_deliverer_message_dropoff_start: 'Pesanan laundri #%{order_number}>
+        Anda akan diantarkan pada %{dropoff_date} antara pukul %{delivery_slot}.'
+      customer_deliverer_message_food_start: 'Pesanan Anda dari %{brand_name} sedang
+        diantarkan :truck:'
+      customer_deliverer_message_laundry_complete: Jika Anda memiliki pertanyaan mengenai
+        pesanan Anda, silakan hubungi kami di laundry@honestbee.com setiap hari pukul
+        09.00 - 22.00
+      customer_deliverer_message_medicine_complete: 'Pesanan Kesehatan Anda telah
+        diantarkan. Bagaimana pengalaman Anda? Ketuk untuk memberi nilai :tada:'
+      customer_deliverer_message_medicine_start: 'Pesanan Kesehatan Anda akan tiba
+        pada %{delivery_date}, antara %{delivery_hour}. Ketuk untuk melacaknya! :truck:'
+      customer_deliverer_message_pickup_start: 'Bee antar-jemput akan mengambil pesanan
+        laundri #%{order_number} Anda pada %{pickup_date} antara pukul %{delivery_slot}.'
+      customer_deliverer_message_start: 'Order Anda dari toko %{brand_name} akan tiba
+        pada tanggal %{delivery_date}, pada jendela waktu pengantaran %{delivery_hour}.  Buka
+        aplikasi untuk melihat proses. :truck:'
+      customer_deliverer_message_trash_start: 'Lebah Anda akan menjemput pesanan sampah
+        Anda #%{order_number} dari depan pintu Anda antara %{delivery_slot}.'
+      customer_order_cancelled: 'Pesanan Anda #%{order_number} dari %{brand_name}
+        telah dibatalkan.'
+      customer_order_cancelled_medicine: 'Pesanan Kesehatan Anda #%{order_number}
+        telah dibatalkan'
+      customer_order_cancelled_trash: 'Pengambilan #%{order_number} Anda telah dibatalkan.'
+      customer_order_cancelled_with_brand: 'Pesanan Anda #%{order_number} dari %{brand_name}
+        telah dibatalkan.'
+      customer_order_receipt_sent: 'Struk belanja akhir Anda dengan nomor order %{order_id}
+        telah dikirimkan ke %{user_email} :mailbox_with_mail:'
+      non_customer_order_cancelled: Maaf, %{brand_name} harus membatalkan pesanan
+        Anda. Silakan mengunjungi restoran hebat yang lain.
+      referee_order_complete: 'Anda telah mendapatkan %{amount} dari referensi Anda!
+        Ayo belanja sekarang! :sunglasses:'
+  countries:
+    HK:
+      company_info_html: honestbee limited, Arion Commercial Building, 2-12 Queen's
+        Road West, Unit 706 7/F, Hong Kong SAR
+      name: Hong Kong
+      operating_hours_everyday: '09.00 - 22.00 setiap hari'
+      service_type:
+        groceries:
+          operating_hours_everyday: '09.00 - 22.00 setiap hari'
+    ID:
+      consumer_web_display_url: id.honestbee.com
+      operating_hours_everyday: 12pm - 10pm
+      service_type:
+        groceries:
+          operating_hours_everyday: 12pm - 10pm
+    JP:
+      company_info_html: honestbee Japan<br>Gedung Nishiazabu ST, 3-23-14, Nishiazabu,
+        Minato-ku, Tokyo, 106-0031, Jepang
+      name: Jepang
+      operating_hours_everyday: '09.30 - 22.00 setiap hari'
+      order_completed_tax_message_html: <br><span class="info">Semua harga yang ditampilkan
+        termasuk 8% Pajak Konsumsi Jepang</span class="info">
+      service_type:
+        food:
+          operating_hours_everyday: '09.30 - 22.00 setiap hari'
+        groceries:
+          operating_hours_everyday: '09.30 - 22.00 setiap hari'
+    MY:
+      company_info_html: Level 23-1, Premier Suite One Mont Kiara. No 1, Jalan Kiara
+        Mont Kiara. 50480 Kuala Lumpur
+      name: Malaysia
+      operating_hours_everyday: '09.00 - 22.00 setiap hari'
+      order_completed_tax_message: "(termasuk 6% GST)"
+      service_type:
+        groceries:
+          operating_hours_everyday: '09.00 - 22.00 setiap hari'
+    PH:
+      company_info_html: Gedung OPL 5-6F, Jalan C. Palanca 100, Desa Legaspi, Kota
+        Makati, Filipina
+      name: Filipina
+      operating_hours_everyday: '09.00 - 22.00 setiap hari'
+      order_completed_tax_message: "(termasuk 12% VAT)"
+      service_type:
+        groceries:
+          operating_hours_everyday: '09.00 - 22.00 setiap hari'
+    SG:
+      company_info_html: 'honestbee Pte. Ltd. (GST Reg. No. 201217834C)<br>2 Alexandra
+        Road, #04-01B Delta House, Singapore 159919'
+      name: Singapura
+      operating_hours_everyday: '09.00 - 22.00 setiap hari'
+      order_completed_tax_message: "(7% GST incl.)"
+      service_type:
+        food:
+          operating_hours_everyday: '09.00 - 22.00 setiap hari'
+        groceries:
+          operating_hours_everyday: '09.00 - 22.00 setiap hari'
+        laundry:
+          operating_hours_everyday: 13.00 - 22.00 setiap hari
+    TH:
+      disclaimer: Pembeli dapat menukar atau mengembalikan produk dalam kurun 7 hari
+        sejak menerimanya, dan penjual harus mengembalikan uang secara tunai kepada
+        pembeli dalam waktu 15 hari sejak menerima surat pemutusan kontrak dari pembeli.
+        Untuk makanan segar, pembeli yang tidak puas harus mengembalikan makanan segar
+        kepada honestbee dengan segera, dan penjual harus mengembalikan uang secara
+        tunai kepada pembeli dalam waktu 15 hari sejak menerima makanan segar yang
+        dikembalikan.
+      operating_hours_everyday: '09.00 - 18.00 setiap hari'
+      order_completed_tax_message: "(termasuk 7% VAT)"
+      service_type:
+        groceries:
+          operating_hours_everyday: '09.00 - 18.00 setiap hari'
+    TW:
+      company_info_html: 12F, No. 200, Section 2, Fuxing South Rd, Da’an District
+        Taipei City, Taiwan (R.O.C.)
+      name: Taiwan
+      operating_hours_everyday: '09.00 - 22.00 setiap hari'
+      service_type:
+        groceries:
+          operating_hours_everyday: '09.00 - 22.00 setiap hari'
+        laundry:
+          operating_hours_everyday: 13.00 - 22.00 setiap hari
+        trash:
+          operating_hours_everyday: 9pm - 12am setiap hari
+  cybersource:
+    reason_code:
+      '101': Maaf, tampaknya ada yang hilang atau informasi tidak benar. Silakan masukkan
+        ulang informasi pembayaran Anda dan tinjau alamat penagihan. Sebagai alternatif,
+        gunakan kartu yang berbeda..
+      '102': Maaf, ada informasi yang terlewati atau tidak benar. Silakan masukkan
+        ulang informasi pembayaran Anda dan tinjau alamat penagihan.
+      '104': Maaf, tampaknya Anda telah mencoba kartu ini selama 15 menit yang lalu
+        tapi tidak berhasil. Silakan coba lagi nanti atau gunakan kartu yang berbeda.
+      '150': Mohon maaf, transaksi Anda gagal. Silakan coba metode pembayaran lain
+        atau hubungi pihak bank Anda.
+      '200': Maaf, tampaknya ada beberapa informasi yang tidak benar. Silakan masukkan
+        ulang informasi pembayaran Anda dan tinjau alamat penagihan.
+      '201': Mohon maaf, transaksi Anda gagal. Silakan coba metode pembayaran lain
+        atau hubungi pihak bank Anda.
+      '202': Maaf, tampaknya kartu Anda telah kedaluwarsa. Silakan verifikasi informasi
+        kartu Anda lalu coba lagi. Sebagai alternatif, gunakan kartu yang berbeda.
+      '203': Mohon maaf, transaksi Anda gagal. Silakan coba metode pembayaran lain
+        atau hubungi pihak bank Anda.
+      '204': Mohon maaf, transaksi Anda gagal. Silakan coba metode pembayaran lain
+        atau hubungi pihak bank Anda.
+      '205': Mohon maaf, transaksi Anda gagal. Silakan coba metode pembayaran lain
+        atau hubungi pihak bank Anda.
+      '207': Maaf, bank penerbit kartu Anda tidak tersedia. Silakan tunggu beberapa
+        menit lalu coba lagi.
+      '208': Mohon maaf, transaksi Anda gagal. Silakan coba metode pembayaran lain
+        atau hubungi pihak bank Anda.
+      '210': Mohon maaf, transaksi Anda gagal. Silakan coba metode pembayaran lain
+        atau hubungi pihak bank Anda.
+      '211': Mohon maaf, transaksi Anda gagal. Silakan coba metode pembayaran lain
+        atau hubungi pihak bank Anda.
+      '221': Kami mohon maaf, kartu Anda ditolak. Anda mungkin mau menghubungi bank
+        penerbit. Silakan gunakan kartu yang berbeda.
+      '222': Kami mohon maaf, kartu Anda ditolak. Anda mungkin mau menghubungi bank
+        penerbit. Silakan gunakan kartu yang berbeda.
+      '230': Maaf, rincian kartu Anda tidak benar. Silakan verifikasi lalu coba lagi.
+      '231': Kami mohon maaf, kartu Anda tidak valid. Silakan gunakan kartu yang berbeda.
+      '232': Kami mohon maaf, kartu Anda tidak diterima oleh prosesor pembayaran.
+        Silakan gunakan kartu yang berbeda.
+      '233': Kami mohon maaf, kartu Anda ditolak. Silakan gunakan kartu yang berbeda.
+      '234': Kami mohon maaf karena sistem kami saat ini sedang mengalami beberapa
+        permasalahan dengan prosesor pembayaran. Silakan coba lagi nanti.
+      '236': Kami mohon maaf karena prosesor pembayaran sedang mengalami permasalahan.
+        Silakan coba lagi nanti.
+      '240': Kami mohon maaf, tampaknya jenis kartu Anda tidak cocok dengan nomor
+        kartu. Tim teknis kami telah diinformasikan tentang hal ini dan sedang mengamatinya.
+        Silakan coba lagi nanti atau gunakan kartu yang berbeda.
+      '475': Kami mohon maaf, kami tidak dapat mengotentifikasi kartu Anda. Tim teknis
+        kami telah diinformasikan tentang hal ini dan sedang mengamatinya.
+      '476': Kami mohon maaf, tampaknya otentifikasi Anda tidak berhasil. Tim teknis
+        kami telah diinformasikan tentang hal ini dan sedang mengamatinya.
+      '520': Kami mohon maaf, tampaknya kami sedang mengalami permasalahan dengan
+        prosesor pembayaran. Silakan tunggu beberapa menit lalu coba lagi.
+  date:
+    abbr_day_names:
+    - Min
+    - Sen
+    - Sel
+    - Rab
+    - Kam
+    - Jum
+    - Sab
+    abbr_month_names:
+    -
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - Mei
+    - Jun
+    - Jul
+    - Agu
+    - Sep
+    - Okt
+    - Nov
+    - Des
+    day_names:
+    - Minggu
+    - Senin
+    - Selasa
+    - Rabu
+    - Kamis
+    - Jumat
+    - Sabtu
+    format:
+      default: "%d-%m-(%Y)"
+    formats:
+      default: "%d-%m-%Y"
+      long: "%d %B, %Y"
+      short: "%b %d"
+    month_names:
+    -
+    - Januari
+    - Februari
+    - Maret
+    - April
+    - Mei
+    - Juni
+    - Juli
+    - Agustus
+    - September
+    - Oktober
+    - November
+    - Desember
+    order:
+    - :tahun
+    - :bulan
+    - :hari
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        other: sekitar %{count} jam
+        zero: sekitar %{count} jam
+      about_x_months:
+        other: sekitar %{count} bulan
+        zero: sekitar %{count} bulan
+      about_x_years:
+        other: sekitar %{count} tahun
+        zero: sekitar %{count} tahun
+      almost_x_years:
+        other: hampir %{count} tahun
+        zero: hampir %{count} tahun
+      half_a_minute: setengah menit
+      less_than_x_minutes:
+        other: kurang dari %{count} menit
+        zero: kurang dari %{count} menit
+      less_than_x_seconds:
+        other: kurang dari %{count} detik
+        zero: kurang dari %{count} detik
+      over_x_years:
+        other: lebih dari %{count} tahun
+        zero: lebih dari %{count} tahun
+      x_days:
+        other: "%{count} hari"
+        zero: "%{count} hari"
+      x_minutes:
+        other: "%{count} menit"
+        zero: "%{count} menit"
+      x_months:
+        other: "%{count} bulan "
+        zero: "%{count} bulan"
+      x_seconds:
+        other: "%{count} detik"
+        zero: "%{count} detik"
+    prompts:
+      day: Hari
+      hour: Jam
+      minute: Menit
+      month: Bulan
+      second: Detik
+      year: Tahun
+  devise:
+    mailer:
+      reset_password_instructions:
+        subject: "[honestbee] Setel ulang kata sandi Anda"
+  enums:
+    order:
+      replacement_preference:
+        call_to_confirm_replacements: Lakukan panggilan untuk mengkonfirmasi penggantian
+        no_replacements_desired: Jangan Telepon. Beli saja barang yang dapat dipenuhi
+          secara lengkap
+        sms_to_confirm_replacements: SMS untuk mengkonfirmasi penggantian
+        suggest_anyway: Jangan Telepon. Beli produk paling mirip yang tersedia
+    order_fulfillment:
+      waive_reason_codes:
+        bad_quality: Kualitas buruk
+        bad_quality_damaged: Kualitas buruk, rusak
+        bad_quality_not_fresh: Kualitas buruk, tidak segar
+        bad_quality_thawed: Kualitas buruk, meleleh
+        did_not_agree_to_replacement: Tidak menyetujui penggantian
+        item_not_purchased: Barang tidak dibeli
+        item_purchased_but_not_delivered: Barang dibeli tetap belum diantarkan
+        not_delivered: Belum diantarkan
+        others: Lainnya
+        refused_item: Barang ditolak
+        return_request: Permintaan pengembalian
+        wrong_item: Barang salah
+        wrong_size_or_excessive_quantity: Ukuran salah atau jumlah berlebih
+  errors:
+    messages:
+      accepted: harus diterima
+      blank: tidak boleh kosong
+      confirmation: tidak sema dengan %{attribute}
+      empty: tidak boleh kosong
+      equal_to: harus setara %{count}
+      even: harus genap
+      exclusion: direservasi
+      greater_than: harus lebih dari %{count}
+      greater_than_or_equal_to: harus lebih dari atau setara %{count}
+      inclusion: tidak ada dalam daftar
+      invalid: tidak sah
+      less_than: harus kurang dari %{count}
+      less_than_or_equal_to: harus kurang dari atau setara %{count}
+      not_an_integer: harus berupa bilangan bulat
+      not_a_number: bukan angka
+      odd: harus ganjil
+      other_than: harus selain %{count}
+      present: harus kosong
+      record_invalid: 'Validasi gagal: %{errors}'
+      taken: sudah terpakai
+      too_long:
+        other: terlalu panjang (maksimal %{count} karakter)
+        zero: terlalu panjang (maksimal %{count} karakter)
+      too_short:
+        other: terlalu pendek (minimal %{count} karakter)
+        zero: terlalu pendek (minimal %{count} karakter)
+      wrong_length:
+        other: memiliki panjang yang salah (harus %{count} karakter)
+        zero: memiliki panjang yang salah (harus %{count} karakter)
+    template:
+      body: 'Terdapat masalah dengan kolom berikut:'
+      header:
+        other: galat %{count} melarang %{model} tersimpan
+        zero: galat %{count} melarang %{model} ini tersimpan
+  helpers:
+    select:
+      prompt: Harap pilih
+    submit:
+      create: Buat %{model}
+      submit: Simpan %{model}
+      update: Perbarui %{model}
+  mailers:
+    bee2b_status:
+      generic:
+        delivery_details: Rincian Pengiriman
+        delivery_id: 'Pesanan: %{order_id}'
+      order_at_hub:
+        customer_header_html: " telah tiba di pusat kami."
+        customer_subject: 'Bee2B - Pesanan #%{order_id} telah tiba di pusat kami!'
+        recipient_header_html: Hai <span class="highlight">%{name}</span>, paket Anda
+          saat ini sedang berada di pusat kami dan akan segera dikirimkan kepada Anda!
+        recipient_subject: 'Bee2B - Pesanan Anda #%{order_id} telah tiba di pusat
+          kami!'
+      order_completed:
+        customer_header_html: " telah terkirim."
+        customer_subject: 'Bee2B - Pesanan #%{order_id} telah terkirim!'
+        recipient_header_html: <span class="highlight">%{name}</span>, pesanan Anda
+          telah terkirim!
+        recipient_subject: 'Bee2B - Pesanan Bee2B Anda #%{order_id} telah terkirim!'
+      order_enroute:
+        customer_header_html: " sedang dalam perjalanan menuju penerima."
+        customer_subject: 'Bee2B - Pesanan #%{order_id} sedang dalam perjalanan menuju
+          penerima!'
+        recipient_header_html: Hai <span class="highlight">%{name}</span>, paket Anda
+          telah meninggalkan pusat kami dan sedang dalam perjalanan menuju Anda!
+        recipient_subject: 'Bee2B - Pesanan Anda #%{order_id} saat ini sedang dalam
+          proses pengiriman kepada Anda!'
+      order_picked_up:
+        customer_header_html: " telah dijemput."
+        customer_subject: 'Bee2B - Pesanan #%{order_id} telah dijemput!'
+        recipient_header_html: Hai <span class="highlight">%{name}</span>, paket Anda
+          telah dijemput oleh delivery bee kami dan sedang dalam perjalanan menuju
+          Anda!
+        recipient_subject: 'Bee2B - Pesanan Anda #%{order_id} telah dijemput!'
+      order_processing:
+        customer_header_html: " telah diproses dan menunggu dijemput."
+        customer_subject: 'Bee2B - Pesanan #%{order_id} telah diproses!'
+        recipient_header_html: Hai <span class="highlight">%{name}</span>, paket Anda
+          saat ini sedang diproses dan akan segera dikirimkan kepada Anda!
+        recipient_subject: 'Bee2B - Pesanan Anda #%{order_id} telah diproses!'
+    concierge_contact:
+      buzz_at_email_html: Kabari kami di %{concierge_email}
+      or_phone: atau %{concierge_phone}
+      question_suggestion: Ada pertanyaan atau saran?
+    contact_us:
+      contact_us_at: Butuh bantuan? Cukup hubungi kami di
+      operating_hours: Jam Operasional
+      operating_hours_everyday: '09.00 - 22.00, setiap hari'
+    coupon:
+      description: "%{coupon_value} dari honestbee."
+      expiry_date: Gunakan pada %{date}
+      guide_html: Jika Anda butuh sedikit bantuan, berikut ini <a href=https://blog.honestbee.com/how-to-use-a-coupon-code-on-honestbee/>panduan
+        kupon</a> singkat kami.
+      guide_url: https://blog.honestbee.com/how-to-use-a-coupon-code-on-honestbee/
+      intro: Sebagai permohonan maaf, kami telah memberikan kupon %{coupon_value}
+        pada dompet kupon Anda
+    generic:
+      automotive: Rumah & Oto
+      bee2b: Bee2b
+      copyrights: "© %{year} honestbee. Dilindungi undang-undang."
+      email: Email
+      email_receipt_reason: Anda menerima email ini karena telah melakukan pesanan
+        di honestbee
+      food: Makanan
+      groceries: belanja
+      laundry: cucian
+      medicine: Kesehatan
+      name: Nama
+      phone: Telepon
+      tickets: Tiket
+      trash: Pengambilan
+    late_fulfillment:
+      headline:
+        html: "%{name} kami mohon maaf atas keterlambatan pengantaran %{service_type}."
+      headline_html: Hi <span class="highlight">%{name}</span> Kami memohon maaf atas
+        terlambatnya pengiriman %{service_type}.
+      message_html: 'Tujuan kami adalah menyediakan apa yang dibutuhkan oleh konsumen
+        di saat mereka membutuhkannya. Kami gagal memenuhi harapan Anda, sekaligus
+        harapan kami. Perbuatan lebih berarti dari kata-kata. '
+      order_date: 'Dipesan pada: %{order_date}'
+      order_info: "%{service_type} pemesanan #%{order_number}"
+      subject: Kami mohon maaf atas keterlambatan pengantaran %{service_type}
+    notify_be_a_bee_submission:
+      id_number: Nomor identifikasi
+      phone_model: Model telepon
+      position: Posisi
+      preferred_working_location: Lokasi kerja yang disukai
+      vehicle_type: Tipe Kendaraan
+      whatsapp: Whatsapp
+    notify_contact_us_submission:
+      company_name: Nama Perusahaan
+      company_website: Situs Web Perusahaan
+      coupon_code: Kode Kupon
+      delivery_timeslot: Slot Waktu Pengiriman Baru
+      message: Pesan
+      order_number: Nomor pesanan
+    order_cancelled:
+      automotive:
+        auto_cancel:
+          'content ': Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        customer_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        fraud_activity:
+          content: |-
+            Kami menemukan pelanggaran pada akun honestbee Anda. Anda tidak dapat menggunakan akun Anda sampai kami dapat mengklarifikasi hal tersebut. <br/><br/>
+            Kami melakukan ini demi melindungi asisten belanja dan kurir kami dan juga memastikan kami memberikan layanan yang adil kepada konsumen lainnya.<br/><br/>
+            Pesanan Anda di %{brand} dengan nomor order #%{order_number} telah dibatalkan. Tidak perlu khawatir, kami tidak akan memberikan tagihan untuk pesanan ini.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.<br/><br/>
+            Jika Anda ingin mempelajari lebih jauh tentang kebijakan kami, silahkan membaca Ketentuan Penggunaan di website kami <a href=https://id.honestbee.com/terms-of-use/>https://id.honestbee.com/terms-of-use</a><br/><br/>
+            Jika Anda punya pertanyaan, kami sangat senang untuk membantu Anda.
+          header: Yth. %{name},
+          subject: Kami telah menangguhkan akun Anda dikarenakan aktivitas tidak wajar.
+        merchant_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        order_number_header: 'Pesanan Rumah & Otomotif #%{order_number}'
+        others:
+          content: |-
+            Kami menemui tantangan tak terduga hari ini dan, sayangnya, kami tak dapat berbuat banyak.<br/><br/>
+            Kami telah mendapat pelajaran berharga yang akan membantu kami memperbaiki layanan yang Anda terima. Beri kami kesempatan dan kami akan melakukan yang terbaik untuk membuktikannya kepada Anda.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.
+          header: Yth. %{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda.
+          subject: "%{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda."
+        out_of_stock:
+          content: "Sebagian besar item yang Anda pesan sedang kosong atau berkualitas
+            rendah. Kami telah memberi tahu %{brand} bahwa item tersebut perlu pengadaan
+            ulang. Tak perlu khawatir, Anda tidak dikenai tagihan.<br/><br/> \nUntuk
+            pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi
+            dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam
+            tagihan kartu Anda."
+          header: Yth. %{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda.
+          subject: "%{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda."
+        subject: "%{name}, kami telah membatalkan pesanan Anda dari %{brand} "
+      bee2b:
+        auto_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        customer_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        fraud_activity:
+          content: |-
+            Kami menemukan pelanggaran pada akun honestbee Anda. Anda tidak dapat menggunakan akun Anda sampai kami dapat mengklarifikasi hal tersebut. <br/><br/>
+            Kami melakukan ini demi melindungi asisten belanja dan kurir kami dan juga memastikan kami memberikan layanan yang adil kepada konsumen lainnya.<br/><br/>
+            Pesanan Anda di %{brand} dengan nomor order #%{order_number} telah dibatalkan. Tidak perlu khawatir, kami tidak akan memberikan tagihan untuk pesanan ini.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.<br/><br/>
+            Jika Anda ingin mempelajari lebih jauh tentang kebijakan kami, silahkan membaca Ketentuan Penggunaan di website kami <a href=https://id.honestbee.com/terms-of-use/>https://id.honestbee.com/terms-of-use</a><br/><br/>
+            Jika Anda punya pertanyaan, kami sangat senang untuk membantu Anda.
+          header: Yth. %{name},
+          subject: Kami telah menangguhkan akun Anda dikarenakan aktivitas tidak wajar.
+        merchant_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        others:
+          content: |-
+            Kami menemui tantangan tak terduga hari ini dan, sayangnya, kami tak dapat berbuat banyak.<br/><br/>
+            Kami telah mendapat pelajaran berharga yang akan membantu kami memperbaiki layanan yang Anda terima. Beri kami kesempatan dan kami akan melakukan yang terbaik untuk membuktikannya kepada Anda.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.<
+          header: Yth. %{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda.
+          subject: "%{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda."
+        out_of_stock:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+      cancel_charge_note: Kami hanya akan membebankan tagihan pada Anda untuk product
+        yang akan kami antarkan dari %{other_brands}.
+      food:
+        auto_cancel:
+          content: |-
+            Saat ini adalah jam-jam sibuk di %{brand}. Mereka tidak ingin Anda menunggu. Oleh sebab itu, pesanan Anda telah dibatalkan. Silakan mengunjungi restoran kami yang lain.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.
+          header: Maaf, %{brand} harus membatalkan pesanan Anda.
+          subject: Maaf, %{brand} harus membatalkan pesanan Anda.
+        cancelled_explanation: |-
+          Saat ini adalah jam-jam sibuk di %{brand_name}. Mereka tidak ingin Anda menunggu. Oleh sebab itu, pesanan Anda telah dibatalkan. Silakan mengunjungi restoran kami yang lain.<br/><br/>
+          Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.
+        customer_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        fraud_activity:
+          content: |-
+            Kami menemukan pelanggaran pada akun honestbee Anda. Anda tidak dapat menggunakan akun Anda sampai kami dapat mengklarifikasi hal tersebut. <br/><br/>
+            Kami melakukan ini demi melindungi asisten belanja dan kurir kami dan juga memastikan kami memberikan layanan yang adil kepada konsumen lainnya.<br/><br/>
+            Pesanan Anda di %{brand} dengan nomor order #%{order_number} telah dibatalkan. Tidak perlu khawatir, kami tidak akan memberikan tagihan untuk pesanan ini.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.<br/><br/>
+            Jika Anda ingin mempelajari lebih jauh tentang kebijakan kami, silahkan membaca Ketentuan Penggunaan di website kami <a href=https://id.honestbee.com/terms-of-use/>https://id.honestbee.com/terms-of-use</a><br/><br/>
+            Jika Anda punya pertanyaan, kami sangat senang untuk membantu Anda.
+          header: Yth. %{name},
+          subject: Kami telah menangguhkan akun Anda dikarenakan aktivitas tidak wajar.
+        merchant_cancel:
+          content: |-
+            Saat ini adalah jam-jam sibuk di %{brand}. Mereka tidak ingin Anda menunggu. Oleh sebab itu, pesanan Anda telah dibatalkan. Silakan mengunjungi restoran kami yang lain.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.
+          header: Maaf, %{brand} harus membatalkan pesanan Anda.
+          subject: Maaf, %{brand} harus membatalkan pesanan Anda.
+        order_cancelled_note: Maaf, %{brand} harus membatalkan pesanan Anda.
+        order_number_header: 'Pesanan Makanan dengan order nomor #%{order_number}'
+        others:
+          content: |-
+            Kami menemui tantangan tak terduga hari ini dan, sayangnya, kami tak dapat berbuat banyak.<br/><br/>
+            Kami telah mendapat pelajaran berharga yang akan membantu kami memperbaiki layanan yang Anda terima. Beri kami kesempatan dan kami akan melakukan yang terbaik untuk membuktikannya kepada Anda.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.
+          header: Yth. %{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda.
+          subject: "%{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda."
+        out_of_stock:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        rejected_subject: Maaf, %{brand} harus membatalkan pesanan Anda.
+        subject: "%{name}, kami telah membatalkan pesanan Anda dari %{brand} "
+      groceries:
+        auto_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        customer_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        fraud_activity:
+          content: |-
+            Kami menemukan pelanggaran pada akun honestbee Anda. Anda tidak dapat menggunakan akun Anda sampai kami dapat mengklarifikasi hal tersebut. <br/><br/>
+            Kami melakukan ini demi melindungi asisten belanja dan kurir kami dan juga memastikan kami memberikan layanan yang adil kepada konsumen lainnya.<br/><br/>
+            Pesanan Anda di %{brand} dengan nomor order #%{order_number} telah dibatalkan. Tidak perlu khawatir, kami tidak akan memberikan tagihan untuk pesanan ini.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.</br></br>
+            Jika Anda ingin mempelajari lebih jauh tentang kebijakan kami, silahkan membaca Ketentuan Penggunaan di website kami <a href=https://id.honestbee.com/terms-of-use/>https://id.honestbee.com/terms-of-use</a><br/><br/>
+            Jika Anda punya pertanyaan, kami sangat senang untuk membantu Anda.
+          header: Yth. %{name},
+          subject: Kami telah menangguhkan akun Anda dikarenakan aktivitas tidak wajar.
+        merchant_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        order_number_header: 'Pesanan Belanja dengan order #%{order_number}'
+        others:
+          content: |-
+            Kami menemui kendala tak terduga hari ini dan mohon maaf, kami berusaha untuk terus membantu Anda.<br/><br/>
+            Kami telah mendapat pelajaran berharga yang akan membantu kami memperbaiki layanan kami untuk Anda. Beri kami kesempatan dan kami akan melakukan yang terbaik untuk membuktikannya kepada Anda.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, mohon maaf kami terpaksa membatalkan pesanan Anda dari
+            %{brand}."
+          subject: "%{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda."
+        out_of_stock:
+          content: |-
+            Sebagian besar produk yang Anda pesan tidak tersedia atau berkualitas rendah. Kami telah menginformasikan pihak %{brand} bahwa produk tersebut perlu dipesan kembali. Tidak perlu khawatir, kami tidak akan memberikan tagihan untuk pesanan ini.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, mohon maaf kami terpaksa membatalkan pesanan Anda dari
+            %{brand}."
+          subject: "%{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda."
+        subject: "%{name}, kami telah membatalkan pesanan Anda dari %{brand} "
+      laundry:
+        auto_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        customer_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        fraud_activity:
+          content: |-
+            Kami menemukan pelanggaran pada akun honestbee Anda. Anda tidak dapat menggunakan akun Anda sampai kami dapat mengklarifikasi hal tersebut. <br/><br/>
+            Kami melakukan ini demi melindungi asisten belanja dan kurir kami dan juga memastikan kami memberikan layanan yang adil kepada konsumen lainnya.<br/><br/>
+            Pesanan Anda di %{brand} dengan nomor order #%{order_number} telah dibatalkan. Tidak perlu khawatir, kami tidak akan memberikan tagihan untuk pesanan ini.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.<br/><br/>
+            Jika Anda ingin mempelajari lebih jauh tentang kebijakan kami, silahkan membaca Ketentuan Penggunaan di website kami <a href=https://id.honestbee.com/terms-of-use/>https://id.honestbee.com/terms-of-use</a><br/><br/>
+            Jika Anda punya pertanyaan, kami sangat senang untuk membantu Anda.
+          header: Yth. %{name},
+          subject: Kami telah menangguhkan akun Anda dikarenakan aktivitas tidak wajar.
+        merchant_cancel:
+          content: |-
+            Kami memercayai penilaian mitra kami yang tepercaya dan kami tidak ingin melakukan apa pun yang mungkin dapat merusak barang kesayangan Anda. Oleh karena itu, kami telah membatalkan pesanan Anda. Tidak perlu cemas, Anda tidak akan dikenai biaya untuk pesanan dan pengantarannya dan barang Anda akan dikembalikan dengan aman dan baik.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.
+          header: "%{name} yang terhormat, mitra kami telah memeriksa pesanan Anda,
+            dan sayangnya pesanan Anda tidak dapat diproses di penatu."
+          subject: Yth. %{name}, maaf, kami terpaksa membatalkan pesanan %{brand}
+            Anda.
+        order_number_header: 'Pesanan Laundry dengan order #%{order_number}'
+        others:
+          content: |-
+            Kami menemui tantangan tak terduga hari ini dan, sayangnya, kami tak dapat berbuat banyak.<br/><br/>
+            Kami telah mendapat pelajaran berharga yang akan membantu kami memperbaiki layanan yang Anda terima. Beri kami kesempatan dan kami akan melakukan yang terbaik untuk membuktikannya kepada Anda.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.
+          header: Yth. %{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda.
+          subject: "%{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda."
+        out_of_stock:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        subject: "%{name}, kami telah membatalkan pesanan Anda dari %{brand} "
+      medicine:
+        auto_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        customer_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda."
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        fraud_activity:
+          content: |-
+            Kami menemukan pelanggaran pada akun honestbee Anda. Anda tidak dapat menggunakan akun Anda sampai kami dapat mengklarifikasi hal tersebut. <br/><br/>
+            Kami melakukan ini demi melindungi asisten belanja dan kurir kami dan juga memastikan kami memberikan layanan yang adil kepada konsumen lainnya.<br/><br/>
+            Pesanan Anda di %{brand} dengan nomor order #%{order_number} telah dibatalkan. Tidak perlu khawatir, kami tidak akan memberikan tagihan untuk pesanan ini.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.<br/><br/>
+            Jika Anda ingin mempelajari lebih jauh tentang kebijakan kami, silahkan membaca Ketentuan Penggunaan di website kami <a href=https://id.honestbee.com/terms-of-use/>https://id.honestbee.com/terms-of-use</a><br/><br/>
+            Jika Anda punya pertanyaan, kami sangat senang untuk membantu Anda.
+          header: Yth. %{name},
+          subject: Kami telah menangguhkan akun Anda dikarenakan aktivitas tidak wajar.
+        merchant_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        order_number_header: 'Pesanan Kesehatan #%{order_number}'
+        others:
+          content: |-
+            Kami menemui tantangan tak terduga hari ini dan, sayangnya, kami tak dapat berbuat banyak.<br/><br/>
+            Kami telah mendapat pelajaran berharga yang akan membantu kami memperbaiki layanan yang Anda terima. Beri kami kesempatan dan kami akan melakukan yang terbaik untuk membuktikannya kepada Anda.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.
+          header: Yth. %{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda.
+          subject: "%{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda."
+        out_of_stock:
+          content: |-
+            Sebagian besar barang yang Anda pesan saat ini habis persediaannya. Kami akan memastikan persediaannya segera diisi kembali. Tidak perlu cemas, Anda tidak akan dikenai biaya.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.
+          header: Yth. %{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda.
+          subject: "%{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda."
+        subject: "%{name}, kami telah membatalkan pesanan Anda dari %{brand} "
+      ordered_on: 'Pesanan dilakukan pada: %{timestamp}'
+      order_is_cancelled_note: "%{name}, kami telah membatalkan pesanan Anda dari
+        %{brand}"
+      order_is_rejected_note: "%{name}, maaf, %{brand} saat ini tidak dapat menerima
+        pesanan Anda."
+      order_now: PESAN SEKARANG
+      out_of_stock:
+        greeting_html: <span class="highlight">%{name}</span>, kami mohon maaf, kami
+          harus membatalkan pesanan dalam jumlah besar Anda dari %{brand}.
+        grocery_order: 'Pesanan grosir #%{order_number}'
+        reason: Sebagian besar barang yang Anda pesan saat ini habis terjual atau
+          berkualitas rendah. Kami telah memberi tahu %{brand} bahwa barang tersebut
+          perlu diisi kembali. Yang lainnya dijamin, Anda tidak akan dikenakan biaya.
+        remedy: Sebagai permohonan maaf, kami telah memberikan kupon %{coupon_value}
+          pada dompet kupon Anda
+        subject: 'Kami harus membatalkan pesanan dalam jumlah besar Anda #%{order_number}'
+      rejected_explanation: Untuk memastikan Anda mendapatkan pengalaman terbaik bersama
+        kami, kami telah membatalkan pesanan Anda. Silakan telusuri restoran kami
+        yang lainnya untuk menemukan makanan lezat.
+      release_funds_note: Untuk pembayaran menggunakan kartu, kami akan menerbitkan
+        nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+        ditampilkan dalam tagihan kartu Anda.
+      subject: "%{name}, kami telah membatalkan pesanan Anda dari %{brand} "
+      trash:
+        auto_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        customer_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        fraud_activity:
+          content: |-
+            Kami menemukan pelanggaran pada akun honestbee Anda. Anda tidak dapat menggunakan akun Anda sampai kami dapat mengklarifikasi hal tersebut. <br/><br/>
+            Kami melakukan ini demi melindungi asisten belanja dan kurir kami dan juga memastikan kami memberikan layanan yang adil kepada konsumen lainnya.<br/><br/>
+            Pesanan Anda di %{brand} dengan nomor order #%{order_number} telah dibatalkan. Tidak perlu khawatir, kami tidak akan memberikan tagihan untuk pesanan ini.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.<br/><br/>
+            Jika Anda ingin mempelajari lebih jauh tentang kebijakan kami, silahkan membaca Ketentuan Penggunaan di website kami <a href=https://id.honestbee.com/terms-of-use/>https://id.honestbee.com/terms-of-use</a><br/><br/>
+            Jika Anda punya pertanyaan, kami sangat senang untuk membantu Anda.
+          header: Yth. %{name},
+          subject: Kami telah menangguhkan akun Anda dikarenakan aktivitas tidak wajar.
+        merchant_cancel:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        order_number_header: 'Pesanan Pengambilan #%{order_number}'
+        others:
+          content: |-
+            Kami menemui tantangan tak terduga hari ini dan, sayangnya, kami tak dapat berbuat banyak.<br/><br/>
+            Kami telah mendapat pelajaran berharga yang akan membantu kami memperbaiki layanan yang Anda terima. Beri kami kesempatan dan kami akan melakukan yang terbaik untuk membuktikannya kepada Anda.<br/><br/>
+            Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai ditampilkan dalam tagihan kartu Anda.
+          header: Yth. %{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda.
+          subject: "%{name}, maaf, kami terpaksa membatalkan pesanan %{brand} Anda."
+        out_of_stock:
+          content: Untuk pembayaran menggunakan kartu, kami akan menerbitkan nominal
+            pra-otorisasi dalam 48 jam. Mungkin butuh hingga 10 hari kerja sampai
+            ditampilkan dalam tagihan kartu Anda.
+          header: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+          subject: "%{name}, kami telah membatalkan pesanan %{brand} Anda"
+        subject: "%{name}, kami telah membatalkan pesanan Anda dari %{brand} "
+    order_completed:
+      final_receipt_survey_button:
+        groceries: 'Beri penilaian pada pesanan Anda %{order_number}'
+        food: 'Beri penilaian pada pesanan Anda %{order_number}'
+        default: 'Beri penilaian pada pesanan Anda %{order_number}'
+      final_receipt_survey_title:
+        groceries: Bagaimana pelayanan kami?
+        food: Bagaimana pelayanan kami?
+        default: Bagaimana pelayanan kami?
+      adjustment: Penyesuaian
+      automotive:
+        order_delivered_html: Selesai—diantar tepat di depan pintu Anda!
+        order_delivered_interim_html: Selesai—diantar tepat di depan pintu Anda!
+        subject: 'Selesai!! Ini tanda terima akhir untuk %{service_type} #%{order_number}'
+        subject_interim: 'Order berhasil dikirim—ini tanda terima sementara untuk
+          pesanan %{service_type} Anda #%{order_number}'
+      cash_refund: 'Uang Kembalian: %{amount}'
+      concierge_fee: Biaya Layanan
+      credit: Kredit
+      delivery_fee: Biaya Pengiriman
+      minimum_spend_extra_fee: 'Belanja min. belum tercapai'
+      discount: Diskon
+      final_total_disclaimer: 'Harap diketahui: harga akhir tidak termasuk biaya eksternal
+        yang mungkin dikenakan oleh bank Anda. Untuk segala pertanyaan, silakan langsung
+        menghubungi bank Anda.'
+      food:
+        order_delivered_html: Kami harap rasanya enak!
+        order_delivered_interim_html: Kami harap rasanya enak!
+        subject: 'Selesai—ini tanda terima akhir untuk pesanan %{service_type} Anda
+          #%{order_number}'
+        subject_interim: 'Order berhasil dikirim—ini tanda terima sementara untuk
+          pesanan %{service_type} Anda #%{order_number}'
+      fulfilled_items: Barang Terpenuhi
+      groceries:
+        order_delivered_html: Selesai—diantar cepat dalam keadaan segar tanpa perlu
+          repot!
+        order_delivered_interim_html: Selesai—diantar cepat dalam keadaan segar tanpa harus repot mengangkat!
+        subject: 'Selesai—ini tanda terima akhir untuk pesanan %{service_type} Anda
+          #%{order_number}'
+        subject_interim: 'Order berhasil dikirim—ini tanda terima sementara untuk
+          pesanan %{service_type} Anda #%{order_number}'
+      inclusive_of_tax: "(termasuk pajak)"
+      laundry:
+        order_delivered_html: Selesai—diantar tepat di depan pintu Anda!
+        order_delivered_interim_html: Selesai—diantar tepat di depan pintu Anda!
+        subject: 'Selesai—ini tanda terima akhir untuk pesanan %{service_type} Anda
+          #%{order_number}'
+        subject_interim: 'Order berhasil dikirim—ini tanda terima sementara untuk
+          pesanan %{service_type} Anda #%{order_number}'
+      medicine:
+        order_delivered_html: Selesai—diantar tepat di depan pintu Anda!
+        order_delivered_interim_html: Selesai—diantar tepat di depan pintu Anda!
+        subject: 'Selesai—ini tanda terima akhir untuk pesanan %{service_type} Anda
+          #%{order_number}'
+        subject_interim: 'Order berhasil dikirim—ini tanda terima sementara untuk
+          pesanan %{service_type} Anda #%{order_number}'
+      oos_items: Barang Stok Habis
+      order_delivered_html: <span class="highlight">%{name}</span>, berikut resi Anda
+        untuk barang yang kami kirimkan.
+      order_refunded_update: Kami akan mengembalikan dana %{refund} ke kartu Anda.
+      order_waived_html: <span class="highlight">%{name}</span>, resi Anda telah diperbarui.
+        Anda tidak akan dikenakan biaya untuk barang yang dibebaskan.
+      order_waived_update: Anda tidak akan dikenakan %{refund} untuk barang yang dibebaskan.
+      receipt_note: Anda belum mendapatkan tagihan. Tanda terima akhir akan dikirim
+        dalam waktu %{days} hari.
+      refund_amount: 'Kembalikan dana ke %{card}:'
+      refund_subject: 'Perbaruan resi Anda untuk pesanan #%{order_number}'
+      replaced_items: Barang Yang Diganti
+      service: Layanan
+      store_price: Harga di toko
+      subject: 'Selesai—ini tanda terima akhir untuk pesanan %{service_type} Anda
+        #%{order_number}'
+      subject_interim: 'Order berhasil dikirim—ini tanda terima sementara untuk pesanan
+        %{service_type} Anda #%{order_number}'
+      subtotal: Subtotal
+      tax: Pajak
+      total: TOTAL BELANJA AKHIR
+      total_interim: JUMLAH
+      trash:
+        order_delivered_html: 'Selesai!! Ini tanda terima akhir untuk %{service_type}
+          #%{order_number}'
+        order_delivered_interim_html: 'Order berhasil dikirim!! Ini tanda terima sementara untuk %{service_type}
+          #%{order_number}'
+        subject: 'Selesai—ini tanda terima akhir untuk pesanan %{service_type} Anda
+          #%{order_number}'
+        subject_interim: 'Order berhasil dikirim—ini tanda terima sementara untuk
+          pesanan %{service_type} Anda #%{order_number}'
+      waived: Jumlah Dibebaskan
+      waived_amount: Jumlah dibebaskan
+      waived_items: Barang Dikembalikan/Dibebaskan
+      web_price: Harga web
+    order_delivering:
+      automotive:
+        subject: 'Pesanan Anda #%{order_number} akan dikirimkan pada %{delivery_slot}'
+      food:
+        subject: 'Pesanan Anda #%{order_number} akan dikirimkan pada %{delivery_slot}'
+      greeting_html: <span class="highlight">%{name}</span>, pesanan akan tiba di
+        depan pintu rumah Anda pada %{delivery_slot}
+      greeting_html_2: pesanan Anda akan berada di depan pintu Anda pada pukul %{delivery_slot}
+      groceries:
+        subject: 'Pesanan Anda #%{order_number} akan dikirimkan pada %{delivery_slot}'
+      laundry:
+        subject: 'Pesanan Anda #%{order_number} akan dikirimkan pada %{delivery_slot}'
+      medicine:
+        subject: 'Pesanan Anda #%{order_number} akan dikirimkan pada %{delivery_slot}'
+      note_on_final_receipt: Anda hanya membayar setelah Anda menerima pesanan. Hal
+        ini memungkinkan kami untuk menyesuaikan struk belanja akhir Anda jika ada
+        barang pengganti dan stok barang yang habis, sebagaimana berlaku di toko tempat
+        Anda melakukan pesanan.
+      subject: 'Pesanan Anda #%{order_number} akan dikirimkan pada %{delivery_slot}'
+      trash:
+        subject: 'Pesanan Anda #%{order_number} akan dikirimkan pada %{delivery_slot}'
+    order_laundry_processing:
+      delivery: Pengantaran
+      no_extra_fee: Tidak ada biaya tambahan jika Anda mengubah jadwal pengambilan
+        atau pengantaran Anda 2 jam sebelumnya.
+      no_rescheduling_fee: Tanpa biaya pengubahan jadwal
+      pickup: Pengambilan
+      subject: "%{name}, pengambilan laundry #%{order_number} milik Anda telah dikonfirmasi"
+      subtotal: Subtotal
+      thank_you_for_shopping_html: '<span class="highlight">%{name}</span>, pengambilan
+        laundry #%{order_number} milik Anda telah dikonfirmasi'
+    order_processing:
+      automotive:
+        delivery_note: Petunjuk pengambilan
+        deliver_to: Alamat pengambilan
+        order_date: Tanggal pesanan
+        store_subtotal: Subtotal
+        subject: 'Pesanan Anda berhasil! Kami telah menerima pesanan %{service_type}
+          Anda #%{order_number}'
+        thank_you_for_shopping_html: 'Hi <span class="highlight">%{name}</span>, pesanan
+          Anda berhasil kami terima! Asisten belanja Anda siap untuk mengurus pesanan
+          Anda #%{order_number}'
+      can_replace_with: Dapat diganti dengan
+      concierge_fee: Biaya Asisten
+      contact_number: Nomor kontak
+      credit_card_charge_time_html: Kartu kredit Anda <span class="highlight">dikenakan
+        biaya setelah pengiriman</span>.
+      customer_note: Catatan
+      delivery_fee: Biaya Pengantaran
+      minimum_spend_extra_fee: 'Belanja min. belum tercapai'
+      delivery_note: Catatan pengiriman
+      deliver_to: Kirim ke
+      food:
+        delivery_note: Petunjuk pengantaran
+        deliver_to: Alamat pengantaran
+        order_date: Pesanan masuk
+        store_subtotal: Subtotal belanja
+        subject: 'Pesanan Anda berhasil! Kami telah menerima pesanan %{service_type}
+          Anda #%{order_number}'
+        thank_you_for_shopping_html: <span class="highlight">%{name}</span>, pesanan
+          makanan Anda telah dikonfirmasi
+      groceries:
+        delivery_note: Catatan pengantaran
+        deliver_to: Diantarkan ke
+        order_date: Tanggal pesanan
+        store_subtotal: Subtotal belanja
+        subject: 'Pesanan Anda berhasil! Kami telah menerima pesanan %{service_type}
+          Anda #%{order_number}'
+        thank_you_for_shopping_html: 'Hi <span class="highlight">%{name}</span>, pesanan
+          Anda berhasil kami terima! Asisten belanja Anda siap untuk mengurus pesanan
+          Anda #%{order_number}'
+      inclusive_of_tax: "(termasuk pajak)"
+      laundry:
+        delivery_note: Catatan pengantaran
+        deliver_to: Diantarkan ke
+        order_date: Tanggal pesanan
+        store_subtotal: Subtotal
+        subject: 'Berhasil! Pengambilan %{service_type} Anda #%{order_number} sudah
+          dikonfirmasikan.'
+        thank_you_for_shopping_html: Hai <span class="highlight">%{name}</span>, pesanan
+          Anda berhasil! Bee kami siap untuk mengurus pesanan Anda.
+      medicine:
+        delivery_note: Catatan pengantaran
+        deliver_to: Diantarkan ke
+        order_date: Tanggal pesanan
+        store_subtotal: Subtotal toko
+        subject: 'Pesanan Anda berhasil! Kami telah menerima pesanan %{service_type}
+          Anda #%{order_number}'
+        thank_you_for_shopping_html: 'Hi <span class="highlight">%{name}</span>, pesanan
+          Anda berhasil kami terima! Asisten belanja Anda siap untuk mengurus pesanan
+          Anda #%{order_number}'
+      no_customer_note: Catatan nomor pelanggan
+      no_replacement: Tanpa pengganti
+      order_date: Tanggal pesanan
+      order_number: Nomor pesanan
+      store_subtotal: Subtotal belanja
+      subject: Kami telah menerima pesanan Anda
+      thank_you_for_shopping_html: 'Hi <span class="highlight">%{name}</span>, pesanan
+        Anda berhasil kami terima! Asisten belanja Anda siap untuk mengurus pesanan
+        Anda #%{order_number}'
+      total: TOTAL
+      total_disclaimer: Semua harga yang ditampilkan termasuk 8% Pajak Konsumsi Jepang.
+      trash:
+        delivery_note: Instruksi pengambilan
+        deliver_to: Alamat pengambilan
+        order_date: Tanggal pesanan
+        store_subtotal: Subtotal
+        subject: 'Berhasil! %{service_type} Anda #%{order_number} sudah dikonfirmasikan.'
+        thank_you_for_shopping_html: 'Hai <span class="highlight">%{name}</span>,
+          pesanan Anda berhasil! %{service_type} #%{order_number} Anda telah dikonfirmasikan.'
+      upfront_payment_christmas: Namun, pembayaran di muka dibutuhkan untuk Toko Natal
+        saja.
+      upfront_payment_seasonal: Namun demikian, pembayaran di muka dibutuhkan untuk
+        toko musiman saja.
+    order_review:
+      disclaimer: Pembelanja concierge Anda, %{shopper_name}, tidak akan membeli tanpa
+        persetujuan Anda. Terima kasih!
+      heading: "%{customer_name}, harap meninjau perubahan terhadap pesanan %{brand_name}
+        Anda."
+      ps: N.B. Kami juga mengirim SMS berisi tautan ke %{phone_number}
+      request: Harap meninjau pesanan Anda dalam waktu %{time_limit}.
+      review_button: Tinjau perubahan
+      subject: Harap meninjau perubahan terhadap pesanan %{brand_name} Anda dalam
+        waktu %{time_limit} menit
+    referee_order_complete:
+      share_email_subject: Selamat! %{name} baru saja mengirimkan kupon belanja online (honestbee) untuk Anda
+      coupon_credited: Kami telah mengisi akun Anda dengan kupon senilai %{discount}!
+      earned_discount: Anda menghasilkan %{discount} dari referral Anda!
+      friend_completed_order: Teman Anda %{name} baru saja menyelesaikan pesanan!
+      made_first_order: "%{name} telah membuat pesanan pertama."
+      refer_and_earn: Ajak teman sebanyak mungkin yang Anda bisa dan dapatkan %{discount}
+        secara bersama dalam bentuk kredit belanja.
+      refer_and_earn_separate: Rujuk sebanyak mungkin teman Anda dan dapatkan %{discount}
+        untuk setiap referal yang berhasil.
+      share_honestbee_text: Nikmati potongan %{discount} untuk minimum pembelanjaan %{minimum_spending}.
+        Gunakan link pendaftaran berikut %{referral_link} untuk bisa menukar kupon belanja ini.
+      share_on: Bagikan ke %{platform}
+      share_signup_link: 'Bagikan tautan pendaftaran Anda sendiri dengan teman:'
+      use_code_as_discount_html: Atau pastikan teman Anda menggunakan kode <b>%{referral_code}</b>
+        sebagai kupon untuk menghemat %{discount} pada pesanan pertamanya.
+      why_stop: Mengapa berhenti di sini?
+    reset_password:
+      alternative_link_instruction: 'Jika tombol di atas tidak bekerja pada aplikasi
+        email Anda, silakan salin dan tempel saja URL berikut ini ke peramban Anda:'
+      click_to_reset: Silakan klik tombol di bawah ini jika Anda ingin menyetel ulang
+        kata sandi.
+      ignore_if_not_applicable: Jika Anda tidak ingin mengubah kata sandi, cukup abaikan
+        pesan ini.
+      let_us_help: Biarkan kami membantu Anda!
+      link_valid_for_html: Tautan ini berlaku untuk <strong>%{time_in_words}</strong>
+      reset_password: Setel Ulang Kata Sandi
+    sign_up:
+      benefits_of_shopping: Keuntungan belanja di honestbee
+      concierge_shopper_handpicked_html: Bersiaplah untuk menikmati sayuran paling
+        segar, dipilih khusus oleh pelayan pembeli Anda, sesuai dengan asuransi kualitas
+        honestbee.
+      delivery_promise_html: "<b>Kilat:</b><br/> Hari yang sama, 1-jam pengiriman"
+      find_out_how: Cara kami bekerja
+      first_value_prop_html: "<b>Praktis</b><br/>Tim profesional kami akan melayani
+        Anda"
+      HK:
+        benefits_of_shopping: Hidup lebih mudah dengan honestbee
+        concierge_shoppers_html: <span class="highlight">Pelayan pembeli</span> memilih
+          secara khusus barang paling segar hanya dengan 42.000 IDR
+        concierge_shopper_handpicked_html: Hidup kini jadi lebih mudah dengan adanya
+          layanan asisten dan pengantaran honestbee. Nikmati produk groceries terbaik
+          yang dipilih langsung oleh asisten belanja Anda.
+        first_value_prop_html: "<b>Praktis</b><br/>Serahkan tugas Anda kepada para
+          pakar kami"
+        second_value_prop_html: "<b>Mudah</b><br/> Kami mengambil dan mengantarkan
+          pesanan Anda ke depan pintu Anda"
+        third_value_prop_html: "<b>Cepat</b><br/>Pengantaran produk groceries dalam
+          1 jam, di hari yang sama"
+      JP:
+        concierge_shopper_handpicked_html: Bersiaplah untuk menikmati produk groceries
+          terbaik yang diantarkan langsung ke depan pintu Anda.
+      MY:
+        concierge_shopper_handpicked_html: Hidup kini jadi lebih mudah dengan adanya
+          layanan asisten dan pengantaran honestbee. Nikmati produk groceries yang
+          dipilih langsung oleh asisten belanja Anda.
+        please_forward_email_html: "<p>Mohon teruskan email ini ke bee@honestbee.my
+          untuk mengaktifkan akun Anda. Setelah akun Anda aktif, kami akan mengirimi
+          Anda email konfirmasi.</p><p>Kami tidak dapat menerima pesanan seluler saat
+          ini, karena kami sedang mengadakan peningkatan pada aplikasi seluler kami.
+          Jangan khawatir, kami akan segera kembali di perangkat seluler!</p>"
+        welcome_to_honestbee: Selamat datang di peluncuran eksklusif honestbee, %{name}
+      second_value_prop_html: "<b>Nyaman</b><br/> Kami memilih produk terbaik untuk
+        diantar ke lokasi Anda"
+      SG:
+        benefits_of_shopping: Hidup lebih mudah dengan honestbee
+        concierge_shoppers_html: "<b>Disesuaikan:</b><br/>Pelayan profesional pembeli"
+        concierge_shopper_handpicked_html: Hidup kini jadi lebih mudah dengan adanya
+          layanan asisten dan pengantaran honestbee. Dapatkan produk groceries tanpa
+          menunggu lama.
+        first_value_prop_html: "<b>Praktis</b><br/>Serahkan tugas Anda kepada para
+          pakar kami"
+        second_value_prop_html: "<b>Mudah</b><br/> Kami mengambil dan mengantarkan
+          pesanan Anda ke depan pintu Anda"
+        start_shopping: Mulai sekarang
+        third_value_prop_html: "<b>Cepat</b><br/>Pengantaran produk groceries dalam
+          1 jam, di hari yang sama"
+        welcome_to_honestbee: "%{name}, hidup Anda lebih hebat dari banyak orang,
+          mau tau kenapa? "
+      shop_skucount_html: <b>Mudah:</b><br/>Lebih dari <span class="highlight">%{sku_count}</span>
+        produk daring
+      start_shopping: Mulai Belanja
+      third_value_prop_html: "<b>Cepat</b><br/>Jam pengantaran fleksibel sesuai kebutuhan
+        Anda"
+      TW:
+        benefits_of_shopping: Hidup lebih mudah dengan honestbee
+        concierge_shoppers_html: <span class="highlight">Pelayan pembeli</span> memilih
+          secara khusus barang paling segar hanya dengan 41.000 IDR
+        concierge_shopper_handpicked_html: Hidup kini jadi lebih mudah dengan adanya
+          layanan asisten dan pengantaran honestbee. Nikmati produk groceries terbaik
+          yang dipilih langsung oleh asisten belanja Anda.
+        first_value_prop_html: "<b>Praktis</b><br/>Serahkan tugas Anda kepada para
+          pakar kami"
+        second_value_prop_html: "<b>Mudah</b><br/> Kami mengambil dan mengantarkan
+          pesanan Anda ke depan pintu Anda"
+        third_value_prop_html: "<b>Cepat</b><br/>Pengantaran produk groceries dalam
+          1 jam, di hari yang sama"
+        welcome_to_honestbee: "%{name}, hidup Anda lebih hebat dari banyak orang,
+          mau tau kenapa? "
+      welcome_to_honestbee: "%{name}, hidup Anda lebih hebat dari banyak orang, mau
+        tau kenapa? "
+  merchant_app:
+    push_notification:
+      notify_deliverer:
+        deliverer_pending_acceptance_message: 'Harap terima pesanan #%{order_number}-%{store_id}!'
+        deliverer_pending_start_message: 'Harap mulai mengantar pesanan #%{order_number}-%{store_id}!'
+        deliverer_picked_up_message: 'Harap antarkan pesanan #%{order_number}-%{store_id}
+          tepat waktu atau informasikan pada konsumen jika Anda akan telat.'
+        deliverer_started_message: 'Anda perlu menjemput pesanan #%{order_number}-%{store_id}
+          agar tidak telat mengantar'
+        message: Anda punya tugas pengantar!
+        order_handed_over: 'Pesanan #%{order_number}-%{store_id} telah siap dijemput'
+      notify_partner:
+        message: 'Datang pesanan baru #%{order_number}-%{store_id} untuk Anda!'
+        notify_auto_cancelled_order_fulfillment: 'Pesanan Anda #%{order_number}-%{store_id}
+          dibatalkan otomatis karena Anda tidak menerimanya dalam %{mins_buffer} menit.'
+        notify_cancelled_order_fulfillment: 'Pesanan # %{id} dibatalkan'
+      notify_shopper:
+        message: Anda punya tugas asisten belanja!
+        shopper_pending_acceptance_message: 'Harap terima pesanan #%{order_number}-%{store_id}!'
+        shopper_pending_start_message: 'Harap mulai berbelanja untuk pesanan #%{order_number}-%{store_id}!'
+        shopper_started_message: 'Selesaikan segera belanja untuk pesanan #%{order_number}-%{store_id}!'
+  mobile:
+    checkout:
+      authorize_payment:
+        accept_card_warning: Mohon diketahui bahwa situs kami saat ini tidak dapat
+          menerima kartu debit CIMB dan kartu kredit HSBC – tetapi kami sedang berusaha
+          untuk mengatasi masalah ini! Kami mohon maaf atas rasa tidak nyaman yang
+          timbul dan silakan mencoba menggunakan kartu yang lain. Terima kasih
+        address_line_1: Alamat baris 1
+        address_line_2: Alamat baris 2
+        add_new_card: Tambah Kartu Baru
+        apartment_unit_bldg_floor_etc: Apartemen, unit, gedung, lantai, dll.
+        billing_address: Alamat Penagihan
+        bill_to_address_postal_code: Kode pos
+        cardholder_name: Nama pemegang kartu
+        card_information: Informasi kartu
+        card_number: Nomor kartu
+        ccv_cvv: CCV/CVV
+        city: Kota
+        country: Negara
+        expiration_date: Waktu kedaluwarsa
+        invalid_details: Maaf, isian %{invalid_fields} tidak valid.
+        no_credit_card_details_required: Tidak Membutuhkan Rincian Kartu Kredit
+        payment_methods: Metode Pembayaran
+        pay_securely: BAYAR DENGAN AMAN
+        pay_with_credits: BAYAR LUNAS DENGAN KREDIT
+        pay_with_secured_transaction: Bayar dengan transaksi aman Kartu Kredit
+        place_order: Masukkan pesanan
+        refund_policy: Pertanyaan Umum
+        security_code: Kode keamanan
+        state: Provinsi
+        street_company_etc: Alamat jalan, nama perusahaan, dll.
+        terms_condition: Syarat & Ketentuan
+        your_credits_deducted_html: Kredit <span class='bank-credits-explain--amount'>%{amount}</span>
+          Anda akan dikurangi.
+        zip: Kode Pos
+      authorize_payment_js:
+        HK:
+          default_city: Hong Kong Island
+        invalid_details: Maaf, isian %{invalid_fields} tidak valid.
+        missing_fields: Silakan periksa untuk isian yang terlewatkan.
+        new_card_not_valid_for_discount: Maaf, kartu Anda tidak berlaku untuk kupon
+          diskon
+        pay_securely: BAYAR %{amount} DENGAN AMAN
+        pay_with_credits: BAYAR LUNAS DENGAN KREDIT
+        place_order: Masukkan pesanan
+        selected_cardnot_valid_for_discount: Kupon yang Anda pakai tidak dapat digunakan
+          dengan metode pembayaran ini. Jangan khawatir! Cukup lihat promosi untuk
+          mengetahui detailnya dan ubah metode pembayaran Anda.
+        select_payment_method: Silakan pilih metode pembayaran
+        SG:
+          default_city: Singapura
+        submitting_order_html: Mengirim Pesanan <i class="fa fa-spinner fa-spin"></i>
+        TW:
+          default_city: Taipei
+        unable_accept_amex: Maaf, kami tidak dapat menerima kartu American Express
+          di %{country}
+      cash:
+        cash_payment_header: Bayar saat diantarkan
+        cash_payment_subheader: Tidak perlu kartu! Bayar kami secara tunai saat Anda
+          menerima pesanan Anda.
+      corporate_account_credit:
+        corporate_payment_header: Pembayaran Perusahaan
+        corporate_payment_subheader: Pembelian yang dilakukan dalam program pembayaran
+          perusahaan akan langsung ditagihkan ke kantor pusat perusahaan Anda
+  number:
+    currency:
+      format:
+        format: "%u%n"
+        precision: 2
+        significant: salah
+        strip_insignificant_zeros: salah
+        unit: "$"
+    format:
+      precision: 3
+      significant: salah
+      strip_insignificant_zeros: salah
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: Miliar
+          million: Juta
+          quadrillion: Kuadriliun
+          thousand: Ribu
+          trillion: Triliun
+      format:
+        precision: 3
+        significant: benar
+        strip_insignificant_zeros: benar
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            other: Bytes
+            zero: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        format: "%n%"
+  pundit:
+    default: Anda tidak dapat melakukan tindakan ini.
+    user_policy:
+      create?: Anda tidak memiliki izin untuk membuat pengguna!
+      index?: Anda tidak memiliki izin untuk melihat daftar pengguna!
+      update?: Anda tidak dapat menyunting pengguna ini!
+  reject_reasons:
+    food:
+      main_dish_is_out_of_stock: Menu utama kosong
+      most_items_are_out_of_stock: Sebagian besar item kosong
+      no_reason: Tak ada alasan
+      other_reason: Alasan lainnya
+      too_many_orders_currently: Terlalu banyak pemesanan saat ini
+    groceries:
+      most_items_are_out_of_stock: Sebagian besar item kosong
+      no_reason: Tak ada alasan
+      other_reason: Alasan lainnya
+      too_many_orders_currently: Terlalu banyak pemesanan saat ini
+    laundry:
+      no_reason: Tak ada alasan
+      other_reason: Alasan lainnya
+      service_not_available: Layanan tak tersedia
+      too_many_orders_currently: Terlalu banyak pemesanan saat ini
+  services:
+    brand_validation:
+      brand_not_available: Merek ini tidak lagi tersedia.
+      brand_not_served: Merek ini tidak melayani daerah Anda
+    product_validation:
+      product_not_available: Produk ini tidak lagi tersedia.
+      product_not_served: Produk ini tidak disediakan di daerah Anda
+    promotion_code_redemption:
+      first_purchase_invalid_response: Kode promo ini hanya berlaku untuk pembelian
+        pertama pengguna
+      invalid_code_response: 'Pastikan Anda telah memasukkan kode kupon yang valid. '
+      multiple_packages_not_supported_response: Kode promo multi-paket tidak berlaku
+      not_active_response: Kode promo saat ini sedang tidak digunakan
+      not_in_redeem_range_response: Kode promo hanya dapat ditebus dari %{start_date}
+        sampai %{end_date}
+      not_on_redeem_day_response: Kode promo hanya dapat ditebus pada %{date}
+      redeemed_before_response: Kode promo telah ditebus
+      used_up_response: " Aduh... kupon ini sudah ditukar seluruhnya."
+      wrong_service_response: Kupon ini untuk %{service_type} honestbee.
+      wrong_zone_response: Maaf, kode promo ini tidak dapat diberlakukan di zona ini
+      wrong_trademark_response: Untuk menggunakan kupon ini Anda harus menambahkan minimal satu produk dari %{trademarks} di keranjang belanja Anda.
+      wrong_trademark_with_min_amount_response: Untuk menggunakan kupon ini Anda harus menambahkan produk dari %{trademarks} seharga $%{min_amount} atau lebih di keranjang belanja Anda.
+    reorder:
+      different_zone_response: Maaf, alamat pengiriman Anda saat ini tidak sama dengan
+        alamat pengiriman untuk pesanan ini. Silakan pesan ulang dari <strong>%{address}</strong>
+        untuk barang ini.
+      item_unavailable: Maaf, produk ini tidak tersedia sekarang.
+      products_unavailable: 'Maaf, produk ini tidak tersedia sekarang: %{products}'
+    service_types:
+      automotive: Rumah & Oto
+      bee2b: Bee2b
+      food: Makanan
+      groceries: Groceries
+      home: Beranda
+      laundry: Cucian
+      medicine: Kesehatan
+      tickets: Tiket
+      trash: Koleksi
+  sms:
+    bee_signature: honestbee concierge
+    can_not_reply: Maaf, Anda tak dapat membalas SMS ini
+    customer_acknowledgement_message: |-
+      %{customer_name}, silakan periksa pesanan Anda dalam %{time_limit} menit dengan membuka link berikut ini %{url}. Saya tidak akan membeli produk tanpa persetujuan Anda.
+      Terima kasih! %{sender}, asisten belanja honestbee. Pesanan %{order_number}. Anda tidak dapat membalas SMS ini.
+    customer_order_cancellation:
+      " groceries": |-
+        Hai %{customer_name}, kami terpaksa membatalkan pesanan %{brand_name} Anda karena sebagian besar barang sedang habis.
+        Atas ketidaknyamanan ini, kami memberikan kupon belanja yang dapat Anda gunakan pada dompet kupon Anda untuk pesanan selanjutnya.
+        %{shopper_name}, asisten belanja honestbee.
+        Pesanan %{order_number}.
+        Maaf, Anda tidakk dapat membalas SMS ini.
+      body:
+        automotive: Mohon maaf, kami terpaksa membatalkan pesanan %{brand_name} Anda.
+          Jangan khawatir, Anda tidak akan ditagih. Jika ada pertanyaan, silakan hubungi
+          kami www.id.honestbee.com/contact-us
+        bee2b: Kami telah membatalkan pesanan %{brand_name} Anda. Yakinlah, Anda tidak
+          akan ditagih. Jika ada pertanyaan, silakan hubungi kami via https://id.honestbee.com/contact-us
+        food: Maaf, %{brand_name} harus membatalkan pesanan Anda. Saat ini adalah
+          jam-jam sibuk dan mereka tidak ingin Anda menunggu. Silakan mengunjungi
+          restoran lezat lainnya.
+        groceries: Mohon maaf, kami terpaksa membatalkan pesanan %{brand_name} Anda.
+          Jangan khawatir, Anda tidak akan ditagih. Jika ada pertanyaan, silakan hubungi
+          kami www.id.honestbee.com/contact-us
+        laundry: Kami telah membatalkan pesanan %{brand_name} Anda. Yakinlah, Anda
+          tidak akan ditagih. Jika ada pertanyaan, silakan hubungi kami via https://id.honestbee.com/contact-us
+        medicine: Mohon maaf, kami terpaksa membatalkan pesanan %{brand_name} Anda.
+          Jangan khawatir, Anda tidak akan ditagih. Jika ada pertanyaan, silakan hubungi
+          kami www.id.honestbee.com/contact-us
+        trash: Kami telah membatalkan pesanan %{brand_name} Anda. Yakinlah, Anda tidak
+          akan ditagih. Jika ada pertanyaan, silakan hubungi kami via https://id.honestbee.com/contact-us
+      template: |-
+        %{greeting} %{body}
+        %{bee_signature}
+        %{order_number}
+        %{can_not_reply}
+    customer_order_cancellation_message: |-
+      Maaf, %{brand_name} harus membatalkan pesanan Anda. Saat ini adalah jam-jam sibuk dan mereka tidak ingin Anda menunggu. Silakan mengunjungi restoran lezat lainnya.
+
+      honestbee concierge
+      Pesanan %{order_number}
+      Maaf, Anda tak dapat membalas SMS ini
+    greeting: Hai %{customer_name},
+    order_number: Pesanan %{order_number}
+    verification_token_message: "%{token} adalah kode verifikasi untuk akun honestbee
+      Anda."
+  stripe:
+    errors:
+      " missing_payment_device": Sepertinya terdapat informasi yang salah atau hilang.
+        Silakan masukkan kembali informasi pembayaran dan tinjau kembali alamat penagihan
+        Anda. Atau, gunakan kartu lain.
+      missing_payment_device: Missing payment devices
+  support:
+    array:
+      last_word_connector: ", dan "
+      two_words_connector: " dan "
+  time:
+    am: am
+    formats:
+      date_format: "%b %d, %Y (%a) %l:%M%P"
+      date_format2: "%A, %d %b, %Y, %l %P"
+      date_format_detail: "%b %d, %Y (%a) %l:%M%P"
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      delivery_time: "%d %b %Y %H:%M"
+      long: "%a, %-d %b %Y, %H:%M"
+      short: "%a, %-d %b %Y"
+      time_format: "%-l:%M%P"
+    pm: pm
+  validators:
+    bee_status_update:
+      responses:
+        cannot_update_status_for_cancelled_fulfillment: Pesanan telah dibatalkan.
+        wrong_status: Status %{role} harus %{status}.
+    credit_account_application:
+      responses:
+        depleted_credit_account: Maaf, kupon ini tidak dapat diberlakukan karena sudah
+          habis.
+        discount_minimum_spend_not_met: Minimum pengeluaran %{amount} dibutuhkan untuk
+          menggunakan kupon ini.
+        expired_credit_account: Maaf, kupon ini tidak dapat diberlakukan karena kedaluwarsa
+        free_delivery_minimum_spend_not_met: Minimum pengeluaran %{amount} untuk setiap
+          toko membutuhkan penggunaan kupon ini.
+        incorrect_order_status: Maaf, hanya pesanan sebelum status persetujuan yang
+          dapat ditambahkan kupon.
+        invalid_brand_specific_coupon: 'Kupon ini membutuhkan jumlah minimum pengeluaran
+          %{min_spending} di toko ini: %{brands}'
+        invalid_coupon_override: Maaf, silakan ganti kupon dengan diskon yang lebih
+          baik
+        invalid_zone: Maaf, kupon ini tidak dapat diberlakukan di zona ini.
+        no_matching_country_credit_type: Maaf, kupon ini tidak dapat diberlakukan
+          di negara ini.
+        required_credit_card: 'Anda harus membayar dengan kartu debit atau kredit
+          untuk menggunakan kupon ini. '
+        required_variables: Maaf, kupon ini tidak dapat diberlakukan karena permintaannya
+          tidak bagus.
+    order_fulfillment_cancellation:
+      confirm_responses:
+        food:
+          general_desc: Temukan hidangan lezat di restoran kami yang lain.
+          general_title: Apakah Anda ingin membatalkan pesanan dari %{brand}?
+        general_desc: Kebijakan proses pembatalan kami dapat berbeda dari toko ke
+          toko.
+        general_title: Anda yakin ingin membatalkan pesanan %{brand} Anda? Tim kami
+          akan merasa sedih.
+        with_coupon_desc: Kupon Anda akan dihapus dan tidak dapat digunakan kembali.
+          Kebijakan proses pembatalan kami dapat berbeda dari toko ke toko.
+        with_trait_title: Anda yakin ingin membatalkan pesanan Farm to Table Anda
+          dari %{brand}? Tim kami akan merasa sedih.
+      responses:
+        cancel_max_time_not_met_desc: Anda dapat membatalkan pemesanan dari toko Farm
+          to Table maksimal %{time} hari sebelum pengiriman (Selasa sampai Jumat).
+        cancel_max_time_not_met_title: Maaf, kami tidak dapat membatalkan pesanan
+          %{brand} Anda karena asisten belanja kami sudah melakukan pembelian untuk
+          pesanan Anda.
+        cancel_min_hours_not_met_desc: Anda dapat membatalkan pemesanan Supermarket,
+          dan toko Khusus jika pengiriman berjarak lebih dari %{hours} jam.
+        cancel_min_hours_not_met_title: Maaf, kami tak dapat membatalkan pemesanan
+          %{brand} Anda karena asisten belanja kami sudah melakukan pembelian untuk
+          pesanan Anda.
+        cannot_cancel_brand_order_desc: Kami melakukan pesanan sebelumnya untuk toko
+          pop-up.
+        cannot_cancel_brand_order_title: Maaf, kami tidak dapat membatalkan pesanan
+          dari %{brand} Anda.
+        cannot_cancel_bulk_order_desc: Saat Anda memesan produk yang sama sebanyak
+          20 pcs atau lebih, kami akan meminta %{brand} untuk menyediajan persediaan
+          khusus untuk Anda, hal ini memastikan agar Anda mendapatkan jumlah yang
+          Anda perlukan.
+        cannot_cancel_bulk_order_title: Maaf, pesanan ini tak dapat dibatalkan.
+        cannot_cancel_food_already_preparing_desc: Anda hanya dapat membatalkan pesanan
+          sebelum kami mulai menyiapkannya.
+        cannot_cancel_food_already_preparing_title: Kami tidak dapat membatalkan pesanan
+          %{brand} Anda. Koki tengah mempersiapkannya.
+        cannot_cancel_generic_title: Maaf, kami tidak dapat membatalkan pesanan %{brand}
+        cannot_cancel_seasonal_store_order_desc: Kami melakukan pesanan sebelumnya
+          untuk toko pop-up.
+        cannot_cancel_seasonal_store_order_title: Maaf, kami tidak dapat membatalkan
+          pesanan dari %{brand} Anda.

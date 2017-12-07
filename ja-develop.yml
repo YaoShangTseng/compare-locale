@@ -1,0 +1,1349 @@
+---
+ja:
+  api:
+    v1:
+      application_messages:
+        bad_request: 不正な要求
+        card_unavailable: クレジットカードでのお支払いはできません。
+        cash_order_size_exceeded: 注文中の商品カートを確認してください。代金引換のは %{amount}（他の支払い前料金も含む）以下になるように確認して下さい。
+        cash_unavailable: クレジットカードでお支払いください。代金引換はご利用できません。
+        conflict: 衝突
+        corporate_limit_exceeded: 利用限度額に達しました。カートのサイズを減らすか、残りの残高を精算してください。
+        corporate_payment_invalid: 現在の残額を超える金額を入力されました。お手数ですが入力内容を今一度ご確認ください。
+        duplicate_account: 別アカウントをお持ちのようです。他の登録アカウントでログインして続行するか、カスタマーサポートまでお問い合わせ下さい。
+        forbidden: 禁止
+        gone: 消滅
+        inactive_account: ユーザーアカウントは削除されます
+        internal_server_error: 内部サーバエラー
+        invalid_parameters: 無効なパラメータ
+        missing_parameters: 足りないパラメータ
+        not_found: 見つかりません
+        not_implemented: 実施されていません
+        ok: わかりました
+        postal_code_not_serviced: 現在、郵便番号が提供されていません
+        unauthorized: 不正なアクセス
+      checkout:
+        address_length_over_sixty: 各住所欄は60字以下になるようお願いいたします。
+        authorization:
+          delivery_timeslot_not_available: 申し訳ございませんが、ご指定の配送時間帯に空きがございません。他の時間帯をお選びになり次にお進みください。
+          invalid_account: 無効なアカウント
+          invalid_coupon: クーポンが無効になっており、お客様のカートから削除されました。ご注文内容をご確認ください。
+          invalid_shopping_cart: 大変申し訳ございませんが、IDが無効です。カスタマーサポートに問い合わせて下さい。
+          missing_billing_address: 請求先住所が足りません
+          missing_payment_method: お支払い方法が見つかりません
+          missing_shipping_address: お届け先住所が見つかりません
+          not_enough_bank_account_credits: 残高不足です。
+          review_cart_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+          review_delivery_fee_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+          review_item_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+        sign_user_authorization:
+          food:
+            delivery_timeslot_not_available: このレストランはちょうど閉店したところです。他のレストランで注文してください!
+            asap:
+              delivery_timeslot_not_available: このレストランはちょうど閉店したところです。他のレストランで注文してください!
+            scheduled:
+              delivery_timeslot_not_available: 申し訳ございませんが、選択された配送時間帯が一杯です。続けるには別の時間帯を選んで下さい。
+          delivery_timeslot_not_available: 申し訳ございませんが、選択された配送時間帯が一杯です。続けるには別の時間帯を選んで下さい。
+          invalid_delivery_type:
+            asap: すみません。あなたではなく私たちです。もう一度お試しください。できるだけ早く選択し直してください。
+            scheulded: すみません,もう一度試してみましょう。タイムスロットを選択し直してください。
+            default: 申し訳ないのですが、接続トラブルがありました。配達時間を再度セレクトして、もう一度お試しください。
+          invalid_quantity: "%{invalid_products} 次に進む前に、カートの中のアイテムの数を調整してください。"
+          invalid_quantity_products: "<b>%{title}</b> は上限 <b>%{max_quantity}</b><br/><br/>を越えます"
+          invalid_account: 無効なアカウント
+          invalid_shopping_cart: 大変申し訳ございませんが、IDが無効です。カスタマーサポートに問い合わせ下さい。
+          missing_billing_address: 請求先住所が見つかりません
+          missing_payment_method: お支払い方法が見つかりません
+          missing_shipping_address: お届け先住所が見つかりません
+          review_cart_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+          review_delivery_fee_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+          review_item_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+        sign_user_auth_bypass_cybersource:
+          delivery_timeslot_not_available: 申し訳ございませんが、ご指定の配送時間帯に空きがございません。他の時間帯をお選びになり次にお進みください。
+          invalid_account: 無効なアカウント
+          invalid_coupon: クーポンが無効になっており、お客様のカートから削除されました。ご注文内容をご確認ください。
+          invalid_shopping_cart: 大変申し訳ございませんが、IDが無効です。カスタマーサポートに問い合わせ下さい。
+          missing_billing_address: 請求先住所が足りません
+          missing_payment_method: お支払い方法が見つかりません
+          missing_shipping_address: お届け先住所が足りません
+          not_enough_bank_account_credits: 残高不足です
+          review_cart_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+          review_delivery_fee_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+          review_item_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+      customer_acknowledgements:
+        create:
+          record_exists: その記録はすでに存在しています。
+        update:
+          expiry_error: 申し訳ございません。リンクの有効期限が切れています。
+      payment_devices:
+        destroy:
+          payment_device_in_use: このカードを削除できるのは、現在のご注文の確定版領収書の受領後48時間が経過してからとなります。
+    v2:
+      application_messages:
+        bad_request: 不正な要求
+        cash_order_size_exceeded: ご注文中の商品カートを確認してください。代金引換の金額は %{amount}（他の支払い前料金も含む）以下でなくてはなりません。
+        cash_unavailable: クレジットカードでお支払いください。代金引換はご利用できません。
+        conflict: 衝突
+        corporate_limit_exceeded: あなたの利用限度額に達しました。カートのサイズを減らすか、残りの残高を精算してください。
+        corporate_payment_invalid: 現在の残額を超える金額を入力されました。お手数ですが入力内容を今一度ご確認ください。
+        duplicate_account: あなたは別のアカウントをお持ちのようです。他の登録アカウントでログインして続行するか、カスタマーサポートまでお問い合わせ下さい。
+        forbidden: 禁止
+        gone: 消滅
+        inactive_account: ユーザーアカウントは削除されます
+        internal_server_error: 内部サーバエラー
+        invalid_parameters: 無効なパラメータ
+        missing_parameters: 足りないパラメータ
+        not_found: 見つかりません
+        not_implemented: 実施されていません
+        ok: わかりました
+        postal_code_not_serviced: 現在、郵便番号が提供されていません
+        unauthorized: 不正なアクセス
+      checkout:
+        authorization:
+          delivery_timeslot_not_available: 申し訳ございませんが、ご指定の配送時間帯に空きがございません。他の時間帯をお選びになり次にお進みください。
+          invalid_account: 無効なアカウント
+          invalid_coupon: クーポンが無効になっており、お客様のカートから削除されました。ご注文内容をご確認ください。
+          invalid_shopping_cart: 大変申し訳ございませんが、IDが無効です。カスタマーサポートに問い合わせ下さい。
+          missing_billing_address: 請求先住所が見つかりません
+          missing_payment_method: お支払い方法が見つかりません
+          missing_shipping_address: お届け先住所が足りません
+          not_enough_bank_account_credits: 残高不足です。
+          review_cart_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+          review_delivery_fee_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+          review_item_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+        sign_user_authorization:
+          delivery_timeslot_not_available: 申し訳ございませんが、選択された配送時間帯が一杯です。続けるには別の時間帯を選んで下さい。
+          invalid_account: 無効なアカウント
+          invalid_shopping_cart: 大変申し訳ございませんが、IDが無効です。カスタマーサポートに問い合わせ下さい。
+          missing_billing_address: 請求先住所が見つかりません
+          missing_payment_method: お支払い方法が見つかりません
+          missing_shipping_address: お届け先住所が足りません
+          review_cart_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+          review_delivery_fee_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+          review_item_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+        sign_user_auth_bypass_cybersource:
+          delivery_timeslot_not_available: 申し訳ございませんが、ご指定の配送時間帯に空きがございません。他の時間帯をお選びになり次にお進みください。
+          invalid_account: 大変申し訳ございません。企業アカウントとしてのお客様のチェックアウトに失敗しました。カスタマーサポートに問い合わせ下さい。
+          invalid_coupon: クーポンが無効になっており、お客様のカートから削除されました。ご注文内容をご確認ください。
+          invalid_shopping_cart: 大変申し訳ございませんが、IDが無効です。カスタマーサポートに問い合わせ下さい。
+          missing_billing_address: 請求先住所が足りません
+          missing_payment_method: お支払い方法が見つかりません
+          missing_shipping_address: お届け先住所が足りません
+          not_enough_bank_account_credits: 残高不足です。
+          review_cart_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+          review_delivery_fee_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+          review_item_changes: お客様のカート内の商品の在庫状態に変更がありました。お手数ですがご注文内容をご確認ください。
+      customer_acknowledgements:
+        update:
+          expiry_error: 申し訳ございません。リンクの有効期限が切れています。
+      payment_devices:
+        destroy:
+          payment_device_in_use: このカードを削除できるのは、現在のご注文の確定版領収書の受領後48時間が経過してからとなります。
+        invalid_payment_info: '問題が発生しており支払情報を確認できません。現在トラブルを解決中です。しばらくして再度お試しください。 '
+      verification:
+        error_messages:
+          existing_verified_number: この番号はすでに登録されています。ほかの番号のアカウントをお持ちですか? %{number}を使って続けるにはログインをしてください。あるいは、新しい番号でサインアップしてください。
+          invalid_country_code: 残念ですが、有効な国番号ではないようです。
+          invalid_number: 申し訳ありませんが、有効な電話番号ではないようです。
+          limit_exceeded: セキュリティ上、3回までしか入力できません。1日後にまたお試しください。
+          sms_count_exceeded: セキュリティ上、3回までしか入力できません。1日後にまたお試しください。
+          token_expired: コードの期限が切れました。"Resend"(再送信)を押してください。コードは2分以内に入力してください。
+          token_mismatch: 間違ったコードのようです。SMSを確認してください。
+          verify_attempts_exceeded: セキュリティ上、3回までしか入力できません。1日後にまたお試しください。
+  beepay:
+    error_code:
+      '101': 情報に欠けている部分、もしくは誤った箇所があるようです。支払い情報を再入力し、支払い住所を見直してください。もしくは別のカードを使用してください。
+      '102': 情報に欠けている部分、もしくは誤った箇所があります。支払い情報を再入力し、支払い住所を見直してください。
+      '104': 申し訳ありません、すでにこのカードを15分前に使おうとし、正常に使用できなかったようです。もう一度試すか、もしくは別のカードを使用してください。
+      '150': " 申し訳ありません、取引は上手くいきませんでした。別の支払い手段を試すか、銀行までお問い合わせください。"
+      '200': 申し訳ありません、情報に欠けている部分、もしくは誤った箇所があるようです。支払い情報を再入力し、支払い住所を見直してください。
+      '201': " 申し訳ありません、取引は上手くいきませんでした。別の支払い手段を試すか、銀行までお問い合わせください。"
+      '202': 申し訳ありませんが、カードの有効期限が切れています。カードの情報を確認し、もう一度試してください。もしくは別のカードを使用してください。
+      '203': " 申し訳ありません、取引は上手くいきませんでした。別の支払い手段を試すか、銀行までお問い合わせください。"
+      '204': " 申し訳ありません、取引は上手くいきませんでした。別の支払い手段を試すか、銀行までお問い合わせください。"
+      '205': " 申し訳ありません、取引は上手くいきませんでした。別の支払い手段を試すか、銀行までお問い合わせください。"
+      '207': 申し訳ありません、現在カードの発行銀行が利用できません。数分後にもう一度試してください。
+      '208': " 申し訳ありません、取引は上手くいきませんでした。別の支払い手段を試すか、銀行までお問い合わせください。"
+      '210': " 申し訳ありません、取引は上手くいきませんでした。別の支払い手段を試すか、銀行までお問い合わせください。"
+      '211': " 申し訳ありません、取引は上手くいきませんでした。別の支払い手段を試すか、銀行までお問い合わせください。"
+      '221': 申し訳ありません、お客様のカードは拒否されました。発行銀行にお問い合わせください。別のカードをお使いください。
+      '222': 申し訳ありません、お客様のカードは拒否されました。発行銀行にお問い合わせください。別のカードをお使いください。
+      '230': 申し訳ありません、カードの詳細に誤りがあります。確認後にもう一度試してください。
+      '231': 申し訳ありません、お使いのカードは無効です。違うカードを使用してください。
+      '232': 申し訳ありません、お使いのカードは支払処理に認められていません。違うカードを使用してください。
+      '233': 申し訳ありません、お客様のカードは拒否されました。発行銀行にお問い合わせください。別のカードをお使いください。
+      '234': 申し訳ありません、支払処理のシステムの問題が発生しています。しばらく経った後にもう一度試してください。
+      '236': 申し訳ありません、支払処理に問題が発生しています。しばらく経った後にもう一度試してください。
+      '240': 申し訳ありません、お使いのカードの種類がカード番号と一致していないようです。弊社テクニカルチームがこの件について連絡を受け、現在確認を行っています。しばらく経った後にもう一度試すか、違うカードを使用してください。
+      '475': 申し訳ありません、このカードの認証を行うことができませんでした。弊社テクニカルチームがこの件について連絡を受け、現在確認を行っています。
+      '476': 申し訳ありません、お使いのカードの認証が正常に完了しなかったようです。弊社テクニカルチームがこの件について連絡を受け、現在確認を行っています。
+      '520': 申し訳ありません、支払処理のシステムの問題が発生しているようです。しばらく経った後にもう一度試してください。
+  bee_rating:
+    damaged_items: 商品の状態
+    driver_attitude: ドライバーの態度
+    freshness: 鮮度
+    friendly_driver: 親身なドライバー
+    late_delivery: 時間通りの配達
+    out_of_stock: 在庫のある商品
+    packaging: 梱包
+    slack_pretext: "%{service_type} の注文対応 <%{order_fulfillment_url}|#%{order_fulfillment_id}>
+      に対して新しい評価がつきました - 評価: %{rating}"
+    timely_delivery: 時間通りの配達
+    wrong_items: 商品の正確さ
+    zendesk_ticket_comment: 'ドライバーの評価: %{deliverer_rating}、ショッパーの評価: %{shopper_rating}、コメント:
+      %{comment}、タグ: %{tags}'
+    zendesk_ticket_subject: 'オーダー・フルフィルメント #%{order_fulfillment_id} の Bee レーティング・フィードバック'
+  concerns:
+    parse_helpers:
+      customer_deliverer_message_complete: 'お待たせしました！%{brand_name}での注文商品が到着しました。評価はこちら
+        :tada:'
+      customer_deliverer_message_dropoff_start: 'お客様から承りましたランドリー #%{order_number}は%{dropoff_date}  %{delivery_slot}の時間帯にお届けいたします。'
+      customer_deliverer_message_food_start: 'お客様の%{brand_name} へのご注文はお届け中です:truck:'
+      customer_deliverer_message_laundry_complete: 注文に関して不明な点がありましたら、午前9時から午後10時の間にlaundry@honestbee.comまでご連絡ください。
+      customer_deliverer_message_medicine_complete: Healthのご注文を配達しました。サービスはいかがでしたか？
+        :tada:をタップして評価してください。
+      customer_deliverer_message_medicine_start: 'Healthのご注文は、%{delivery_hour}の間に、%{delivery_date}の玄関先へ到着します。タップすると追跡できます！:truck:'
+      customer_deliverer_message_pickup_start: 受け渡し担当者がランドリーのご注文#%{order_number}を
+        %{pickup_date} %{delivery_slot}の時間帯に受け取りに参ります。
+      customer_deliverer_message_start: "%{brand_name}での注文商品は%{delivery_date}の%{delivery_hour}にお届け予定です。詳しくはこちら
+        :truck:"
+      customer_deliverer_message_trash_start: あなたのミツバチが依頼番号#%{order_number}のゴミを、玄関先より%{delivery_slot}頃に回収いたします。
+      customer_order_cancelled: "%{brand_name}からのお客様のご注文%{order_number}は、キャンセルされました。"
+      customer_order_cancelled_medicine: 'Healthのご注文 #%{order_number}は取り消されました。'
+      customer_order_cancelled_trash: 集荷番号 %{order_number} はキャンセルされました。
+      customer_order_cancelled_with_brand: "%{brand_name}からのお客様のご注文%{order_number}は、キャンセルされました。"
+      customer_order_receipt_sent: '注文番号%{order_id}の最終領収書を %{user_email} にて確認して下さい
+        :mailbox_with_mail:'
+      non_customer_order_cancelled: 大変申し訳ございません。 %{brand_name}はお客様のご注文をキャンセルせざるを得ませんでした。他のレストランをお探しいただくようお願いいたします。
+      referee_order_complete: '友人紹介によって%{amount}をゲットしました今すぐお買い物！:sunglasses:'
+  countries:
+    HK:
+      company_info_html: 香港 honestbee limited, Arion Commercial Building, 2-12 Queen's
+        Road West, Unit 706 7/F, Hong Kong SAR
+      name: 香港
+      operating_hours_everyday: 毎日午前9時から午後10時まで
+      service_type:
+        groceries:
+          operating_hours_everyday: 毎日午前9時から午後10時まで
+    ID:
+      consumer_web_display_url: id.honestbee.com
+      operating_hours_everyday: 正午から午後10時まで
+      service_type:
+        groceries:
+          operating_hours_everyday: 正午から午後10時まで
+    JP:
+      company_info_html: 106-0031 東京都港区西麻布3-23-14 西麻布STビル
+      name: 日本
+      operating_hours_everyday: 毎日朝9:30から夜22:00まで
+      order_completed_tax_message_html: <br><span class="info">全ての表示価格に消費税8%が含まれています<span
+        class="info">
+      service_type:
+        food:
+          operating_hours_everyday: 毎日朝9:30から夜22:00まで
+        groceries:
+          operating_hours_everyday: 毎日朝9:30から夜22:00まで
+    MY:
+      company_info_html: B3-1-2, Block B3, Solaris Dutamas, No.1, Jalan Dutamas, 50480
+        Kuala Lumpur
+      name: マレーシア
+      operating_hours_everyday: 毎日午前9時から午後10時まで
+      order_completed_tax_message: "（税込）"
+      service_type:
+        groceries:
+          operating_hours_everyday: 毎日午前9時から午後10時まで
+    PH:
+      company_info_html: 5-6F OPL Building, 100 C. Palanca Street, Legaspi Village,
+        Makati City, Philippines
+      name: フィリピン
+      operating_hours_everyday: 毎日午前9時から午後10時まで
+      order_completed_tax_message: "(税込)"
+      service_type:
+        groceries:
+          operating_hours_everyday: 毎日午前9時から午後10時まで
+    SG:
+      company_info_html: 'honestbee Pte. Ltd. (GST Reg. No. 201217834C)<br>2 Alexandra
+        Road, #04-01B Delta House, Singapore 159919'
+      name: シンガポール
+      operating_hours_everyday: 毎日午前9:30時から10時まで
+      order_completed_tax_message: "(全ての表示価格に日本の消費税8%が含まれています)"
+      service_type:
+        food:
+          operating_hours_everyday: 毎日午前9:30時から10時まで
+        groceries:
+          operating_hours_everyday: 毎日午前9:30時から10時まで
+        laundry:
+          operating_hours_everyday: 毎日午後1時 - 午後10時
+    TH:
+      disclaimer: 買い手は商品受け取り後7日以内に商品を交換、または返品でき、売り手は買い手から契約の解消の書面を受け取ってから15日以内に買い手に現金で払い戻ししなければならなりません。生鮮食品に関しては、満足のいかなかった買い手はすぐにオネストビーに生鮮食品を返送し、売り手は返送された生鮮食品を受け取ってから15日以内に買い手に現金で払い戻しをしなければなりません。
+      operating_hours_everyday: 毎日午前9時 - 午後6時
+      order_completed_tax_message: "(付加価値税7%込み)"
+      service_type:
+        groceries:
+          operating_hours_everyday: 毎日午前9時 - 午後6時
+    TW:
+      company_info_html: 台湾 12F, No. 200, Section 2, Fuxing South Rd, Da’an District
+        Taipei City, Taiwan (R.O.C.)
+      name: 台湾
+      operating_hours_everyday: 毎日午前9時から午後10時まで
+      service_type:
+        groceries:
+          operating_hours_everyday: 毎日午前9時から午後10時まで
+        laundry:
+          operating_hours_everyday: 毎日午後1時 - 午後10時
+        trash:
+          operating_hours_everyday: 午後9時から深夜12時まで、毎日
+  cybersource:
+    reason_code:
+      '101': 申し訳ございませんが、情報が不足しているか正しくないようです。お支払い情報をもう一度入力して頂き請求先住所を確認して下さい。または、他のカードをお使い下さい..
+      '102': 申し訳ございません。不足しているか、不正確な情報があります。支払い情報をもう一度ご入力いただき、請求先住所をご確認ください。
+      '104': 申し訳ございません。あなたは15分間このカードをご使用なさろうとしましたが失敗しました。再試行するか他のカードをお使い下さい。
+      '150': 申し訳ございませんが支払いを完了できません。別の支払い方法を試すか発行会社に連絡して下さい。
+      '200': 申し訳ございません。情報が正しくないようです。支払い情報を再入力して請求先住所を確認してください。
+      '201': 申し訳ございませんが支払いを完了できません。別の支払い方法を試すか発行会社に連絡して下さい。
+      '202': 申し訳ございません。カードの有効期限が切れているようです。カード情報を確認し再試行して下さい。または他のカードをお使いください。
+      '203': 申し訳ございませんが支払いを完了できません。別の支払い方法を試すか発行会社に連絡して下さい。
+      '204': 申し訳ございませんが支払いを完了できません。別の支払い方法を試すか発行会社に連絡して下さい。
+      '205': 申し訳ございませんが支払いを完了できません。別の支払い方法を試すか発行会社に連絡して下さい。
+      '207': 申し訳ございませんが、あなたのカード発行銀行は利用できません。数分間お待ちになってからもう一度行って下さい。
+      '208': 申し訳ございませんが支払いを完了できません。別の支払い方法を試すか発行会社に連絡して下さい。
+      '210': 申し訳ございませんが支払いを完了できません。別の支払い方法を試すか発行会社に連絡して下さい。
+      '211': 申し訳ございませんが支払いを完了できません。別の支払い方法を試すか発行会社に連絡して下さい。
+      '221': 申し訳ございませんが、カードが承認されませんでした。他のカードをお使い下さい。
+      '222': 申し訳ございませんが、カードが承認されませんでした。他のカードをお使い下さい。
+      '230': 申し訳ございません。カードの詳細が誤っています。確認し再試行して下さい。
+      '231': 申し訳ございません、カードは無効です。他のカードをお使い下さい。
+      '232': 申し訳ございませんが、あなたのカードは支払処理で承認されませんでした。他のカードをお使い下さい。
+      '233': 申し訳ございませんが、あなたのカードが承認されませんでした。他のカードをお使い下さい。
+      '234': 申し訳ございませんが、現在システムトラブル中ですので、後ほど再度お試し下さい。
+      '236': 申し訳ございませんが、支払処理に問題が発生しているようです。後でもう一度試して下さい。
+      '240': 申し訳ございませんが、カードの種類がカード番号と一致していないようです。当社のテクニカルチームに通知されており、現在調査中です。後でもう一度試して頂くか、他のカードを使って下さい。
+      '475': 申し訳ございませんが、当社はあなたのカードを認証することができませんでした。当社のテクニカルチームにこのことが通知されており現在調査中です。
+      '476': 申し訳ございませんが、認証が上手くいかなかったようです。当社のテクニカルチームにこのことが通知されており、現在調査中です。
+      '520': 申し訳ございませんが、当社の支払処理に問題が発生しているようです。数分間お待ちになってから、もう一度行って下さい。
+  date:
+    abbr_day_names:
+    - 日
+    - 月
+    - 火
+    - 水
+    - 木
+    - 金
+    - 土
+    abbr_month_names:
+    -
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+    day_names:
+    - 日曜日
+    - 月曜日
+    - 火曜日
+    - 水曜日
+    - 木曜日
+    - 金曜日
+    - 土曜日
+    format:
+      default: "%年-%月-%日"
+    formats:
+      default: "%Y年-%m月-%d日"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    -
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+    order:
+    - :年
+    - :月
+    - :日
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        other: 約%{count}時
+        zero: 約 %{count} 時間
+      about_x_months:
+        other: 約%{count}ヶ月
+        zero: 約%{count}ヶ月
+      about_x_years:
+        other: 約%{count}年
+        zero: 約%{count}年
+      almost_x_years:
+        other: "%{count}年近く"
+        zero: 約%{count}年
+      half_a_minute: 1/2分
+      less_than_x_minutes:
+        other: "%{count}分未満"
+        zero: "%{count}分未満"
+      less_than_x_seconds:
+        other: "%{count}秒未満"
+        zero: "%{count}秒未満"
+      over_x_years:
+        other: "%{count}年以上"
+        zero: "%{count}年以上"
+      x_days:
+        other: "%{count}日"
+        zero: "%{count}日"
+      x_minutes:
+        other: "%{count} 分"
+        zero: "%{count}分"
+      x_months:
+        other: "%{count}月"
+        zero: "%{count}月"
+      x_seconds:
+        other: "%{count}秒"
+        zero: "%{count} 秒"
+    prompts:
+      day: 日
+      hour: 時
+      minute: 分
+      month: 月
+      second: 秒
+      year: 年
+  devise:
+    mailer:
+      reset_password_instructions:
+        subject: "[honestbee] パスワードをリセット"
+  enums:
+    order:
+      replacement_preference:
+        call_to_confirm_replacements: 代替商品を確認のため電話
+        no_replacements_desired: 電話しないで下さい。在庫がある分のみを購入して下さい
+        sms_to_confirm_replacements: 代替商品を確認するために、SMSを送る
+        suggest_anyway: 電話しないで下さい。類似商品を購入して下さい
+    order_fulfillment:
+      waive_reason_codes:
+        bad_quality: 品質が悪い
+        bad_quality_damaged: 質が悪く、商品が破損している
+        bad_quality_not_fresh: 品質が悪く新鮮でない
+        bad_quality_thawed: 質の悪い解凍
+        did_not_agree_to_replacement: 商品の交換に同意がされていません
+        item_not_purchased: 商品が購入されていません
+        item_purchased_but_not_delivered: 商品の購入は完了しましたが、配達がされていません
+        not_delivered: 配達していない
+        others: その他
+        refused_item: 拒否された商品
+        return_request: 返品リクエスト
+        wrong_item: 間違った商品
+        wrong_size_or_excessive_quantity: サイズの違う商品、もしくは商品の数が多い
+  errors:
+    messages:
+      accepted: 受け入れられるべき
+      blank: 空欄にすることができません
+      confirmation: "%{attribute}と一致しません"
+      empty: 空白であってはいけない
+      equal_to: "%{count}と同じでなくてはなりません"
+      even: 偶数でなくてはならない
+      exclusion: 予約済み
+      greater_than: "%{count}以上にして下さい"
+      greater_than_or_equal_to: "%{count}と同じかそれ以上を入力して下さい"
+      inclusion: はリストに含まれていません
+      invalid: は有効です
+      less_than: "%{count}以下でなくてはなりません"
+      less_than_or_equal_to: は%{count}以下でなくてはなりません
+      not_an_integer: 整数にして下さい
+      not_a_number: は番号ではありません
+      odd: 奇数でなくてはならない
+      other_than: "%{count}以外でなければなりません"
+      present: 空欄にすることはできません
+      record_invalid: 検証がエラーに成りました。%{errors}
+      taken: 既に使用済み
+      too_long:
+        other: は長すぎます(最大%{count}文字)
+        zero: は長すぎます(最大%{count}文字)
+      too_short:
+        other: 短すぎます（最低 %{count} 文字）
+        zero: は短すぎます (最低%{count}文字)
+      wrong_length:
+        other: は正しくない長さです(%{count}文字でなくてはなりません)
+        zero: は正しくない長さです(%{count}文字でなくてはなりません)
+    template:
+      body: こちらの項目に不備がありました
+      header:
+        other: "%{count} のエラーはこの %{model} から保存を拒絶"
+        zero: "%{count} のエラーはこの %{model} から保存を拒絶"
+  helpers:
+    select:
+      prompt: 選択してください
+    submit:
+      create: "%{model}作成"
+      submit: 保存%{model}
+      update: "%{model}を更新"
+  mailers:
+    bee2b_status:
+      generic:
+        delivery_details: 配達の詳細
+        delivery_id: '配達: %{order_id}'
+      order_at_hub:
+        customer_header_html: " こちらのハブに到着しました。"
+        customer_subject: 'Bee2B - 配達 #%{order_id} はこちらのハブに到着しました!'
+        recipient_header_html: こんにちは<span class="highlight">%{name}</span>さん, あなたの荷物はこちらのハブにあって、もうすぐお届けに向かいます!
+        recipient_subject: 'Bee2B - あなたのご注文 #%{order_id} は、こちらのハブに到着しました!'
+      order_completed:
+        customer_header_html: " 完了しました。"
+        customer_subject: Bee2B - 配達#%{order_id} は完了しました!
+        recipient_header_html: <span class="highlight">%{name}</span>さん、あなたのご注文の配達は完了しました!
+        recipient_subject: Bee2B - あなたがご注文の配達#%{order_id}は完了しました。
+      order_enroute:
+        customer_header_html: " あなたにお届けの途中です。"
+        customer_subject: Bee2B - 配送#%{order_id}は受取人へお届けの途中です。
+        recipient_header_html: こんにちは、<span class="highlight">%{name}</span>さん、あなたへの荷物は当方のハブを出発してそちらに配送中です。
+        recipient_subject: Bee2B - あなたのご注文#%{order_id} は現在配送中です。
+      order_picked_up:
+        customer_header_html: " 引き取られる。"
+        customer_subject: 'Bee2B - 配達 #%{order_id} は引き取られました!'
+        recipient_header_html: こんにちは<span class="highlight">%{name}</span>さん、あなたの荷物は当方の配達人が引き取りそちらのハブに向かっています。
+        recipient_subject: Bee2B - あなたのご注文#%{order_id}は引き取られました!
+      order_processing:
+        customer_header_html: " 処理が終わり引取り待ちです。"
+        customer_subject: 'Bee2B - 配達 #%{order_id} は処理されました!'
+        recipient_header_html: こんにちは<span class="highlight">%{name}</span>さん、あなたの荷物は現在処理中で、もうすぐそちらに向かいます!
+        recipient_subject: 'Bee2B - あなたのご注文 #%{order_id} は処理されました!'
+    concierge_contact:
+      buzz_at_email_html: "%{concierge_email} まで連絡して下さい"
+      or_phone: あるいは %{concierge_phone}
+      question_suggestion: 質問か提案はございますか？
+    contact_us:
+      contact_us_at: お困りの場合には、以下までご連絡ください
+      operating_hours: 営業時間
+      operating_hours_everyday: 毎日午前10時から午後10時まで
+    coupon:
+      description: 誠実なコンシェルジュからの%{coupon_value}。
+      expiry_date: "%{date}までにお使いください"
+      guide_html: クーポンの使い方でお困りでしたら <a href=https://blog.honestbee.com/use-coupon-honestbee-jp-website/>こちら</a>をご覧ください。
+      guide_url: https://blog.honestbee.com/use-coupon-honestbee-jp-website/
+      intro: お詫びのしるしを贈らせていただきたく存じます。お客様のクーポンウォレットに%{coupon_value}をクレジットさせていただきました。
+    generic:
+      automotive: ホーム＆オート
+      bee2b: Bee2b
+      copyrights: "© %{year} honestbee。無断転載を禁ず。"
+      email: メール
+      email_receipt_reason: 本メールは honestbee でご注文されたお客様に送信されるメールです。
+      food: フード
+      groceries: 生鮮食料品
+      laundry: クリーニング
+      medicine: 健康
+      name: 名前
+      phone: 電話
+      tickets: チケット
+      trash: コレクション
+    late_fulfillment:
+      headline:
+        html: "%{name}様、%{service_type}の配達が遅れまして、申し訳ございません。"
+      headline_html: <span class="highlight">%{name}</span>様、%{service_type}のお届けが遅れまして大変申し訳ございませんでした。
+      message_html: 弊社は、お客様のご要望にいつでもお応えすることを目指しております。今回は、その目標を満たすことができず、またご期待に沿うこともできませんでした。
+      order_date: 'ご注文日: %{order_date}'
+      order_info: "%{service_type}ご注文番号 %{order_number}"
+      subject: "%{service_type} の配達が遅れまして申し訳ございません。"
+    notify_be_a_bee_submission:
+      id_number: ID番号
+      phone_model: 電話のモデル
+      position: 位置
+      preferred_working_location: 好ましい労働場所
+      vehicle_type: 乗り物の種類
+      whatsapp: Whatsapp
+    notify_contact_us_submission:
+      company_name: 会社名
+      company_website: 会社のウェブサイト
+      coupon_code: クーポンコード
+      delivery_timeslot: 新しい配達時間帯
+      message: メッセージ
+      order_number: 注文番号
+    order_cancelled:
+      automotive:
+        auto_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          'content ': カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        customer_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        fraud_activity:
+          content: |-
+            お客様の honestbeeアカウントに通常とは異なる行為が見られたことから、一時的にお客様のアカウントを停止させて頂きます。<br/><br/>
+            この処置は、お客様とdelivery beesを保護し、他のお客様に公平なサービスを提供するためのものです。<br/><br/>
+            お客様のご注文番号%{order_number}の%{brand}のご注文は取り消しされました。代金は請求されませんのでご安心ください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。<br/><br/>
+            弊社の方針についてもっと詳しくお知りになりたい方は、 <a href=https://honestbee.jp/terms-of-use/>https://honestbee.jp/terms-of-use</a>で利用規約をご覧ください。<br/><br/>
+            何かご質問がございましたらお気軽にお問い合わせください。
+          header: "%{name}様、"
+          subject: 通常とは異なる行為があった為、お客様のアカウントを停止しました。
+        merchant_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        order_number_header: 'Home & Autoのご注文 #%{order_number}'
+        others:
+          content: |-
+            今日私たちは予期できない課題に直面し、残念なことに解決することはできませんでした。<br/><br/>
+            今回学んだ貴重な教訓をもとにサービス向上に向けて努力してまいります。それを証明するべく最善を尽くしますので私たちに機会を与えてください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+          subject: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+        out_of_stock:
+          content: |-
+            ご注文頂いたほとんどの商品は、現在在庫切れか品質に問題がありました。%{brand}には再入荷を依頼しています。代金は請求されませんのでご安心ください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+          subject: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+        subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+      bee2b:
+        auto_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        customer_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        fraud_activity:
+          content: |-
+            お客様の honestbeeアカウントに通常とは異なる行為が見られたことから、一時的にお客様のアカウントを停止させて頂きます。<br/><br/>
+            この処置は、お客様とdelivery beesを保護し、他のお客様に公平なサービスを提供するためのものです。<br/><br/>
+            お客様のご注文番号%{order_number}の%{brand}のご注文は取り消しされました。代金は請求されませんのでご安心ください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。<br/><br/>
+            弊社の方針についてもっと詳しくお知りになりたい方は、 <a href=https://honestbee.jp/terms-of-use/>https://honestbee.jp/terms-of-use</a>で利用規約をご覧ください。<br/><br/>
+            何かご質問がございましたらお気軽にお問い合わせください。
+          header: "%{name}様、"
+          subject: 通常とは異なる行為があった為、お客様のアカウントを停止しました。
+        merchant_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        others:
+          content: |-
+            今日私たちは予期できない課題に直面し、残念なことに解決することはできませんでした。<br/><br/>
+            今回学んだ貴重な教訓をもとにサービス向上に向けて努力してまいります。それを証明するべく最善を尽くしますので私たちに機会を与えてください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+          subject: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+        out_of_stock:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+      cancel_charge_note: "%{other_brands}から発送する商品にのみ料金が請求されます。"
+      food:
+        auto_cancel:
+          content: |-
+            大変申し訳ございません。只今、%{brand}に注文が殺到しており、お客様を長らくお待たせするため、ご注文をキャンセルさせて頂きました。他のレストランをご検討いただければ幸いです。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: 大変申し訳ございません。%{brand}はお客様の注文をキャンセルせざるを得ませんでした。
+          subject: 大変申し訳ございません。%{brand}はお客様の注文をキャンセルせざるを得ませんでした。
+        cancelled_explanation: |-
+          大変申し訳ございません。只今、%{brand_name}に注文が殺到しており、お客様を長らくお待たせするため、ご注文をキャンセルさせて頂きました。他のレストランをご検討いただければ幸いです。<br/><br/>
+          カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+        customer_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        fraud_activity:
+          content: |-
+            お客様の honestbeeアカウントに通常とは異なる行為が見られたことから、一時的にお客様のアカウントを停止させて頂きます。<br/><br/>
+            この処置は、お客様とdelivery beesを保護し、他のお客様に公平なサービスを提供するためのものです。<br/><br/>
+            お客様のご注文番号%{order_number}の%{brand}のご注文は取り消しされました。代金は請求されませんのでご安心ください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。<br/><br/>
+            弊社の方針についてもっと詳しくお知りになりたい方は、 <a href=https://honestbee.jp/terms-of-use/>https://honestbee.jp/terms-of-use</a>で利用規約をご覧ください。<br/><br/>
+            何かご質問がございましたらお気軽にお問い合わせください。
+          header: "%{name}様、"
+          subject: 通常とは異なる行為があった為、お客様のアカウントを停止しました。
+        merchant_cancel:
+          content: |-
+            大変申し訳ございません。只今、%{brand}に注文が殺到しており、お客様を長らくお待たせするため、ご注文をキャンセルさせて頂きました。他のレストランをご検討いただければ幸いです。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: 申し訳ございませんが、%{brand}のご注文はキャンセルせざるを得ません。
+          subject: 大変申し訳ございません。%{brand}はお客様の注文をキャンセルせざるを得ませんでした。
+        order_cancelled_note: 大変申し訳ございません。%{brand}はお客様の注文をキャンセルせざるを得ませんでした。
+        order_number_header: 'FOODのご注文 #%{order_number}'
+        others:
+          content: |-
+            今日私たちは予期できない課題に直面し、残念なことに解決することはできませんでした。<br/><br/>
+            今回学んだ貴重な教訓をもとにサービス向上に向けて努力してまいります。それを証明するべく最善を尽くしますので私たちに機会を与えてください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+          subject: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+        out_of_stock:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        rejected_subject: 大変申し訳ございません。%{brand}はお客様の注文をキャンセルせざるを得ませんでした。
+        subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+      groceries:
+        auto_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        customer_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        fraud_activity:
+          content: |-
+            お客様の honestbeeアカウントに通常とは異なる行為が見られたことから、一時的にお客様のアカウントを停止させて頂きます。<br/><br/>
+            この処置は、お客様とdelivery beesを保護し、他のお客様に公平なサービスを提供するためのものです。<br/><br/>
+            お客様のご注文番号%{order_number}の%{brand}のご注文は取り消しされました。代金は請求されませんのでご安心ください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。</br></br>
+            弊社の方針についてもっと詳しくお知りになりたい方は、 <a href=https://honestbee.jp/terms-of-use/>https://honestbee.jp/terms-of-use</a>で利用規約をご覧ください。<br/><br/>
+            何かご質問がございましたらお気軽にお問い合わせください。
+          header: "%{name}様、"
+          subject: 通常とは異なる行為があった為、お客様のアカウントを停止しました。
+        merchant_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        order_number_header: 生鮮食料品のご注文 ♯%{order_number}
+        others:
+          content: |-
+            今日私たちは予期できない課題に直面し、残念なことに解決することはできませんでした。<br/><br/>
+            今回学んだ貴重な教訓をもとにサービス向上に向けて努力してまいります。それを証明するべく最善を尽くしますので私たちに機会を与えてください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+          subject: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+        out_of_stock:
+          content: |-
+            ご注文頂いたほとんどの商品は、現在在庫切れか品質に問題がありました。%{brand}には再入荷を依頼しています。代金は請求されませんのでご安心ください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+          subject: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+        subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+      laundry:
+        auto_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        customer_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        fraud_activity:
+          content: |-
+            お客様の honestbeeアカウントに通常とは異なる行為が見られたことから、一時的にお客様のアカウントを停止させて頂きます。<br/><br/>
+            この処置は、お客様とdelivery beesを保護し、他のお客様に公平なサービスを提供するためのものです。<br/><br/>
+            お客様のご注文番号%{order_number}の%{brand}のご注文は取り消しされました。代金は請求されませんのでご安心ください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。<br/><br/>
+            弊社の方針についてもっと詳しくお知りになりたい方は、 <a href=https://honestbee.jp/terms-of-use/>https://honestbee.jp/terms-of-use</a>で利用規約をご覧ください。<br/><br/>
+            何かご質問がございましたらお気軽にお問い合わせください。
+          header: "%{name}様、"
+          subject: 通常とは異なる行為があった為、お客様のアカウントを停止しました。
+        merchant_cancel:
+          content: |-
+            当社は一流のパートナーによる判断を信頼しており、大切になさっている品を台無しにするようなことは控えたいと思っております。従って、ご注文はキャンセルさせていただきました。でもご安心ください。このご注文や配送に関する代金は請求されません。品物はお客さまのもとへ無事にご返却いたします。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、当社のパートナーがご注文内容を確認しましたが、こちらはお洗濯ができません。 "
+          subject: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+        order_number_header: 'お洗濯のご注文 #%{order_number}'
+        others:
+          content: |-
+            今日私たちは予期できない課題に直面し、残念なことに解決することはできませんでした。<br/><br/>
+            今回学んだ貴重な教訓をもとにサービス向上に向けて努力してまいります。それを証明するべく最善を尽くしますので私たちに機会を与えてください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+          subject: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+        out_of_stock:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+      medicine:
+        auto_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        customer_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        fraud_activity:
+          content: |-
+            お客様の honestbeeアカウントに通常とは異なる行為が見られたことから、一時的にお客様のアカウントを停止させて頂きます。<br/><br/>
+            この処置は、お客様とdelivery beesを保護し、他のお客様に公平なサービスを提供するためのものです。<br/><br/>
+            お客様のご注文番号%{order_number}の%{brand}のご注文は取り消しされました。代金は請求されませんのでご安心ください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。<br/><br/>
+            弊社の方針についてもっと詳しくお知りになりたい方は、 <a href=https://honestbee.jp/terms-of-use/>https://honestbee.jp/terms-of-use</a>で利用規約をご覧ください。<br/><br/>
+            何かご質問がございましたらお気軽にお問い合わせください。
+          header: "%{name}様、"
+          subject: 通常とは異なる行為があった為、お客様のアカウントを停止しました。
+        merchant_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        order_number_header: 'Healthのご注文 #%{order_number}'
+        others:
+          content: |-
+            今日私たちは予期できない課題に直面し、残念なことに解決することはできませんでした。<br/><br/>
+            今回学んだ貴重な教訓をもとにサービス向上に向けて努力してまいります。それを証明するべく最善を尽くしますので私たちに機会を与えてください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+          subject: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+        out_of_stock:
+          content: |-
+            ご注文いただいた商品の多くは現在品切れとなっております。すぐに在庫を補充いたします。 代金は請求されませんのでご安心ください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+          subject: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+        subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+      ordered_on: 'ご注文日時: %{timestamp}'
+      order_is_cancelled_note: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+      order_now: 今すぐ注文
+      out_of_stock:
+        greeting_html: <span class="highlight">%{name}</span>、申し訳ございません、お客様の%{brand}からの食料品のご注文をキャンセルさせていただく必要がございました。
+        grocery_order: '生鮮食料品のご注文 #%{order_number}'
+        reason: ご注文頂いた商品のほとんどが現在、在庫切れか状態の良くないものになっています。私どもは%{brand}にこれらの商品の再入荷を依頼します。お客様には請求されませんのでご安心ください。
+        remedy: お詫びのしるしを贈らせていただきたく存じます。お客様のクーポンウォレットに%{coupon_value}をクレジットさせていただきました。
+        subject: 生鮮食料品の注文#%{order_number}はキャンセルいたします
+      release_funds_note: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+      subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+      trash:
+        auto_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        customer_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        fraud_activity:
+          content: |-
+            お客様の honestbeeアカウントに通常とは異なる行為が見られたことから、一時的にお客様のアカウントを停止させて頂きます。<br/><br/>
+            この処置は、お客様とdelivery beesを保護し、他のお客様に公平なサービスを提供するためのものです。<br/><br/>
+            お客様のご注文番号%{order_number}の%{brand}のご注文は取り消しされました。代金は請求されませんのでご安心ください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。<br/><br/>
+            弊社の方針についてもっと詳しくお知りになりたい方は、 <a href=https://honestbee.jp/terms-of-use/>https://honestbee.jp/terms-of-use</a>で利用規約をご覧ください。<br/><br/>
+            何かご質問がございましたらお気軽にお問い合わせください。
+          header: "%{name}様、"
+          subject: 通常とは異なる行為があった為、お客様のアカウントを停止しました。
+        merchant_cancel:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        order_number_header: コレクション発注番号 %{order_number}
+        others:
+          content: |-
+            今日私たちは予期できない課題に直面し、残念なことに解決することはできませんでした。<br/><br/>
+            今回学んだ貴重な教訓をもとにサービス向上に向けて努力してまいります。それを証明するべく最善を尽くしますので私たちに機会を与えてください。<br/><br/>
+            カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+          subject: "%{name}様、申し訳ありませんが%{brand}のご注文を取り消す必要がありました。"
+        out_of_stock:
+          content: カードでのお支払いに関して、事前承認された金額は48時間以内にリリース致します。カードの明細書に反映されるまで最大10営業日かかる場合があります。
+          header: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+          subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+        subject: "%{name}様、%{brand}へのご注文をキャンセルいたしました。"
+    order_completed:
+      final_receipt_survey_button:
+        groceries: 'あなたのご注文 %{order_number} を評価'
+        food: 'あなたのご注文 %{order_number} を評価'
+        default: 'あなたのご注文 %{order_number} を評価'
+      final_receipt_survey_title:
+        groceries: ご体験はいかがでしたか?
+        food: ご体験はいかがでしたか?
+        default: ご体験はいかがでしたか?
+      adjustment: 調整
+      automotive:
+        order_delivered_html: 全て完了しました—玄関口まで直接お届けに上がりました!
+        order_delivered_interim_html: 全て完了しました—玄関口まで直接お届けに上がりました!
+        subject: '全て完了しました!! こちらがお客様の%{service_type} #%{order_number}の最終的な領収書となります。'
+        subject_interim: 全て完了しました。お客様の%{service_type} オーダー#%{order_number}につきまして、こちらが領収書でございます。
+      cash_refund: '返金額: %{amount}'
+      concierge_fee: コンシェルジュ料
+      credit: クレジット
+      delivery_fee: 送料
+      minimum_spend_extra_fee: '最低ご利用金額未満です'
+      discount: 割引
+      final_total_disclaimer: ご注意：最終価格に含まれない外部手数料等については、ご利用の銀行に直接お問い合わせください。
+      food:
+        order_delivered_html: お味はいかがでしたでしょうか？またお楽しみください！
+        order_delivered_interim_html: お味はいかがでしたでしょうか？またお楽しみください！
+        subject: 全て完了しました。お客様の%{service_type} オーダー%{order_number}につきまして、こちらが最終的な領収書となります。
+        subject_interim: 全て完了しました。お客様の%{service_type} オーダー#%{order_number}につきまして、こちらが領収書でございます。
+      fulfilled_items: 在庫あり商品
+      groceries:
+        order_delivered_html: 新鮮なまま迅速にすべてお届けいたしました。次回もお客様が重い思いをする必要はありません！
+        order_delivered_interim_html: 新鮮なまま迅速にすべてお届けいたしました。次回もお客様が重い思いをする必要はありません！
+        subject: 全て完了しました。お客様の%{service_type}  オーダー#%{order_number}につきまして、こちらが最終的な領収書となります。
+        subject_interim: 全て完了しました。お客様の%{service_type} オーダー#%{order_number}につきまして、こちらが領収書でございます。
+      inclusive_of_tax: "(税込)"
+      laundry:
+        order_delivered_html: 全て完了しました—玄関口まで直接お届けに上がりました!
+        order_delivered_interim_html: 全て完了しました—玄関口まで直接お届けに上がりました!
+        subject: 全て完了しました。お客様の%{service_type} オーダー#%{order_number}につきまして、こちらが最終的な領収書となります。
+        subject_interim: 全て完了しました。お客様の%{service_type} オーダー#%{order_number} につきまして、こちらが領収書でございます。
+      medicine:
+        order_delivered_html: 全て完了しました—玄関口まで直接お届けに上がりました!
+        order_delivered_interim_html: 全て完了しました—玄関口まで直接お届けに上がりました!
+        subject: 全て完了しました。お客様の%{service_type} オーダー#%{order_number}につきまして、こちらが最終的な領収書となります。
+        subject_interim: 全て完了しました。お客様の%{service_type} オーダー#%{order_number}につきまして、こちらが領収書でございます。
+      oos_items: 在庫切れ商品
+      order_delivered_html: "%{name}様、こちらがお届けした商品の領収書です。"
+      order_refunded_update: 取り消された商品分¥%{refund}はお客様のカードに返金いたします。
+      order_waived_html: "<span class=\"highlight\">%{name}</span>様、領収書を更新しました。\n\n"
+      order_waived_update: 取り消された商品分%{refund}は請求いたしませんのでご安心ください。
+      receipt_note: お客様のクレジットカードは変更されていません。最終的な領収証は%{days}日以内に送付されます。
+      refund_amount: 返金先カード %{card}
+      refund_subject: 更新された#%{order_number}の注文の領収書
+      replaced_items: 交換した商品
+      service: サービス
+      store_price: 店頭価格
+      subject: '全て完了しました。お客様の %{service_type} オーダー #%{order_number} につきまして、こちらが最終的な領収書となります。'
+      subject_interim: '全て完了しました。お客様の%{service_type} オーダー #%{order_number} につきまして、こちらが領収書でございます。'
+      subtotal: 小計
+      tax: 税金
+      total: 最終合計金額
+      total_interim: 合計
+      trash:
+        order_delivered_html: '全て完了しました!! こちらがお客様の%{service_type} #%{order_number}の最終的な領収書となります。'
+        order_delivered_interim_html: "%{name}, あなたのコレクションの領収書です。\n"
+        subject: 全て完了しました。お客様の%{service_type} オーダー#%{order_number}につきまして、こちらが最終的な領収書となります。
+        subject_interim: 全て完了しました。お客様の %{service_type} オーダー#%{order_number} につきまして、こちらが領収書でございます。
+      waived: 割引金額
+      waived_amount: 割引金額
+      waived_items: 取消した商品
+      web_price: Web上の価格
+    order_delivering:
+      automotive:
+        subject: お客様の注文番号%{order_number}は%{delivery_slot}に配送予定です。
+      food:
+        subject: お客様の注文番号%{order_number}は%{delivery_slot}に配送予定です。
+      greeting_html: <span class="highlight">%{name}</span>様, お客様の注文商品は %{delivery_slot}にお届け予定です
+      greeting_html_2: "%{delivery_slot}にお届けする予定です"
+      groceries:
+        subject: お客様の注文番号%{order_number}は%{delivery_slot}に配送予定です。
+      laundry:
+        subject: お客様の注文番号%{order_number}は%{delivery_slot}に配送予定です。
+      medicine:
+        subject: お客様の注文番号%{order_number}は%{delivery_slot}に配送予定です。
+      note_on_final_receipt: ご注文の商品が到着するまで支払いの必要はありません。これにより、商品の在庫切れやそれに伴う代替品のご購入があった場合にお客様の最終のレシートを調整することが可能です。
+      subject: お客様の注文番号%{order_number}は%{delivery_slot}に配送予定です。
+      trash:
+        subject: お客様の注文番号%{order_number}は%{delivery_slot}に配送予定です。
+    order_laundry_processing:
+      delivery: 配達
+      no_extra_fee: ピックアップや配達のスケジュールの変更に関しては、2時間前であれば追加の手数料は発生しません。
+      no_rescheduling_fee: スケジュールの変更手数料は発生しません
+      pickup: ピックアップ
+      subject: "%{name}様, お引き取りに伺う洗濯物は #%{order_number}で 確認済です"
+      subtotal: 小計
+      thank_you_for_shopping_html: あなたのランドリーの<span class="highlight">%{name}</span>が選んだ%{order_number}が確認されました
+    order_processing:
+      automotive:
+        delivery_note: 集荷についての説明
+        deliver_to: 集荷のための住所
+        order_date: 注文日
+        store_subtotal: 小計
+        subject: ありがとうございます！ お客様の%{service_type} オーダー#%{order_number}を承りました。
+        thank_you_for_shopping_html: こんにちは、%{name}さん！オーダー%{order_number} 承りました、ありがとうございます。
+      can_replace_with: に取り替えることができる
+      concierge_fee: コンシェルジュ料金
+      contact_number: 連絡先番号
+      credit_card_charge_time_html: クレジットカードは<span class="highlight">配達完了後に引き落とし</span>されます。
+      customer_note: 備考
+      delivery_fee: 送料
+      delivery_note: 配達メモ
+      minimum_spend_extra_fee: '最低ご利用金額未満です'
+      deliver_to: お届け先住所
+      food:
+        delivery_note: 配送指示
+        deliver_to: 配達先住所
+        order_date: 注文
+        store_subtotal: 店舗小計
+        subject: ありがとうございます！ お客様の%{service_type} オーダー#%{order_number}を承りました。
+        thank_you_for_shopping_html: <span class="highlight">%{name}様</span>, FOODの注文を確定しました。
+      groceries:
+        delivery_note: 配達メモ
+        deliver_to: デリバリー
+        order_date: 注文日時
+        store_subtotal: 店舗小計
+        subject: ありがとうございます！ お客様の%{service_type} オーダー#%{order_number}を承りました。
+        thank_you_for_shopping_html: こんにちは、%{name}さん！オーダー%{order_number} 承りました、ありがとうございます。
+      inclusive_of_tax: "(税込)"
+      laundry:
+        delivery_note: 配達メモ
+        deliver_to: へデリバリー
+        order_date: 注文日
+        store_subtotal: 小計
+        subject: 素晴らしい! お客様の%{service_type} ピックアップ#%{order_number}を確認いたしました。
+        thank_you_for_shopping_html: こんにちは<span class="highlight">%{name}</span>さん、素晴らしい!
+          弊社のビーが準備万端、ご注文をお待ちいたしております。
+      medicine:
+        delivery_note: 納品書
+        deliver_to: お届け先
+        order_date: 注文日
+        store_subtotal: ストア小計
+        subject: ありがとうございます！ お客様の%{service_type} オーダー#%{order_number}を承りました。
+        thank_you_for_shopping_html: こんにちは、%{name}さん！オーダー%{order_number} 承りました、ありがとうございます。
+      no_customer_note: お客様メモはありません
+      no_replacement: 代替商品はありません
+      order_date: ご注文日
+      order_number: 注文番号
+      stores_subtotal: 店舗小計
+      store_subtotal: 店舗小計
+      subject: ご注文を承りました
+      thank_you_for_shopping_html: こんにちは、%{name}さん！オーダー%{order_number} 承りました、ありがとうございます。
+      total: 合計
+      total_disclaimer: 全ての表示価格に消費税8%が含まれています。
+      trash:
+        delivery_note: 集荷の説明
+        deliver_to: 集荷住所
+        order_date: 注文日
+        store_subtotal: 小計
+        subject: '素晴らしい! お客様の%{service_type} #%{order_number}を確認いたしました。'
+        thank_you_for_shopping_html: 'こんにちは、<span class="highlight">%{name}</span>さん。完璧です!
+          %{service_type} #%{order_number} の確認が完了しました。'
+      upfront_payment_christmas: ただし、期間限定ストアでは前払いのみです。
+      upfront_payment_seasonal: ただし、期間限定店舗のみ前払いとなります。
+    order_review:
+      disclaimer: あなたのコンシェルジェ客%{shopper_name}さんは、あなたの認可なしには購入しないそうです。よろしくお願いします。
+      heading: "%{customer_name}さん、あなたの %{brand_name} のご注文の変更を再点検してください。"
+      ps: '追伸: 並行して%{phone_number}へのリンク付きのSMSも送りました。'
+      request: あなたの品物を%{time_limit}以内に再点検してください。
+      review_button: 変更を再点検する
+      subject: あなたの%{brand_name}のご注文の変更を  %{time_limit} 分以内に再点検してください。
+    referee_order_complete:
+      share_email_subject: "%{name}さんより honestbee のクーポンがプレゼントされます！"
+      coupon_credited: "%{discount}分のクーポンをあなたのアカウントに入金しました！"
+      earned_discount: 紹介料として%{discount}獲得しました！
+      friend_completed_order: ご友人 %{name} が注文を完了しました！
+      made_first_order: "%{name} 様が初めて注文しました。"
+      refer_and_earn: たくさん友達に紹介して%{discount}円の紹介料をゲットしましょう
+      refer_and_earn_separate: たくさんの友達に紹介して%{discount}円の紹介料をゲットしましょう
+      share_honestbee_text: "%{minimum_spending}以上のお買上げで%{discount}オフになります。こちらのリンク(%{referral_link})を使用してhonestbeeアカウントにサインアップするとクーポンを取得できます。"
+      share_on: "%{platform} で共有する"
+      share_signup_link: 'あなたの登録用リンクを友達にシェアしましょう:'
+      use_code_as_discount_html: 友達があなたの紹介コードを使ってお買い物をすると初回購入から%{discount}円割引が適用されます
+      why_stop: たくさんのシェアお願いします！
+    reset_password:
+      alternative_link_instruction: 上記ボタンがメールクライアントで動作しない場合、下記URLをブラウザにコピペして下さい。
+      click_to_reset: パスワードのリセットは下のボタンをクリックして下さい。
+      ignore_if_not_applicable: パスワードの変更をご希望でなければ、このメッセージを無視して下さい。
+      let_us_help: 私たちにお手伝いさせて下さい！
+      link_valid_for_html: このリンクは<strong>%{time_in_words}</strong>用に有効です
+      reset_password: パスワードをリセット
+    sign_up:
+      benefits_of_shopping: honestbeeが便利な理由
+      concierge_shopper_handpicked_html: honestbeeの買物代行コンシェルジュはお客様の日常生活を快適にします！
+      delivery_promise_html: "<b>すばやく:</b><br/> 最短1 時間の当日配送"
+      find_out_how: 仕組み
+      first_value_prop_html: <span class="highlight">らくらく</span><br/>私たちプロに雑用をお任せください
+      HK:
+        benefits_of_shopping: honestbeeで日常生活をより快適に
+        concierge_shoppers_html: <span class="highlight">コンシェルジュ・ショッパー</span>が 新鮮な商品を厳選します
+        concierge_shopper_handpicked_html: honestbeeの買物代行コンシェルジュサービスで日常生活はもっと便利になります。プロが厳選した新鮮な食料品をお楽しみ下さい！
+        first_value_prop_html: "<b>手間いらず</b><br/>あなたの用事は当社の専門家にやらせましょう"
+        second_value_prop_html: "<b>便利</b><br/>お引き取りに伺って、玄関までお届けにあがります"
+        third_value_prop_html: "<b>素早く</b><br/>当日、最短1時間以内にお届け"
+      JP:
+        concierge_shopper_handpicked_html: 生鮮食料品から日用品さらに人気レストランの料理を新鮮・出来立ての状態でお届けいたします！
+      MY:
+        concierge_shopper_handpicked_html: honestbeeの買物代行コンシェルジュサービスで日常生活はもっと便利になります。プロが厳選した新鮮な食料品をお楽しみ下さい！
+        please_forward_email_html: "<p>アカウントを有効にするために、このメールをbee@honestbee.myに転送してください。アカウントが有効になりましたら、確認メールをお送りします</p><p>現在モバイルアプリ更新中のため、モバイルアプリからのオーダーはお受けできません。</p>"
+        welcome_to_honestbee: "%{name}様、 honestbeeの限定発表会へようこそ"
+      second_value_prop_html: <span class="highlight">便利で</span><br/>ご自宅までお届けいたします
+      SG:
+        benefits_of_shopping: honestbeeで日常生活をより快適に！
+        concierge_shoppers_html: "<b>お客様を担当する：</b><br/>プロのコンシェルジュ"
+        concierge_shopper_handpicked_html: honestbeeの買物代行コンシェルジュサービスで日常生活はもっと便利になります。プロが厳選した新鮮な食料品をお楽しみ下さい！
+        first_value_prop_html: "<b>らくらく<b><br/>私たちプロに雑用をお任せください"
+        second_value_prop_html: "<b>便利</b><br/>お引き取りに伺って、玄関までお届けにあがります"
+        start_shopping: すぐに始める
+        third_value_prop_html: "<b>j迅速</b><br/>同日、1時間で食料雑貨お届け"
+        welcome_to_honestbee: "%{name} さん、ようこそ honestbee ファミリーへ！"
+      shop_skucount_html: <b>便利な:</b><br/><span class="highlight">%{sku_count}</span>以上の商品数
+      start_shopping: ショッピング
+      third_value_prop_html: <span class="highlight">すばやく</span><br/> 当日、最短1時間以内
+      TW:
+        benefits_of_shopping: honestbeeで日常生活をより快適に！
+        concierge_shoppers_html: 490円で<span class="highlight">コンシェルジュ</span>が最も新鮮な商品を厳選いたします。
+        concierge_shopper_handpicked_html: honestbeeの買物代行コンシェルジュサービスで日常生活はもっと便利になります。プロが厳選した新鮮な食料品をお楽しみ下さい！
+        first_value_prop_html: "<b>手間いらず</b><br/>日常の雑用は専門家にお任せ"
+        second_value_prop_html: "<b>便利</b><br/>お引き取りに伺って、玄関までお届けにあがります"
+        third_value_prop_html: "<b>素早く</b><br/>当日、最短1時間以内にお届け"
+        welcome_to_honestbee: "%{name} さん、ようこそ honestbee ファミリーへ！"
+      welcome_to_honestbee: "%{name} さん、ようこそ honestbee ファミリーへ！"
+  merchant_app:
+    push_notification:
+      notify_deliverer:
+        deliverer_pending_acceptance_message: 'オーダー #%{order_number}-%{store_id}を承認してください!'
+        deliverer_pending_start_message: 'オーダー #%{order_number}-%{store_id}の配送作業を始めてください!'
+        deliverer_picked_up_message: 'オーダー #%{order_number}-%{store_id} を期日までに配送してください。配送が遅れる場合はお客様にご連絡ください。'
+        deliverer_started_message: '配送が遅れないよう、オーダー #%{order_number}-%{store_id} を集荷してください'
+        message: 配送のお仕事があります!
+        order_handed_over: 'オーダー #%{order_number}-%{store_id} の集荷準備が整いました。'
+      notify_partner:
+        message: '新しいオーダー #%{order_number}-%{store_id} があります!'
+        notify_auto_cancelled_order_fulfillment: オーダー#%{order_number}-%{store_id}
+          は%{mins_buffer}分以内に承認されなかったため、自動的にキャンセルされました。
+        notify_cancelled_order_fulfillment: 注文番号 %{id} はキャンセルされます
+      notify_shopper:
+        message: ショッパーのお仕事があります!
+        shopper_pending_acceptance_message: 'オーダー #%{order_number}-%{store_id}を承認してください!'
+        shopper_pending_start_message: オーダー#%{order_number}-%{store_id}の購入を始めてください!
+        shopper_started_message: すぐにオーダー#%{order_number}-%{store_id} の購入をすませてください!
+  mobile:
+    checkout:
+      authorize_payment:
+        accept_card_warning: 当サイトでは、現在CIMBデビットカードおよびHSBCクレジットカードを受け付けておりませんのでご注意ください
+          - しかしながら、現在この解決に取り組んでおります! ご不便をおかけして申し訳ございませんが、別のカードをお試しください。よろしくお願い申し上げます。
+        address_line_1: 住所 1
+        address_line_2: 住所 2
+        add_new_card: 新しいカードを追加する
+        apartment_unit_bldg_floor_etc: アパート、部屋番号、ビル、フロア等
+        billing_address: 請求先住所
+        bill_to_address_postal_code: 郵便番号
+        cardholder_name: カード保有者のお名前
+        card_information: カード情報
+        card_number: カード番号
+        ccv_cvv: CCV/CVV（セキュリティコード）
+        city: 都市
+        country: 国
+        expiration_date: 有効期限
+        invalid_details: 申し訳ございませんが、%{invalid_fields}が無効です。
+        no_credit_card_details_required: クレジットカード情報は不要です
+        payment_methods: お支払い方法
+        pay_securely: 安全な支払い
+        pay_with_credits: クレジットで全額を支払います
+        pay_with_secured_transaction: セキュリティで保護された取引でクレジットカード支払を行います
+        place_order: 注文
+        refund_policy: よくある質問
+        security_code: セキュリティコード
+        state: 状態
+        street_company_etc: 所在地住所、会社名など
+        terms_condition: 利用規約
+        your_credits_deducted_html: "<span class='bank-credits-explain--amount'>%{amount}</span>クレジットが差し引かれます。"
+        zip: 郵便番号
+      authorize_payment_js:
+        HK:
+          default_city: 香港島
+        invalid_details: 申し訳ございませんが、%{invalid_fields}が無効です。
+        missing_fields: 必要事項に空欄がないか確認してください。
+        new_card_not_valid_for_discount: 申し訳ございませんが、このカードは当クーポンには利用できません。
+        pay_securely: "%{amount}を支払う"
+        pay_with_credits: クレジットで全額を支払います
+        place_order: 注文
+        selected_cardnot_valid_for_discount: 適用したクーポンはこの支払い方法では利用できません。心配は要りません! プロモーションの詳細を確認して支払い方法を変更してください。
+        select_payment_method: お支払い方法をご選択ください
+        SG:
+          default_city: シンガポール
+        submitting_order_html: ご注文を送信中 <i class="fa fa-spinner fa-spin"></i>
+        TW:
+          default_city: 台北
+        unable_accept_amex: 申し訳ございませんが、現在%{country}でアメリカン・エクスプレス・カードを承認することができません。
+      cash:
+        cash_payment_header: 代金引換
+        cash_payment_subheader: カードは必要ありません。商品を受け取る際に現金でお支払いください。
+      corporate_account_credit:
+        corporate_payment_header: 法人払い
+        corporate_payment_subheader: 法人払いでの購入に関しては直接本社に請求いたします
+  number:
+    currency:
+      format:
+        format: "%u%n"
+        precision: 2
+        significant: 誤り
+        strip_insignificant_zeros: 誤り
+        unit: "¥"
+    format:
+      precision: 3
+      significant: 誤り
+      strip_insignificant_zeros: 誤り
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: 10億
+          million: 100万
+          quadrillion: 1000兆
+          thousand: '1000'
+          trillion: 兆
+      format:
+        precision: 3
+        significant: 正
+        strip_insignificant_zeros: 正
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            other: バイト
+            zero: バイト
+          gb: ギガバイト
+          kb: キロバイト
+          mb: メガバイト
+          tb: テラバイト
+    percentage:
+      format:
+        format: "%n%"
+  pundit:
+    default: このアクションを実行することができません。
+    user_policy:
+      create?: ユーザー作成の権限がありません。
+      index?: ユーザーリストを閲覧するアクセス権がありません。
+      update?: このユーザーを編集することは出来ません!
+  reject_reasons:
+    food:
+      main_dish_is_out_of_stock: メインディッシュは在庫切れ
+      most_items_are_out_of_stock: ほとんどの品物が在庫切れ
+      no_reason: 理由なし
+      other_reason: 他の理由
+      too_many_orders_currently: 現在の注文が多すぎます
+    groceries:
+      most_items_are_out_of_stock: ほとんどの品物が在庫切れ
+      no_reason: 理由なし
+      other_reason: 他の理由
+      too_many_orders_currently: 現在の注文が多すぎます
+    laundry:
+      no_reason: 理由なし
+      other_reason: 他の理由
+      service_not_available: サービスは利用できません
+      too_many_orders_currently: 現在の注文が多すぎます
+  services:
+    brand_validation:
+      brand_not_available: このブランドは利用できません
+      brand_not_served: このブランドはお客様の地域では取り扱っておりません。
+    product_validation:
+      product_not_available: この商品はご購入いただけません
+      product_not_served: この商品はお客様の地域では取り扱っておりません
+    promotion_code_redemption:
+      first_purchase_invalid_response: こちらのプロモーション コードは初めてご注文のお客様のみに有効です。
+      invalid_code_response: " 有効なクーポンのコードを入力したことを確認してください。"
+      multiple_packages_not_supported_response: 複数のプロモーションコードは無効
+      not_active_response: プロモーション コードは現在お使いいただけません
+      not_in_redeem_range_response: プロモーション コードは、%{start_date}から%{end_date}までの期間のみお使いいただけます。
+      not_on_redeem_day_response: プロモーションコードは、%{date}のみご利用可能。
+      redeemed_before_response: 使用済のプロモーションコードです
+      used_up_response: 残念... このクーポンは完全に引き換えられています。
+      wrong_service_response: このクーポンはhonestbee %{service_type}用です。
+      wrong_zone_response: 申し訳ございませんが、こちらのプロモーションコードはこの地域ではお使いいただけません。
+      wrong_trademark_response: このクーポンを使用する為には、%{trademarks} の商品が少なくとも1つカートに入っていなければなりません。
+      wrong_trademark_with_min_amount_response: このクーポンを使用する為には、 %{min_amount} 円以上の %{trademarks} の商品がカートに入っていなければなりません。
+    reorder:
+      different_zone_response: 申し訳ありませんが、現在の送付先住所は、この注文の送付先住所と同じではありません。これらの商品は<strong>%{address}</strong>から再注文してください。
+      item_unavailable: 申し訳ございませんが、現在こちらの商品は取り扱っておりません。
+      products_unavailable: 申し訳ございませんが、本商品は現在取り扱っておりません。%{products}
+    service_types:
+      automotive: ホーム＆オート
+      bee2b: Bee2b
+      food: 料理
+      groceries: 生鮮食料品
+      home: 自宅
+      laundry: クリーニング
+      medicine: 健康
+      tickets: チケット
+      trash: コレクション
+  sms:
+    bee_signature: honestbeeコンシェルジュ
+    can_not_reply: 申し訳ありませんがこのSMSに返信することはできません
+    customer_acknowledgement_message: |-
+      %{customer_name}様 　お手数をおかけ致しますが、 リンクを%{time_limit}分以内にクリックしご注文品に関する変更点についてご確認を頂けますでしょうか %{url}。 お客様のご了承を頂いてから購入手続きを進めます。どうぞよろしくお願いいたします。
+      honestbee 買物代行コンシェルジュ、%{sender}。 Order %{order_number}。 このSMSにはご返信いただけませんのでご注意下さい。
+    customer_order_cancellation:
+      " groceries": |-
+        %{customer_name}さんこんにちは、申し訳ありませんがご注文頂いた多くの商品が品切れのため、%{brand_name}のご注文をキャンセルさせて頂きます。
+        キャンセルのお詫びとして、honestbeeのウォレットにクーポンを追加させて頂きます。
+        honestbeeコンシェルジュショッパー、%{shopper_name}
+        ご注文：%{order_number}
+        申し訳ありませんがこのSMSに返信することはできません。
+      body:
+        automotive: 申し訳ありませんが、%{brand_name}のご注文はキャンセルさせていただきます。代金は請求されませんのでご安心ください。何か質問がございましたらお問い合わせください
+          www.honestbee.jp/contact-us
+        bee2b: "%{brand_name}の注文をキャンセルしました。ご安心ください、料金は請求されません。何か疑問があれば、https://honestbee.jp/contact-usから弊社までお問い合わせください"
+        food: 大変申し訳ございません。只今、%{brand_name}に注文が殺到しており、お客様を長らくお待たせするため、ご注文をキャンセルさせて頂きました。他のレストランをご検討いただければ幸いです。
+        groceries: 申し訳ありませんが、%{brand_name}のご注文はキャンセルさせていただきます。代金は請求されませんのでご安心ください。何か質問がございましたらお問い合わせください
+          www.honestbee.jp/contact-us
+        laundry: "%{brand_name}の注文をキャンセルしました。ご安心ください、料金は請求されません。何か疑問があれば、https://honestbee.jp/contact-usから弊社までお問い合わせください"
+        medicine: 申し訳ありませんが、%{brand_name}のご注文はキャンセルさせていただきます。代金は請求されませんのでご安心ください。何か質問がございましたらお問い合わせください
+          www.honestbee.jp/contact-us
+        trash: "%{brand_name}の注文をキャンセルしました。ご安心ください、料金は請求されません。何か疑問があれば、https://honestbee.jp/contact-usから弊社までお問い合わせください"
+      template: |-
+        %{greeting}%{body}
+        %{bee_signature}
+        %{order_number}
+        %{can_not_reply}
+    customer_order_cancellation_message: |-
+      大変申し訳ございません。只今、%{brand_name}に注文が殺到しており、お客様を長らくお待たせするため、ご注文をキャンセルさせて頂きました。他のレストランをご検討いただければ幸いです。
+
+      honestbeコンシェルジュ
+      ご注文：%{order_number}
+      申し訳ありませんがこのSMSに返信することはできません
+    greeting: "%{customer_name}さんこんにちは、"
+    order_number: ご注文：%{order_number}
+    verification_token_message: "%{token} がお客様の honestbee 検証コードです。"
+  stripe:
+    errors:
+      " missing_payment_device": 情報が不十分または間違っているようです。支払情報を再入力の上請求先住所をご確認ください。又は別のカードをご使用ください。
+      missing_payment_device: Missing payment devices
+  support:
+    array:
+      last_word_connector: ",そして "
+      two_words_connector: " そして "
+  time:
+    am: 午前
+    formats:
+      date_format: "%Y年%b%d日 (%a) 、%P%l時%M分"
+      date_format2: "%A, %d %b, %Y, %l %P"
+      date_format_detail: "%Y年%b%d日 (%a) %l:%M%P"
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      delivery_time: "%Y年%m月%d日%H時%M分"
+      long: "%a, %-d %b %Y , %H:%M"
+      short: "%a, %-d %b %Y"
+      time_format: "%-l時%M分"
+    pm: 午後
+  validators:
+    bee_status_update:
+      responses:
+        cannot_update_status_for_cancelled_fulfillment: 注文はキャンセルされました。
+        wrong_status: "%{role}は、 %{status}でなければなりません。"
+    credit_account_application:
+      responses:
+        depleted_credit_account: 申し訳ございませんが、こちらのクーポンはご使用済みのためお使いいただけません。
+        discount_minimum_spend_not_met: 当クーポンの使用には%{amount}以上お買い上げ頂く必要がございます。
+        expired_credit_account: 申し訳ございませんが、こちらのクーポンは失効しているためお使いいただけません。
+        free_delivery_minimum_spend_not_met: このクーポンのご使用には各店で%{amount}以上お買い上げいただく必要がございます。
+        incorrect_order_status: 申し訳ありませんが、調整前のご注文のみにクーポンを追加することができます。
+        invalid_brand_specific_coupon: 当クーポンのご使用には店舗合計金額%{min_spending}以上お買い上げいただく必要がございます。%{brands}
+        invalid_coupon_override: 申し訳ありませんが、より良い割引率のクーポンに上書きしてください。
+        invalid_zone: 申し訳ございませんが、こちらのクーポンはこの地域ではお使いいただけません。
+        no_matching_country_credit_type: 申し訳ございませんが、こちらのクーポンはこの国ではお使いいただけません。
+        required_credit_card: 'こちらのクーポンを使うには、クレジットカードまたはデビットカードでのお支払いが必要です。 '
+        required_variables: 申し訳ありませんが、リクエストがうまくいかないためこのクーポンを適用することはできません。
+    order_fulfillment_cancellation:
+      confirm_responses:
+        food:
+          general_desc: 他のレストランでおいしい料理を探す。
+          general_title: "%{brand}への注文をキャンセルしますか?"
+        general_desc: キャンセルポリシーは店舗ごとに異なります。
+        general_title: 本当に%{brand}の注文をキャンセルしますか? 残念です!
+        with_coupon_desc: クーポンは削除され、再利用できません。キャンセルポリシーは店舗ごとに異なります。
+        with_trait_title: 本当に%{brand}でのFarm to Tableの注文をキャンセルしますか? 残念です!
+      responses:
+        cancel_max_time_not_met_desc: ご注文をキャンセルされる場合は、配達日 (火曜から金曜) の前日%{time}までに、Farm
+          to Table のストアからお手続きをお願いします。
+        cancel_max_time_not_met_title: 申し訳ありませんが、%{brand}へのご注文はキャンセルできません。コンシェルジュがもう仕事を始めています。
+        cancel_min_hours_not_met_desc: 商品が発送される%{hours} 時間前までは、スーパー、専門店からのご注文に限りキャンセルすることができます。
+        cancel_min_hours_not_met_title: 申し訳ありませんが、%{brand}へのご注文はキャンセルできません。コンシェルジュがもう仕事を始めています。
+        cannot_cancel_brand_order_desc: ポップアップストアに商品を予約注文しております。
+        cannot_cancel_brand_order_title: 申し訳ございませんが、%{brand} からの注文をキャンセルすることは出来ません。
+        cannot_cancel_bulk_order_desc: 同じ商品について20個以上の注文を受けた場合、お客様のために別途発注するよう%{brand}に依頼し、必要数をお届けできるようにします。
+        cannot_cancel_bulk_order_title: 申し訳ありませんが、このご注文をキャンセルすることはできません。
+        cannot_cancel_food_already_preparing_desc: 注文のキャンセルはレストランでの準備が開始する前まで可能です。あらかじめご了承ください。
+        cannot_cancel_food_already_preparing_title: "%{brand}の注文をキャンセルすることはできません。レストランでの準備が始まっています。"
+        cannot_cancel_generic_title: 申し訳ありませんが、%{brand}へのご注文はキャンセルできません。
+        cannot_cancel_seasonal_store_order_desc: ポップアップストアに商品を予約注文しております。
+        cannot_cancel_seasonal_store_order_title: 申し訳ございませんが、%{brand} からの注文をキャンセルすることは出来ません。

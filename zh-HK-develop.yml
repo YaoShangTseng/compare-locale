@@ -1,0 +1,1417 @@
+---
+zh-HK:
+  api:
+    v1:
+      application_messages:
+        bad_request: 錯誤的請求
+        card_unavailable: 不能使用信用卡付款
+        cash_order_size_exceeded: 總貨到付款的訂單必須低於 %{amount}（未完成訂單包括在內）。
+        cash_unavailable: 無貨到付款選項。請使用信用卡付款。
+        conflict: 衝突
+        corporate_limit_exceeded: 已超過您的點數額度。請減少購物車數量或結清餘款。
+        corporate_payment_invalid: 輸入的數值超過了目前的餘額，請重新檢查輸入內容。
+        duplicate_account: 您已經註冊過，請以原有帳號登入並繼續，或與我們聯繫，以獲得進一步協助。
+        forbidden: 被禁止
+        gone: 已不存在
+        inactive_account: 使用者帳號已被刪除
+        internal_server_error: 內部伺服器發生錯誤
+        invalid_parameters: 參數無效
+        missing_parameters: 缺少參數
+        not_found: 未找到
+        not_implemented: 未實現
+        ok: 確定
+        postal_code_not_serviced: 郵遞區號目前尚未提供服務
+        unauthorized: 此指令未經授權
+      checkout:
+        address_length_over_sixty: 每個地址欄位必須少於60字
+        authorization:
+          delivery_timeslot_not_available: 對不起，您選擇的送貨時段已滿，請選擇另一個時段。
+          invalid_account: 無效的帳號
+          invalid_coupon: 該優惠券已經無效，並已從您的購物車中刪除。請檢視您的訂單。
+          invalid_shopping_cart: 很抱歉，您的購物車無效，請與我們聯絡。
+          missing_billing_address: 請填寫帳單地址
+          missing_payment_method: 請使用有效的付款方式
+          missing_shipping_address: 請填寫送貨地址
+          not_enough_bank_account_credits: 銀行帳戶餘額不足
+          no_corporate_account: 用戶並沒有商業戶口
+          review_cart_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+          review_delivery_fee_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+          review_item_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+        sign_user_authorization:
+          food:
+            delivery_timeslot_not_available: 這間餐廳關門了。請從其他餐廳點購食物！
+            asap:
+              delivery_timeslot_not_available: 這間餐廳關門了。請從其他餐廳點購食物！
+            scheduled:
+              delivery_timeslot_not_available: 選定的送貨時段已滿， 請選擇另一個時段。
+          delivery_timeslot_not_available: 選定的送貨時段已滿， 請選擇另一個時段。
+          invalid_delivery_type:
+            asap: 對不起,不是您的錯,是我們的。讓我們再試一次,請盡快重新選擇。
+            scheulded: 對不起,讓我們再試一次。請重新選擇時段。
+            default: 抱歉！系統忙線中。請再試一次，重新選擇運送時段。
+          invalid_quantity: "%{invalid_products} 請調整您購物車中的商品存貨以繼續結帳"
+          invalid_quantity_products: "<b>%{title}</b> 超出最大可購買商品存貨上限 <b>%{max_quantity}</b><br/><br/>"
+          invalid_account: 無效的帳號
+          invalid_coupon: 您輸入的優惠券已不再有效，並已從您的購物車中移除。請檢查您的訂單喔。
+          invalid_shopping_cart: 很抱歉，您的購物車無效，請與我們聯絡。
+          missing_billing_address: 請輸入帳單地址
+          missing_payment_method: 請選擇您的付款方式
+          missing_shipping_address: 請輸入送貨地址
+          review_cart_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+          review_delivery_fee_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+          review_item_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+        sign_user_auth_bypass_cybersource:
+          delivery_timeslot_not_available: 很抱歉，您選擇的送貨時段已滿，請選擇另一個時段。
+          invalid_account: 無效的帳號
+          invalid_coupon: 該優惠券已經無效，並已從您的購物車中刪除。請檢視您的訂單。
+          invalid_shopping_cart: 很抱歉，您的購物車無效，請與我們聯絡。
+          missing_billing_address: 請填寫帳單地址
+          missing_payment_method: 請使用有效的付款方式
+          missing_shipping_address: 請填寫送貨地址
+          not_enough_bank_account_credits: 銀行帳戶餘額不足
+          no_corporate_account: 用戶並沒有商業戶口
+          review_cart_changes: 您購物車的商品存貨有了更改，請檢查您的訂單。
+          review_delivery_fee_changes: 您購物車的商品存貨有了更改，請檢查您的訂單。
+          review_item_changes: 您購物車的商品存貨有了更改，請檢查您的訂單。
+      customer_acknowledgements:
+        create:
+          record_exists: 記錄經已存在
+        update:
+          expiry_error: 很抱歉, 超連結已過期
+      payment_devices:
+        destroy:
+          payment_device_in_use: 您須在收到當前訂單最終收據的 48 小時之後，才能刪除這張卡片。
+    v2:
+      application_messages:
+        bad_request: 錯誤的請求
+        cash_order_size_exceeded: 總貨到付款的訂單必須低於 %{amount}（未完成訂單包括在內）。
+        cash_unavailable: 無貨到付款選項。請使用信用卡付款。
+        conflict: 衝突
+        corporate_limit_exceeded: 已超過您的點數額度。請減少購物車數量或結清餘款。
+        corporate_payment_invalid: 輸入的數值超過了目前的餘額，請重新檢查輸入內容。
+        duplicate_account: 您已經註冊過。請以原有帳號登入並繼續，或與我們聯絡，以獲得進一步協助。
+        forbidden: 被禁止
+        gone: 已不存在
+        inactive_account: 使用者帳號已被刪除
+        internal_server_error: 內部伺服器發生錯誤
+        invalid_parameters: 參數無效
+        missing_parameters: 缺少參數
+        not_found: 未找到
+        not_implemented: 未實現
+        ok: 確定
+        postal_code_not_serviced: 郵遞區號目前尚未提供服務
+        unauthorized: 此指令未經授權
+      checkout:
+        authorization:
+          delivery_timeslot_not_available: 對不起，您選擇的配送時段已滿。請選擇另一個時段。
+          invalid_account: 無效的帳號
+          invalid_coupon: 該優惠券已經無效，並已從您的購物車中刪除。請檢視您的訂單。
+          invalid_shopping_cart: 很抱歉，您的購物車無效，請與我們聯絡。
+          missing_billing_address: 請填寫帳單地址
+          missing_payment_method: 請使用有效的付款方式
+          missing_shipping_address: 請填寫配送地址
+          not_enough_bank_account_credits: 銀行帳戶餘額不足
+          no_corporate_account: 用戶並沒有商業戶口
+          review_cart_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+          review_delivery_fee_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+          review_item_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+        sign_user_authorization:
+          delivery_timeslot_not_available: 很抱歉，您選擇的送貨時段已滿，請選擇另一個時段。
+          invalid_account: 無效的帳號
+          invalid_coupon: 您輸入的優惠券已不再有效，並已從您的購物車中移除。請檢查您的訂單喔。
+          invalid_shopping_cart: 很抱歉，您的購物車無效，請與我們聯絡。
+          missing_billing_address: 請輸入帳單地址
+          missing_payment_method: 請選擇您的付款方式
+          missing_shipping_address: 請輸入送貨地址
+          review_cart_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+          review_delivery_fee_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+          review_item_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+        sign_user_auth_bypass_cybersource:
+          delivery_timeslot_not_available: 對不起，您選擇的送貨時段已滿。請選擇另一個時段。
+          invalid_account: 很抱歉，您不能使用公司帳戶結帳，請與我們聯絡。
+          invalid_coupon: 該優惠券已經無效，並已從您的購物車中刪除。請查看您的訂單。
+          invalid_shopping_cart: 很抱歉，您的購物車無效，請與我們聯絡。
+          missing_billing_address: 請填寫帳單地址
+          missing_payment_method: 請使用有效的付款方式
+          missing_shipping_address: 請填寫送貨地址
+          not_enough_bank_account_credits: 銀行帳戶餘額不足
+          no_corporate_account: 用戶並沒有商業戶口
+          review_cart_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+          review_delivery_fee_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+          review_item_changes: 您購物車中的商品存貨有了更改，請查看您的訂單。
+      customer_acknowledgements:
+        update:
+          expiry_error: 很抱歉, 超連結已過期
+      payment_devices:
+        destroy:
+          payment_device_in_use: 您須在收到當前訂單最終收據的 48 小時之後，才能刪除這張卡片。
+        invalid_payment_info: 我們正在面臨一些技術上的問題, 未能驗證你的付款資料。我們正在解決問題, 請稍候再嘗試。
+      verification:
+        error_messages:
+          existing_verified_number: 此號碼已註冊。有其他號碼的帳戶嗎？請使用 %{number} 繼續登入，或以新號碼進行註冊。
+          invalid_country_code: 看來似乎不是有效的國碼。
+          invalid_number: 嗯...這好像不是一個有效的電話號碼
+          limit_exceeded: 基於安全考慮，我們只允許三次嘗試。請於 1 天後再試一次。
+          sms_count_exceeded: 基於安全考慮，我們只允許三次嘗試。請於 1 天後再試一次。
+          token_expired: |-
+            此優惠代碼已過期, 請點擊 ''重新傳送''。
+            請確保在2分鐘內輸入
+          token_mismatch: 你輸入了錯誤的代號, 請檢查你的短訊
+          verify_attempts_exceeded: 基於安全考慮，我們只允許三次嘗試。請於 1 天後再試一次。
+  beepay:
+    error_code:
+      '101': 很抱歉，似乎有遺失或不正確的資訊。請重新輸入您的付款資料並檢查帳單地址。
+      '102': 很抱歉，似乎有遺失或不正確的資訊。請重新輸入您的付款資料並檢查帳單地址。
+      '104': 抱歉, 似乎你在過往15分鐘嘗試使用這張信用卡, 但未能成功。請稍候再嘗試或使用另一張信用卡
+      '150': 很抱歉，交易失敗。請嘗試其他的付款方式，或聯繫您的銀行。
+      '200': 很抱歉, 某些資料錯誤, 請重新輸入你的付款資料及檢查賬單地址
+      '201': 很抱歉，交易失敗。請嘗試其他的付款方式，或聯繫您的銀行。
+      '203': 很抱歉，交易失敗。請嘗試其他的付款方式，或聯繫您的銀行。
+      '204': 很抱歉，交易失敗。請嘗試其他的付款方式，或聯繫您的銀行。
+      '205': 很抱歉，交易失敗。請嘗試其他的付款方式，或聯繫您的銀行。
+      '207': 很抱歉, 你的發卡銀行未能提供服務, 請稍候片刻再嘗試
+      '208': 很抱歉，交易失敗。請嘗試其他的付款方式，或聯繫您的銀行。
+      '210': 很抱歉，交易失敗。請嘗試其他的付款方式，或聯繫您的銀行。
+      '211': 很抱歉，交易失敗。請嘗試其他的付款方式，或聯繫您的銀行。
+      '221': 很抱歉，您的卡片已被取消。您可能需要聯繫您的發卡銀行。請使用其他卡片。
+      '222': 很抱歉，您的卡片已被取消。您可能需要聯繫您的發卡銀行。請使用其他卡片。
+      '230': 很抱歉, 你的信用卡資料錯誤, 請檢查後重新輸入
+      '231': 很抱歉, 你的信用卡無效, 請使用另一張卡
+      '232': 抱歉，您的信用卡不適用於這個優惠，請輸入新的信用卡資料
+      '233': 很抱歉，您的卡片已被取消。您可能需要聯繫您的發卡銀行。請使用其他卡片。
+      '234': 很抱歉, 我們的付款系統現正發生錯誤, 請稍後再嘗試
+      '236': 抱歉, 我們的付款處理器目前正面臨技術上的問題, 請稍候再嘗試
+      '240': 很抱歉, 似乎你所輸入的卡號與信用卡種類並不相符。 我們的技術支援團隊正在嘗試解決問題, 請嘗試使用另一張信用卡
+      '475': 很抱歉, 我們未能認證此信用卡。我們的技術支援團隊正嘗試解解問題
+      '476': |-
+        很抱歉, 驗證失敗。
+        我們的技術支援團隊正在嘗試解決問題
+  bee_rating:
+    driver_attitude: 司機表現
+    freshness: 新鮮度
+    friendly_driver: 友善的司機
+    late_delivery: 準時送貨
+    out_of_stock: 存貨產品
+    packaging: 包裝
+    timely_delivery: 準時送貨
+    wrong_items: 物品正確嗎
+    zendesk_ticket_subject: 請為訂單%{order_fulfillment_id}評分
+  concerns:
+    parse_helpers:
+      customer_deliverer_message_complete: 'Wow！你在 %{brand_name} 訂購的產品已經送到！滿意嗎？按此幫我們評分吧
+        ! :tada:'
+      customer_deliverer_message_food_start: 你從%{brand_name}的訂單正在運送途中
+      customer_deliverer_message_laundry_complete: 如有任何疑問, 歡迎在每天早上9時至晚上10時期間聯絡我們
+      customer_deliverer_message_pickup_start: '送貨專員會來在 %{delivery_date_with_year_and_weekday}  %{delivery_hour}之間
+        .收取你的洗衣單 #%{order_number} '
+      customer_deliverer_message_start: '您在 %{brand_name} 購買的產品，將在 %{delivery_date},
+        %{delivery_hour} 送到你的指定地點。按此以追蹤訂單！:truck:'
+      customer_deliverer_message_trash_start: 我們會在%{delivery_slot}期間上門收集你拒絕的訂單%{order_number}
+      customer_order_cancelled: '您的訂單 #%{order_number} 已取消。'
+      customer_order_cancelled_trash: 你的訂單%{order_number}已被取消
+      customer_order_cancelled_with_brand: '您在 %{brand_name} 的訂單 #%{order_number}
+        已取消。'
+      customer_order_receipt_sent: '你的訂單編號 %{order_id} 正式收據已寄到電郵地址 %{user_email} :mailbox_with_mail:'
+      non_customer_order_cancelled: 很抱歉，%{brand_name} 不得不取消你的訂單, 立即尋找另一間美食吧!
+      referee_order_complete: '你成功推薦朋友首購，獲得 %{amount}！的回饋！ 馬上去採購吧！:sunglasses:'
+  countries:
+    HK:
+      company_info_html: honestbee 有限公司，香港上環皇后大道西 2-12 號聯發商業中心 7 樓 706 室
+      name: 香港
+      operating_hours_everyday: 每日早上9時至晚上10時
+      service_type:
+        groceries:
+          operating_hours_everyday: 每日早上9時至晚上10時
+    ID:
+      consumer_web_display_url: id.honestbee.com
+      operating_hours_everyday: 中午12時至晚上10時
+      service_type:
+        groceries:
+          operating_hours_everyday: 中午12時至晚上10時
+    JP:
+      company_info_html: "#16, JETRO IBSC 7F, ARK Mori Bldg, 1-12-32 Akasaka, Minato-ku,
+        Tokyo 107-6006 Japan"
+      name: 日本
+      operating_hours_everyday: 每日早上9時30分至晚上10時
+      order_completed_tax_message_html: <br> <span class="info">所有顯示之價錢, 已包括8%日本銷售稅</span
+        class="info">
+      service_type:
+        food:
+          operating_hours_everyday: 每日早上9時30分至晚上10時
+        groceries:
+          operating_hours_everyday: 每日早上9時30分至晚上10時
+    MY:
+      company_info_html: Level 23-1, Premier Suite One Mont Kiara. No 1, Jalan Kiara
+        Mont Kiara. 50480 Kuala Lumpur
+      name: 馬來西亞
+      operating_hours_everyday: 每日早上9時至晚上10時
+      service_type:
+        groceries:
+          operating_hours_everyday: 每天上午9點到晚上10點
+    PH:
+      company_info_html: 5-6F OPL Building, 100 C. Palanca Street, Legaspi Village,
+        Makati City, Philippines
+      name: 菲律賓
+      operating_hours_everyday: 每日早上9時至晚上10時
+      service_type:
+        groceries:
+          operating_hours_everyday: 每天早上9am - 10pm
+    SG:
+      company_info_html: 'honestbee 私人企業（GST 註冊號 201217834C）<br>159919 新加坡 #04-01B
+        Delta House 亞歷山大路 2 號'
+      consumer_web_display_url: honestbee.com
+      name: 新加坡
+      operating_hours_everyday: 每天早上9時至晚上10時
+      order_completed_tax_message: "（含 7% 消費稅）"
+      service_type:
+        food:
+          operating_hours_everyday: 每天上午9點到晚上10點
+        groceries:
+          operating_hours_everyday: 每天上午9點到晚上10點
+        laundry:
+          operating_hours_everyday: 每天下午1點到晚上10點
+    TH:
+      disclaimer: |-
+        買家可以於收貨後的7天內更換貨品或退貨, 而賣家必須於收到正式解除合約通知後的15天內,提供現金退款。
+        如涉及新鮮食品, 買家需於收貨後盡快退回給honestbee, 而賣家必須於收到退貨產品後的15天內,提供現金退款。
+      operating_hours_everyday: 每天早上9點到晚上6點
+      service_type:
+        groceries:
+          operating_hours_everyday: 每天早上9am - 6pm
+    TW:
+      company_info_html: 台北市大安區復興南路二段200號12樓
+      name: 台灣
+      operating_hours_everyday: 每天上午9點到晚上10點
+      service_type:
+        groceries:
+          operating_hours_everyday: 每天上午9點到晚上10點
+        laundry:
+          operating_hours_everyday: 每天下午1點到晚上10點
+        trash:
+          operating_hours_everyday: 每天早上9點至晚上12點
+  cybersource:
+    reason_code:
+      '101': 很抱歉，似乎有遺失或不正確的資訊。請重新輸入您的付款資料並檢查帳單地址，或請用另一張卡付款。
+      '102': 很抱歉，似乎有遺失或不正確的資訊。請重新輸入您的付款資料並檢查帳單地址。
+      '104': 很抱歉，似乎 15 分鐘前您曾使用過這張卡並且沒有執行成功。請稍後重試或使用另一張卡。
+      '150': 很抱歉，交易並未成功。請試試其他付款方式或聯絡您的銀行。
+      '200': 很抱歉，有些資訊不正確。請重新輸入您的付款資料並檢查帳單地址。
+      '201': 很抱歉，交易並未成功。請試試其他付款方式或聯絡您的銀行。
+      '202': 很抱歉，您的信用卡似乎已經過期。請確認您的信用卡資料，然後重試。或者，請用另一張卡付款。
+      '203': 很抱歉，交易並未成功。請試試其他付款方式或聯絡您的銀行。
+      '204': 很抱歉，交易並未成功。請試試其他付款方式或聯絡您的銀行。
+      '205': 很抱歉，交易並未成功。請試試其他付款方式或聯絡您的銀行。
+      '207': 很抱歉，無法聯繫您的發卡銀行。請稍等幾分鐘，然後重試。
+      '208': 很抱歉，交易並未成功。請試試其他付款方式或聯絡您的銀行。
+      '210': 很抱歉，交易並未成功。請試試其他付款方式或聯絡您的銀行。
+      '211': 很抱歉，交易並未成功。請試試其他付款方式或聯絡您的銀行。
+      '221': 很抱歉，您的信用卡被拒。您可能需要聯絡您的發卡銀行。請使用另一張信用卡。
+      '222': 很抱歉，您的信用卡被拒。您可能需要聯絡您的發卡銀行。請使用另一張信用卡。
+      '230': 很抱歉，您的信用卡資訊不正確。請確認後重試。
+      '231': 很抱歉，您的信用卡無效。請使另一張信用卡。
+      '232': 很抱歉，您的信用卡不被付款處理器接受。請使用不同的信用卡。
+      '233': 很抱歉，您的信用卡被拒。請使用不同的信用卡。
+      '234': 很抱歉，我們的系統目前正面臨一些付款處理器的問題。請稍後再試。
+      '236': 很抱歉，我們的付款處理器發生了一些問題。請稍後再試。
+      '240': 很抱歉，似乎您的信用卡類型與您的卡號不符。我們的技術團隊已經獲悉此事，並正在進行調查。請稍後再試，或使用另一張卡。
+      '475': 很抱歉，我們似乎無法驗證您的信用卡。我們的技術團隊已經獲悉此事，並正在進行調查。
+      '476': 很抱歉，似乎您的身份驗證不成功。我們的技術團隊已經獲悉此事，並正在進行調查。
+      '520': 很抱歉，似乎我們的付款處理器發生了一些問題。我們的技術團隊已經獲悉此事，並正在進行調查。
+  date:
+    abbr_day_names:
+    - 周日
+    - 周一
+    - 周二
+    - 周三
+    - 周四
+    - 周五
+    - 周六
+    abbr_month_names:
+    -
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+    day_names:
+    - 星期日
+    - 星期一
+    - 星期二
+    - 星期三
+    - 星期四
+    - 星期五
+    - 星期六
+    format:
+      default: "%m-%d-(%Y)"
+    formats:
+      default: "%Y-%m-%d"
+      long: "%Y年%b%d日"
+      short: "%b%d日"
+    month_names:
+    -
+    - 一月
+    - 二月
+    - 三月
+    - 四月
+    - 五月
+    - 六月
+    - 七月
+    - 八月
+    - 九月
+    - 十月
+    - 十一月
+    - 十二月
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        other: 約%{count}小時
+      about_x_months:
+        other: 約%{count}個月
+      about_x_years:
+        other: 約%{count}年
+      almost_x_years:
+        other: 接近%{count}年
+      half_a_minute: 半分鐘
+      less_than_x_minutes:
+        other: 不到%{count}分鐘
+      less_than_x_seconds:
+        other: 不到%{count}秒
+      over_x_years:
+        other: 超過%{count}年
+      x_days:
+        other: "%{count}天"
+      x_minutes:
+        other: "%{count}分鐘"
+      x_months:
+        other: "%{count}個月"
+      x_seconds:
+        other: "%{count}秒"
+    prompts:
+      day: 日
+      hour: 時
+      minute: 分
+      month: 月
+      second: 秒
+      year: 年
+  devise:
+    mailer:
+      reset_password_instructions:
+        subject: "[honestbee] 重設密碼"
+  enums:
+    order:
+      replacement_preference:
+        call_to_confirm_replacements: 來電確認替代品
+        no_replacements_desired: 不要打電話給我，只買我已指定的商品
+        sms_to_confirm_replacements: 發送短訊以確認替代品
+        suggest_anyway: 不要打電話給我，購買最接近的商品
+    order_fulfillment:
+      waive_reason_codes:
+        bad_quality: 質量不佳
+        bad_quality_damaged: 商品有損壞
+        bad_quality_not_fresh: 商品不新鮮
+        bad_quality_thawed: 商品已解凍
+        did_not_agree_to_replacement: 不同意替代品
+        item_not_purchased: 沒有購買該商品
+        item_purchased_but_not_delivered: 商品已購買但沒有送到
+        not_delivered: 沒有送到
+        others: 其他
+        refused_item: 被拒絕的物品
+        return_request: 要求返回
+        wrong_item: 錯誤的物品
+        wrong_size_or_excessive_quantity: 尺吋錯誤或件數過多
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: 必須是可被接受的
+      blank: 不可以是空白
+      confirmation: 兩次輸入須一致
+      empty: 不可以留空
+      equal_to: 必須等於 %{count}
+      even: 必須要是雙數
+      exclusion: 是被保留的關鍵字
+      greater_than: 必須大於 %{count}
+      greater_than_or_equal_to: 必須大於或等於 %{count}
+      inclusion: 沒有包含在列表中
+      invalid: 是無效的
+      less_than: 必須小於 %{count}
+      less_than_or_equal_to: 必須小於或等於 %{count}
+      not_an_integer: 必須是整數
+      not_a_number: 不是數字
+      odd: 必須是單數
+      other_than: 唔可以係 %{count}
+      present: 必定要是空白
+      record_invalid: 驗證失敗︰%{errors}
+      taken: 已被使用
+      too_long:
+        other: 太長（最長為%{count}個字元）
+      too_short:
+        other: 太短（最少為%{count}個字元）
+      wrong_length:
+        other: 字數錯誤 (應為%{count}個字元)
+    template:
+      body: 以下欄位發生問題︰
+      header:
+        other: 發生%{count}項錯誤，以致%{model}未能儲存。
+  helpers:
+    select:
+      prompt: 請選擇
+    submit:
+      create: 新增%{model}
+      submit: 儲存%{model}
+      update: 更新%{model}
+  mailers:
+    bee2b_status:
+      generic:
+        delivery_details: 送貨詳情
+        delivery_id: 送貨:%{order_id}
+      order_at_hub:
+        customer_header_html: 已到達honestbee總部
+        customer_subject: Bee2B - 你的訂單%{order_id}已到達我們的總部
+        recipient_header_html: Hey <span class="highlight">%{name}</span>, 你的包裹已被領取,
+          會盡快送到你手上!
+        recipient_subject: Bee2B - 你的訂單%{order_id}已到達我們的總部!
+      order_completed:
+        customer_header_html: 已經完成
+        customer_subject: Bee2B - 訂單%{order_id}已完成!
+        recipient_header_html: <span class="highlight">%{name}</span>, 你的訂單已完成!
+        recipient_subject: Bee2B - 你的訂單%{order_id}已完成!
+      order_enroute:
+        customer_header_html: 正在運送到客人手上
+        customer_subject: Bee2B - 訂單%{order_id}現正在運送途中
+        recipient_header_html: 哈囉 <span class="highlight">%{name}</span>, 你的包裹已離開我們總部,
+          正在運送到你手上!
+        recipient_subject: Bee2B - 你的訂單編號%{order_id}正在送遞府上!
+      order_picked_up:
+        customer_header_html: 司機已領取訂單
+        customer_subject: Bee2B - 訂單編唬%{order_id}已取貨!
+        recipient_header_html: 哈囉<span class="highlight">%{name}</span>, 你的包裹已被領取,
+          現正送到我們的總部!
+        recipient_subject: Bee2B - 你的訂單#%{order_id}已被送貨專員領取
+      order_processing:
+        customer_header_html: 已被處理, 等待司機領取
+        recipient_subject: Bee2B - 你的訂單%{order_id}已被處理
+    concierge_contact:
+      buzz_at_email_html: 發送訊息給我們：%{concierge_email}
+      or_phone: 或打電話至 %{concierge_phone}
+      question_suggestion: 有問題或建議嗎？
+    contact_us:
+      contact_us_at: 需要幫助？請聯絡客戶服務
+      operating_hours: 營業時間
+      operating_hours_everyday: 每天上午9點到晚上10點
+    coupon:
+      description: honestbee 送你 %{coupon_value}
+      expiry_date: "%{date} 前適用"
+      guide_html: 如有需要，可以參考這個 <a href=https://blog.honestbee.com/how-to-use-a-coupon-honestbee-taiwan/>
+        簡短的優惠券使用指南。</a>
+      guide_url: https://blog.honestbee.com/how-to-use-a-coupon-code-on-honestbee/
+      intro: 為了表示歉意, 我們為你送上%{coupon_value}
+    generic:
+      automotive: 住屋＆自動
+      bee2b: Bee2b
+      copyrights: "© %{year} honestbee。版權所有。"
+      email: 電子郵件
+      email_receipt_reason: 您收到此郵件是因為您與honestbee 下了訂單。
+      food: 食物
+      groceries: 食用品
+      laundry: 洗衣
+      medicine: 健康
+      name: 名稱
+      phone: 電話
+      trash: 收集
+    late_fulfillment:
+      headline:
+        html: "%{name}, 我們對於%{service_type}的延誤, 深感抱歉"
+      headline_html: "%{name} 你好，對於%{service_type}服務延誤\b，我們感到萬分抱歉。"
+      message_html: 滿足客人的需求一向是我們的目標，這次的服務不符合您的期望，我們深感自責。行動勝於空談。
+      order_date: 訂購日期：%{order_date}
+      order_info: "%{service_type}訂購編號%{order_number}"
+      subject: 對於%{service_type}交付延誤，我們感到萬分抱歉
+    notify_be_a_bee_submission:
+      id_number: 識別號碼
+      phone_model: 電話型號
+      position: 位置
+      preferred_working_location: 偏好工作地點
+      vehicle_type: 車輛類型
+      whatsapp: Whatsapp
+    notify_contact_us_submission:
+      company_email: 公司電郵
+      company_name: 公司名稱
+      company_website: 公司網站
+      coupon_code: 優惠券代碼
+      delivery_timeslot: 新的送貨時間
+      message: 訊息
+      order_number: 訂單號碼
+    order_cancelled:
+      automotive:
+        auto_cancel:
+          'content ': |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        customer_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            這可能需要10個工作天才能在你的信用卡賬單上反映出來。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        fraud_activity:
+          content: |-
+            我們發現你的honestbee賬戶有異常活動, 因此, 我們將會暫停你的賬戶<br/><br/>
+            我們這樣做是為了保障我們的採購及送貨專員, 以確保他們能公平地為其他顧客提供服務<br/><br/>
+            你從%{brand}的訂單%{order_number}已被取消, 放心, 你不會被收取任何金額<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。<br/><br/>
+            如果你想了解更多關於我們的政策, 請到<a href=https://honestbee.hk/terms-of-use/>https://honestbee.hk/terms-of-use</a>瀏覽<br/><br/>
+            如有任何疑問, 歡迎隨時聯絡我們
+          header: 親愛的%{name}
+          subject: 由於偵測到異常活動, 我們已暫停你的賬戶
+        merchant_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        others:
+          content: |-
+            我們今天正在面對一些不能預測的障礙, 很不幸地我們未能跨越它。<br/><br/>
+            我們學習到寶貴的一課, 這有助我們更進一步提升我們的服務質素, 請給一次機 會我們, 向你證明我們是成功的。<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+          subject: "%{name}, 很抱歉, 我們需要取消你從%{brand}的訂單"
+        out_of_stock:
+          content: |
+            大部份你所選擇的產品均售罄或只有少量存貨。我們已通知%{brand}補充存貨。放心, 你不會被收取金錢。<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+          subject: "%{name}, 我們需要取消你從%{brand}的訂單"
+        subject: "%{name}, 我們已取消你從%{brand}的訂單"
+      bee2b:
+        auto_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        customer_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        fraud_activity:
+          content: |-
+            我們發現你的honestbee賬戶有異常活動, 因此, 我們將會暫停你的賬戶<br/><br/>
+            我們這樣做是為了保障我們的採購及送貨專員, 以確保他們能公平地為其他顧客提供服務<br/><br/>
+            你從%{brand}的訂單%{order_number}已被取消, 放心, 你不會被收取任何金額<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。<br/><br/>
+            如果你想了解更多關於我們的政策, 請到<a href=https://honestbee.hk/terms-of-use/>https://honestbee.hk/terms-of-use</a>瀏覽<br/><br/>
+            如有任何疑問, 歡迎隨時聯絡我們
+          header: 親愛的%{name}
+          subject: 由於偵測到異常活動, 我們已暫停你的賬戶
+        merchant_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        others:
+          content: |-
+            我們今天正在面對一些不能預測的障礙, 很不幸地我們未能跨越它。<br/><br/>
+            我們學習到寶貴的一課, 這有助我們更進一步提升我們的服務質素, 請給一次機 會我們, 向你證明我們是成功的。<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+          subject: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+        out_of_stock:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+      cancel_charge_note: 我們只會收取最後從%{other_brands}送到你手上的物品的金額
+      food:
+        auto_cancel:
+          content: |-
+            目前正值 %{brand} 用餐繁忙時間。餐廳不想讓你久候，因此取消了你的訂單。歡迎瀏覽其他餐廳尋找更多美食。<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: 很抱歉，%{brand} 不得不取消你的訂單。
+          subject: 很抱歉，%{brand} 不得不取消您的订单。
+        cancelled_explanation: |-
+          目前正值 %{brand_name} 用餐尖峰時間。餐廳不想讓您久候，因此取消了您的訂單。請瀏覽其他餐廳尋找美食。<br/><br/>
+          如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+          你的信用卡賬單可能需要10個工作天才會更新。
+        customer_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        fraud_activity:
+          content: |-
+            我們發現你的honestbee賬戶有異常活動, 因此, 我們將會暫停你的賬戶<br/><br/>
+            我們這樣做是為了保障我們的採購及送貨專員, 以確保他們能公平地為其他顧客提供服務<br/><br/>
+            你從%{brand}的訂單%{order_number}已被取消, 放心, 你不會被收取任何金額<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。<br/><br/>
+            如果你想了解更多關於我們的政策, 請到<a href=https://honestbee.hk/terms-of-use/>https://honestbee.hk/terms-of-use</a>瀏覽<br/><br/>
+            如有任何疑問, 歡迎隨時聯絡我們
+          header: 親愛的%{name}
+          subject: 由於偵測到異常活動, 我們已暫停你的賬戶
+        merchant_cancel:
+          content: |-
+            目前正值 %{brand} 用餐繁忙時間。餐廳不想讓你久候，因此取消了你的訂單。歡迎瀏覽其他餐廳尋找更多美食。<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: 很抱歉，%{brand} 不得不取消您的订单。
+          subject: 很抱歉，%{brand} 不得不取消您的订单。
+        order_cancelled_note: 很抱歉，%{brand} 不得不取消您的订单。
+        order_number_header: '食品訂單 #%{order_number}'
+        others:
+          content: |-
+            我們今天正在面對一些技術上的障礙，影響到我們今天的運作。<br/><br/>
+            今次的經驗會促使我們進步，更進一步提升我們的服務質素。請給我們一次機會，讓我們向你展示更佳的服務質素。<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+          subject: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+        out_of_stock:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        rejected_subject: 很抱歉，%{brand} 不得不取消您的订单。
+        subject: "%{name}, 我們已取消你從%{brand}的訂單"
+      groceries:
+        auto_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        customer_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你在%{brand}的訂單"
+        fraud_activity:
+          content: |-
+            我們發現你的honestbee賬戶有異常活動, 因此, 我們將會暫停你的賬戶<br/><br/>
+            我們這樣做是為了保障我們的採購及送貨專員, 以確保他們能公平地為其他顧客提供服務<br/><br/>
+            你從%{brand}的訂單%{order_number}已被取消, 放心, 你不會被收取任何金額<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。</br></br>
+            如果你想了解更多關於我們的政策, 請到<a href=https://honestbee.hk/terms-of-use/>https://honestbee.hk/terms-of-use</a>瀏覽<br/><br/>
+            如有任何疑問, 歡迎隨時聯絡我們
+          header: 親愛的%{name}
+          subject: 由於偵測到異常活動, 我們已暫停你的賬戶
+        merchant_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        order_number_header: 訂單編號%{order_number}
+        others:
+          content: |-
+            我們今天正在面對一些技術上的障礙，影響到我們今天的運作。<br/><br/>
+            今次的經驗會促使我們進步，更進一步提升我們的服務質素。請給我們一次機會，讓我們向你展示更佳的服務質素。<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+          subject: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+        out_of_stock:
+          content: |-
+            大部份你所選擇的產品均售罄或只有少量存貨。我們已通知%{brand}補充存貨。放心, 你不會被收取金錢。<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+          subject: "%{name}, 很抱歉, 我們需要取消你在%{brand}的訂單"
+        subject: "%{name}, 我們已取消你從%{brand}的訂單"
+      laundry:
+        auto_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        customer_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        fraud_activity:
+          content: |-
+            我們發現你的honestbee賬戶有異常活動, 因此, 我們將會暫停你的賬戶<br/><br/>
+            我們這樣做是為了保障我們的採購及送貨專員, 以確保他們能公平地為其他顧客提供服務<br/><br/>
+            你從%{brand}的訂單%{order_number}已被取消, 放心, 你不會被收取任何金額<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。<br/><br/>
+            如果你想了解更多關於我們的政策, 請到<a href=https://honestbee.hk/terms-of-use/>https://honestbee.hk/terms-of-use</a>瀏覽<br/><br/>
+            如有任何疑問, 歡迎隨時聯絡我們
+          header: 親愛的%{name}
+          subject: 由於偵測到異常活動, 我們已暫停你的賬戶
+        merchant_cancel:
+          content: |-
+            我們相信一流合作夥伴的判斷，不希望做出可能破壞心愛物品的事。因此我們取消了您的訂單。請放心，您不會被收取訂單或運送費用，物品將會安全無恙的退還給您。<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: '親愛的 %{name}，我們的合作夥伴檢查了您的訂單，遺憾的是這無法洗滌。 '
+          subject: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+        order_number_header: 洗衣單號%{order_number}
+        others:
+          content: |-
+            我們今天正在面對一些不能預測的障礙, 很不幸地我們未能跨越它。<br/><br/>
+            我們學習到寶貴的一課, 這有助我們更進一步提升我們的服務質素, 請給一次機 會我們, 向你證明我們是成功的。<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。你的信用卡賬單可能需要10個工作天才會更新。
+          header: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+          subject: "%{name}, 很抱歉, 我們需要取消你在%{brand}的訂單"
+        out_of_stock:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        subject: "%{name}, 我們已取消你在%{brand}的訂單"
+      medicine:
+        auto_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        customer_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 很抱歉, 我們需要取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你在%{brand}的訂單"
+        fraud_activity:
+          content: |-
+            我們發現你的honestbee賬戶有異常活動, 因此, 我們將會暫停你的賬戶<br/><br/>
+            我們這樣做是為了保障我們的採購及送貨專員, 以確保他們能公平地為其他顧客提供服務<br/><br/>
+            你從%{brand}的訂單%{order_number}已被取消, 放心, 你不會被收取任何金額<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。<br/><br/>
+            如果你想了解更多關於我們的政策, 請到<a href=https://honestbee.hk/terms-of-use/>https://honestbee.hk/terms-of-use</a>瀏覽<br/><br/>
+            如有任何疑問, 歡迎隨時聯絡我們
+          header: 親愛的%{name}
+          subject: 由於偵測到異常活動, 我們已暫停你的賬戶
+        merchant_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        others:
+          content: |-
+            我們今天正在面對一些不能預測的障礙, 很不幸地我們未能跨越它。<br/><br/>
+            我們學習到寶貴的一課, 這有助我們更進一步提升我們的服務質素, 請給一次機 會我們, 向你證明我們是成功的。<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。你的信用卡賬單可能需要10個工作天才會更新。
+          header: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+          subject: "%{name}, 我們需要取消你從%{brand}的訂單"
+        out_of_stock:
+          content: |-
+            您所訂購的物品大部分目前為缺貨狀態。我們會確保盡快補貨。請放心，您不會被收取費用。<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。你的信用卡賬單可能需要10個工作天才會更新。
+          header: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+          subject: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+      ordered_on: '於: %{timestamp}下單'
+      order_is_cancelled_note: "%{name}, 我們已取消你在%{brand}的訂單"
+      order_now: 立即訂購
+      out_of_stock:
+        greeting_html: <span class="highlight">%{name}</span>, 很抱歉, 我們需要取消你在 %{brand}的訂單
+        grocery_order: 食用品訂單#%{order_number}
+        reason: |-
+          大部份你所選擇的產品均售罄或只有少量存貨。
+          我們已通知%{brand}補充存貨。
+          放心, 你不會被收取金錢
+        remedy: 為了表示歉意, 我們為你送上%{coupon_value}
+        subject: 我們需要取消你的訂單%{order_number}
+      release_funds_note: |-
+        如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+        這可能需要10個工作天才能在你的信用卡賬單上反映出來。
+      subject: "%{name}, 我們已取消你在%{brand}的訂單"
+      trash:
+        auto_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        customer_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        fraud_activity:
+          content: |-
+            我們發現你的honestbee賬戶有異常活動, 因此, 我們將會暫停你的賬戶<br/><br/>
+            我們這樣做是為了保障我們的採購及送貨專員, 以確保他們能公平地為其他顧客提供服務<br/><br/>
+            你從%{brand}的訂單%{order_number}已被取消, 放心, 你不會被收取任何金額<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。<br/><br/>
+            如果你想了解更多關於我們的政策, 請到<a href=https://honestbee.hk/terms-of-use/>https://honestbee.hk/terms-of-use</a>瀏覽<br/><br/>
+            如有任何疑問, 歡迎隨時聯絡我們
+          header: 親愛的%{name}
+          subject: 由於偵測到異常活動, 我們已暫停你的賬戶
+        merchant_cancel:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        order_number_header: 收集訂單%{order_number}
+        others:
+          content: |-
+            我們今天正在面對一些不能預測的障礙, 很不幸地我們未能跨越它。<br/><br/>
+            我們學習到寶貴的一課, 這有助我們更進一步提升我們的服務質素, 請給一次機 會我們, 向你證明我們是成功的。<br/><br/>
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。你的信用卡賬單可能需要10個工作天才會更新。
+          header: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+          subject: 親愛的%{name}, 很抱歉, 我們需要取消你的%{brand}訂單
+        out_of_stock:
+          content: |-
+            如使用信用卡付款, 我們會在48小時內釋放已預支的信用額。
+            你的信用卡賬單可能需要10個工作天才會更新。
+          header: "%{name}, 我們已取消你從%{brand}的訂單"
+          subject: "%{name}, 我們已取消你從%{brand}的訂單"
+        subject: "%{name}, 我們已取消你從%{brand}的訂單"
+    order_completed:
+      final_receipt_survey_button:
+        groceries: '請為您此次的訂購 %{order_number} 評分'
+        food: '請為您此次的訂購 %{order_number} 評分'
+        default: '請為您此次的訂購 %{order_number} 評分'
+      final_receipt_survey_title:
+        groceries: 蜜蜂的表現如何？
+        food: 蜜蜂的表現如何？
+        default: 蜜蜂的表現如何？
+      adjustment: 調整
+      automotive:
+        order_delivered_html: 已完成—貨品已經送到府上。
+        order_delivered_interim_html: 已完成—貨品已經送到府上。
+        subject: '已完成！這裡是 %{service_type} #%{order_number} 的最終收據'
+        subject_interim: '已完成！這裡是 %{service_type} #%{order_number} 的收據'
+      cash_refund: '現金退款: %{amount}'
+      concierge_fee: 代購費
+      credit: 點數
+      delivery_fee: 運費
+      minimum_spend_extra_fee: 未達最低消費
+      discount: 折扣金額
+      final_total_disclaimer: 請注意：最終價格不包括您銀行可能收取的額外費用。如有任何疑問，請直接與您的銀行聯絡。
+      food:
+        order_delivered_html: 希望你享受剛才的美食！
+        order_delivered_interim_html: 希望你享受剛才的美食！
+        subject: '已完成—你的 %{service_type} 訂單 #%{order_number} 的最終收據'
+        subject_interim: '已完成—你的 %{service_type} 訂單 #%{order_number} 的收據'
+      fulfilled_items: 確定出貨
+      groceries:
+        order_delivered_html: 已完成—節省麻煩，新鮮、快速送到!
+        order_delivered_interim_html: 已完成—節省麻煩，新鮮、快速送到!
+        subject: '已完成—你的 %{service_type} 訂單 #%{order_number} 的最終收據'
+        subject_interim: '已完成—你的 %{service_type} 訂單 #%{order_number} 的收據'
+      inclusive_of_tax: "(已包含稅項)"
+      laundry:
+        order_delivered_html: 已完成—貨品已經送到府上。
+        order_delivered_interim_html: 已完成—貨品已經送到府上。
+        subject: '已完成—你的 %{service_type} 訂單 #%{order_number} 的最終收據
+
+'
+        subject_interim: '已完成—你的 %{service_type} 訂單 #%{order_number} 的收據'
+      medicine:
+        order_delivered_html: 已完成—貨品已經送到府上。
+        order_delivered_interim_html: 已完成—貨品已經送到府上。
+        subject: '已完成—你的 %{service_type} 訂單 #%{order_number} 的最終收據'
+        subject_interim: '已完成—你的 %{service_type} 訂單 #%{order_number} 的收據'
+      oos_items: 缺貨商品
+      order_delivered_html: "%{name}，這是我們的正式收據，支付金額是根據最終的採購狀況而定。"
+      order_refunded_update: '我們將會退款%{refund}至您的信用卡。 '
+      order_waived_html: <span class="highlight">%{name}</span>, 您的收據已經更新。
+      order_waived_update: " 我們將不會跟您收取已退貨的金額 %{refund}。"
+      receipt_note: 你的信用卡還未被扣賬。最終的收據會於 %{days} 日內寄出。
+      refund: 退款
+      refund_amount: '退款至 %{card}:'
+      refund_subject: 此為您更新後的收據，訂單編號#%{order_number}
+      replaced_items: 替換品
+      service: 服務
+      store_price: 商店內價格
+      subject: '已完成—你的 %{service_type} 訂單 #%{order_number} 的最終收據'
+      subject_interim: '已完成—你的 %{service_type} 訂單 #%{order_number} 的收據'
+      subtotal: 小計
+      tax: 稅
+      total: 最終總金額
+      total_interim: 實際支付金額
+      trash:
+        order_delivered_html: '已完成！這是 %{service_type} #%{order_number} 的最終收據'
+        order_delivered_interim_html: '已完成！這裡是 %{service_type} #%{order_number} 的收據'
+        subject: '已完成—你的 %{service_type} 訂單 #%{order_number} 的最終收據'
+        subject_interim: '已完成—你的 %{service_type} 訂單 #%{order_number} 的收據'
+      waived: 退款金額
+      waived_amount: 退款金額
+      waived_items: 退貨商品
+      web_price: 網上價格
+    order_delivering:
+      automotive:
+        subject: 你的訂單#%{order_number}會在%{delivery_slot}送到
+      food:
+        subject: 你的訂單#%{order_number}會在%{delivery_slot}送到
+      greeting_html: <span class="highlight">%{name}</span>，您的訂單將在 %{delivery_slot}
+        之間送到。
+      greeting_html_2: 您的訂單將在 %{delivery_slot} 之間送到。
+      groceries:
+        subject: 你的訂單%{order_number}會在%{delivery_slot}送到
+      laundry:
+        subject: 你的訂單%{order_number}會在%{delivery_slot}送到
+      note_on_final_receipt: 在我們遞送訂購物品後付款即可。這樣我們能在有替代品及缺貨物品情況時調整您的最終收據。
+      subject: 您的訂單#%{order_number}將在 %{delivery_slot} 之間送到！
+      trash:
+        subject: 你的訂單%{order_number}會在%{delivery_slot}送到
+    order_handed_over:
+      order_handed_over_html: 訂單已轉交到司機手上
+    order_laundry_processing:
+      delivery: 送貨
+      no_extra_fee: 如果你在4小時前更改你的取貨或送貨時間, 無須額外收費
+      no_rescheduling_fee: 免費重新安排送貨時間
+      pickup: 收集
+      subject: "%{name}, 你的洗衣單%{order_number}已被確認"
+      subtotal: 小計
+      thank_you_for_shopping_html: '<span class="highlight">%{name}</span>, 你的洗衣單
+        #%{order_number} 已被確認'
+    order_processing:
+      automotive:
+        delivery_note: 收集指引
+        deliver_to: 收集地址
+        order_date: 訂單評價
+        store_subtotal: 小計
+        subject: '做得好！我們已收到你的 %{service_type} 訂單 #%{order_number}'
+        thank_you_for_shopping_html: '嗨<span class="highlight">%{name}</span>, 我們的蜜蜂小隊已經準備好處理你的訂單了
+          #%{order_number}。'
+      can_replace_with: 可替換為
+      concierge_fee: 代購費
+      contact_number: 聯絡電話
+      credit_card_charge_time_html: 您的信用卡將只在<br><span class="highlight">訂單送達後</span>才扣款。
+      customer_note: 說明
+      delivery_fee: 運費
+      minimum_spend_extra_fee: 未達最低消費
+      delivery_note: 送貨指示
+      deliver_to: 收貨地址
+      food:
+        delivery_note: 送貨指引
+        deliver_to: 收貨地址
+        order_date: 訂購日期
+        store_subtotal: 商店小計
+        subject: '做得好！我們已收到你的 %{service_type} 訂單 #%{order_number}'
+        thank_you_for_shopping_html: <span class="highlight">%{name}</span>，感謝您在 honestbee
+          購物
+      groceries:
+        delivery_note: 送貨指示
+        deliver_to: 收貨地址
+        order_date: 訂購日期
+        store_subtotal: 商店小計
+        subject: '做得好！我們已收到你的 %{service_type} 訂單 #%{order_number}'
+        thank_you_for_shopping_html: '嗨<span class="highlight">%{name}</span>, 我們的蜜蜂小隊已經準備好處理你的訂單了
+          #%{order_number}。'
+      inclusive_of_tax: "(已包含稅項)"
+      laundry:
+        delivery_note: 送貨指示
+        deliver_to: 收貨地址
+        order_date: 訂購日期
+        store_subtotal: 小計
+        subject: '做得好！你的 %{service_type} 收件 #%{order_number} 已經確認。'
+        thank_you_for_shopping_html: 嗨 <span class="highlight">%{name}</span>，我們的蜜蜂小隊已經準備好處理你的訂單了。
+      medicine:
+        delivery_note: 送貨指引
+        deliver_to: 送到
+        order_date: 訂單日期
+        store_subtotal: 商店小計
+        subject: '做得好！我們已收到你的 %{service_type} 訂單 #%{order_number}'
+        thank_you_for_shopping_html: '嗨<span class="highlight">%{name}</span>, 我們的蜜蜂小隊已經準備好處理你的訂單了
+          #%{order_number}。'
+      no_customer_note: 無客戶指示
+      no_replacement: 沒有選擇替代品
+      order_date: 訂購日期
+      order_number: 訂單編號
+      stores_subtotal: 商店小計
+      store_subtotal: 商店小計
+      subject: 您已收到您的訂單
+      thank_you_for_shopping_html: '嗨<span class="highlight">%{name}</span>, 我們的蜜蜂小隊已經準備好處理你的訂單了
+        #%{order_number}。'
+      total: 實際支付金額
+      total_disclaimer: 所有顯示之價錢,已包括8%銷售稅
+      trash:
+        delivery_note: 收集指示
+        deliver_to: 收貨地址
+        order_date: 訂單日期
+        store_subtotal: 小計
+        subject: '做得好！你的 %{service_type} #%{order_number} 已經確認。'
+        thank_you_for_shopping_html: '嗨，<span class="highlight">%{name}</span>，您的
+          %{service_type} #%{order_number} 已確認。'
+      upfront_payment_christmas: 節日性商店必須預先付費。
+      upfront_payment_seasonal: 節日性商店必須預先付費。
+    order_review:
+      disclaimer: 您的採買專員，%{shopper_name}，未得到您的同意之下不會採買這些商品。謝謝您！
+      heading: "%{customer_name}，請檢視您的 %{brand_name} 訂單之變更。"
+      ps: 附帶一提，我們已發送附帶連結的簡訊至 %{phone_number}
+      request: 請您於 %{time_limit} 內檢視您的商品。
+      review_button: 檢視變更
+      subject: 請於 %{time_limit} 分鐘內檢視您的 %{brand_name} 訂單之變更
+    referee_order_complete:
+      share_email_subject: "正！%{name} 送您一張 honestbee 優惠券"
+      coupon_credited: 我們已將價值%{discount}的優惠代碼已經自動加到您的帳號。
+      earned_discount: 您推薦朋友後獲得的 %{discount} 回贈！
+      friend_completed_order: 您的朋友%{name}剛完成了下單！
+      made_first_order: 謝謝您推薦%{name}來體驗！
+      refer_and_earn: 繼續推薦，您們各自就能獲得%{discount} 的回贈！
+      refer_and_earn_separate: 每個成功的推薦，您都能獲得%{discount} 的回贈，推薦越多，賺得越多！
+      share_honestbee_text: "新用戶經朋友介紹，只要消費滿 %{minimum_spending} 即可享受 %{discount}折扣。使用此連結註冊 honestbee 帳戶 %{referral_link} 兌換優惠券。"
+      share_on: 分享至%{platform}
+      share_signup_link: 與您的朋友分享您的註冊連接：
+      use_code_as_discount_html: 或者讓您的朋友使用您個人的優惠代碼<b>%{referral_code}</b>, 首次購物即可享有%{discount}的折扣。
+      why_stop: 為何於此停下來？
+    reset_password:
+      alternative_link_instruction: 如果上面的按鈕不適用您的郵件客戶端，請複製貼上以下網址到瀏覽器：
+      click_to_reset: 如果您想重設密碼，請點擊下面。
+      ignore_if_not_applicable: 如果您不想重設密碼，請忽略此訊息。
+      let_us_help: 讓我們來幫助您！
+      link_valid_for_html: 此連結的有效期限至 <strong>%{time_in_words}</strong>
+      reset_password: 重新設定密碼
+    sign_up:
+      benefits_of_shopping: '為什麼大家都愛用 honestbee '
+      concierge_shopper_handpicked_html: honestbee的採購專員為您親手挑選最新鮮最優質的商品，馬上體驗，再重都送到您家門口！
+      delivery_promise_html: 一小時送貨服務
+      find_out_how: 了解我們的服務
+      first_value_prop_html: chores<span class="highlight">省時省力</span><br/>麻煩的問題，就該交給專業的人處理
+      HK:
+        benefits_of_shopping: 生活就是簡單 honestbee
+        concierge_shoppers_html: 只需$25 就有專人為您選購最新鮮和最優質的商品
+        concierge_shopper_handpicked_html: honestbee 的代購和送貨服務令您的生活變得更簡單。馬上請你的採購專員幫你親選你需要的食品家用品吧。
+        first_value_prop_html: <span class="highlight">省時省力</span><br/>把煩瑣的工作都交給我們專業的
+          bee 團
+        second_value_prop_html: <span class="highlight">極度方便</span><br/>您生活所需的，都送到您家門口
+        third_value_prop_html: <span class="highlight">快速準時</span><br/>下單後最快一小時內到貨
+      JP:
+        concierge_shopper_handpicked_html: 隨時享用我們的服務, 專人把最新鮮及美味的食品送到府上!
+      MY:
+        concierge_shopper_handpicked_html: 誠實蜜蜂的禮賓及送貨服務, 令生活變得更簡單。隨時享受由採購專員為你親自選購的新鮮食品!
+        welcome_to_honestbee: 歡迎來到誠實蜜蜂的獨家專門店, %{name}
+      second_value_prop_html: "<b>方便快捷</b><br/>我們為你提取及送貨至你家中"
+      SG:
+        benefits_of_shopping: 生活就是簡單 honestbee
+        concierge_shoppers_html: "<b>個人化:</b><br/>專業的採購專員"
+        concierge_shopper_handpicked_html: 生活就是簡單 honestbee
+        first_value_prop_html: <span class="highlight">无需费力</span><br/>让我们的专家为您做家务
+        second_value_prop_html: <span class="highlight">便利</span><br/>我们到您家门口取货和送货
+        start_shopping: 立即開始
+        third_value_prop_html: <span class="highlight">迅速</span><br/>当日，1 小时食物配送
+        welcome_to_honestbee: "%{name}，你最醒目！為什麼？"
+      shop_skucount_html: <b>方便快捷:</b><br/>Over <span class="highlight">%{sku_count}</span>
+        網上商品
+      start_shopping: 馬上選購
+      third_value_prop_html: <span class="highlight">快速準時</span><br/>下訂後 1 小時或可任選時間送達
+      TW:
+        benefits_of_shopping: 生活就是簡單 honestbee
+        concierge_shopper_handpicked_html: 所有你需要的服務，只要在 honestbee 上簡單一點，就能享有代買及配送服務，
+          讓繁雜的生活變簡單。馬上請你的採購專員，幫你親選你需要的生鮮家用品吧。
+        first_value_prop_html: <span class="highlight">省時省力</span><br/>麻煩的問題，就該交給專業的人處理
+        second_value_prop_html: <span class="highlight">極度便利</span><br/>送取所有生活所需，都在你家門口發生
+        third_value_prop_html: <span class="highlight">快速準時</span><br/>下訂後 1 小時或可任選時間送達
+        welcome_to_honestbee: "%{name}，你最醒目！為什麼？ "
+      welcome_to_honestbee: "%{name}，你最醒目！為什麼？"
+  merchant_app:
+    push_notification:
+      notify_deliverer:
+        deliverer_pending_acceptance_message: 請接受訂單%{order_number} - %{store_id}
+        deliverer_pending_start_message: '請開始送貨 #%{order_number}-%{store_id}!'
+        deliverer_picked_up_message: 請將訂單#%{order_number} - %{store_id}準時送到, 如果你會遲到,
+          請通知客人
+        deliverer_started_message: 你需要領取訂單#%{order_number} - %{store_id}以避免延誤
+        message: 你有一個未接的送貨任務!
+        order_handed_over: 訂單#%{order_number} - %{store_id}已經準備好, 請去領取
+      notify_partner:
+        message: 你有一張新訂單%{order_number} - %{store_id}!
+        notify_auto_cancelled_order_fulfillment: 你的訂單%{order_number} - %{store_id}已被自動取消,
+          因為你沒有在%{mins_buffer}分鐘內接受訂單
+        notify_cancelled_order_fulfillment: 您的訂單＃%{id} 已被取消
+      notify_shopper:
+        message: 你有一個未接的購物任務!
+        shopper_pending_acceptance_message: 請接受訂單#%{order_number}- %{store_id}
+        shopper_pending_start_message: '請開姑購物 #%{order_number}-%{store_id}!'
+        shopper_started_message: 訂單#%{order_number} - %{store_id}很快會完成採購
+  mobile:
+    checkout:
+      authorize_payment:
+        accept_card_warning: |-
+          請留意, 我們目前並不接受CIMB debit cards及HSBC信用卡 - 但我們正在尋找解決方法!
+          抱歉為您帶來不便, 請嘗試使用其他信用卡, 感謝
+        address_line_1: 地址第一行
+        address_line_2: 地址第二行
+        add_new_card: 新增信用卡
+        apartment_unit_bldg_floor_etc: 大廈，室號，樓層等
+        billing_address: 帳單地址
+        bill_to_address_postal_code: 郵遞區號
+        cardholder_name: 持卡人姓名
+        card_information: 信用卡資料
+        card_number: 信用卡卡號
+        ccv_cvv: CCV/CVV
+        city: 城市
+        country: 國家
+        expiration_date: 有效期限
+        invalid_details: 很抱歉，%{invalid_fields}信息有誤
+        no_credit_card_details_required: 不需信用卡資料
+        payment_methods: 付款方式
+        pay_securely: 安全地付款
+        pay_with_credits: 以點數全額支付
+        pay_with_secured_transaction: 使用信用卡安全付款
+        place_order: 下單
+        refund_policy: 常見問題集
+        security_code: 安全碼
+        state: 州
+        street_company_etc: 街道名稱，公司名稱等
+        terms_condition: 使用條款
+        your_credits_deducted_html: 將扣除您的 <span class='bank-credits-explain--amount'>%{amount}</span>
+          點數。
+        zip: 郵遞區號
+      authorize_payment_js:
+        HK:
+          default_city: 香港島
+        invalid_details: 很抱歉，%{invalid_fields}信息有誤
+        missing_fields: 請檢查必填欄位
+        new_card_not_valid_for_discount: 抱歉，您的信用卡不適用於這個優惠。
+        pay_securely: 安全地支付 %{amount}
+        pay_with_credits: 以點數全額支付
+        place_order: 下單
+        selected_cardnot_valid_for_discount: 您所使用的優惠券不適用於此支付方式。別擔心！只要查看優惠活動詳情，並變更支付方式即可。
+        select_payment_method: 請選擇付款方式
+        SG:
+          default_city: 新加坡
+        submitting_order_html: 送出訂單 <i class="fa fa-spinner fa-spin"></i>
+        TW:
+          default_city: 台北
+        unable_accept_amex: 很抱歉，我們目前在%{country}還不接受美國運通卡
+      cash:
+        cash_payment_header: 貨到付現金
+        cash_payment_subheader: 不需信用卡，您可以在收到訂單後才付現金。
+      corporate_account_credit:
+        corporate_payment_header: 企業賬戶付款
+        corporate_payment_subheader: 所有在公司賬戶進行的購買, 將會直接向你的總公司收取費用
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u %n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: HK$
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: 十億
+          million: 百萬
+          quadrillion: 千兆
+          thousand: 千
+          trillion: 兆
+      format:
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        format: "%n%"
+  pundit:
+    default: 您無法執行此動作。
+    user_policy:
+      create?: 您沒有權限建立使用者！
+      index?: 您沒有權限查看使用者列表！
+      update?: 您無法編輯此使用者！
+  reject_reasons:
+    food:
+      main_dish_is_out_of_stock: 食品售罄
+      most_items_are_out_of_stock: 大部份產品售罄
+      no_reason: 沒有原因
+      other_reason: 其他原因
+      too_many_orders_currently: 目前太多訂單
+    groceries:
+      most_items_are_out_of_stock: 大部份產品售罄
+      no_reason: 沒有原因
+      other_reason: 其他原因
+      too_many_orders_currently: 目前有太多訂單
+    laundry:
+      no_reason: 沒有原因
+      other_reason: 其他原因
+      service_not_available: 無法提供服務
+      too_many_orders_currently: 目前太多訂單
+  services:
+    brand_validation:
+      brand_not_available: 此品牌已不存在
+      brand_not_served: 此品牌未在您的區域提供服務
+    product_validation:
+      product_not_available: 此商品已斷貨
+      product_not_served: 此地區不在商店的服務範圍內
+    promotion_code_redemption:
+      first_purchase_invalid_response: 此優惠代碼只適用於首次購買者
+      multiple_packages_not_supported_response: 優惠代碼無效
+      not_active_response: 優惠代碼無效
+      not_in_redeem_range_response: 優惠代碼只在 %{start_date} 與 %{end_date} 之間有效
+      not_on_redeem_day_response: 該優惠代碼只能在 %{date} 進行兌換
+      redeemed_before_response: 優惠代碼已經兌換
+      wrong_service_response: 優惠券限用於 honestbee %{service_type}。
+      wrong_zone_response: 抱歉，此優惠代碼不適用於您的地區
+      wrong_trademark_response: 要使用此優惠券，您的購物車中需要有至少一項 %{trademarks} 的商品。
+      wrong_trademark_with_min_amount_response: 要使用此優惠券，您的購物車中需要有價值 $%{min_amount} 以上的 %{trademarks} 商品。
+    reorder:
+      different_zone_response: 很抱歉，您現有的送貨地址和訂單上的送貨地址不吻合。請從新再為%{address}下一個訂單。
+      item_unavailable: 很抱歉，該商品已斷貨。
+      products_unavailable: 很抱歉，以下商品目前缺貨： %{products}
+    service_types:
+      automotive: 住屋＆自動
+      bee2b: Bee2b
+      food: 食物
+      groceries: 食品家用品
+      laundry: 洗衣
+      medicine: 健康
+      trash: 資源回收
+  sms:
+    bee_signature: honestbee 代購送貨服務
+    can_not_reply: 此短訊為系統發送，請勿直接回覆
+    customer_acknowledgement_message: "%{customer_name} 你好，請在 %{time_limit} 分鐘內按這條連結並檢閱我們對你的訂單所做的修改
+      %{url}。在你同意前，我不會進行交易。謝謝你！\n%{sender}, honestbee 採購員。 訂單 %{order_number}。 \n\n此為系統發送簡訊，請勿直接回覆"
+    customer_order_cancellation:
+      " groceries": |-
+        哈囉%{customer_name}, 由於大部份產品目前都售罄, 我們需要取消你從%{brand_name}的訂單。
+        為表歉意, 我們已為你送上一張優惠劵。
+        %{shopper_name}, honestbee採購專員
+        訂單%{order_number}
+
+        此為系統發送簡訊，請勿直接回覆
+      body:
+        automotive: 很抱歉，我們必須取消您的 %{brand_name} 訂單。 請放心，我們不會向您收取費用。如有任何問題，請聯絡我們 www.honestbee.hk/zh-HK/contact-us
+        bee2b: 我們已取消您的%{brand_name}訂單。請放心，您不會被收取費用。如果您有任何疑問，請透過 https://honestbee.hk/contact-us
+          聯繫我們
+        food: |-
+          很抱歉, %{brand_name}需要取消你的訂單
+          目前餐廳有大量訂單, 需要大量時間處理, 不想令你久等。
+          立即尋找其他美食!
+
+          honestbee團隊
+          你不能回覆此短訊
+        groceries: 很抱歉，我們必須取消您的 %{brand_name} 訂單。 請放心，我們不會向你收取費用。如有任何問題，歡迎跟我們聯絡。www.honestbee.hk/zh-HK/contact-us
+        laundry: 我們已取消您的%{brand_name}訂單。請放心，您不會被收取費用。如果您有任何疑問，請透過 https://honestbee.hk/contact-us
+          聯繫我們
+        medicine: 很抱歉，我們必須取消您的 %{brand_name} 訂單。 請放心，我們不會向您收取費用。如有任何問題，請聯絡我們 www.honestbee.hk/zh-HK/contact-us
+        trash: 我們已取消你在%{brand_name}的訂單。請放心，我們會調整你的收據，確保金額正確。如果你有任何疑問，請透過 https://honestbee.hk/contact-us
+          聯繫我們
+      template: |-
+        %{greeting}%{body}
+        %{bee_signature}
+        %{order_number}
+        %{can_not_reply}
+    customer_order_cancellation_message: |-
+      很抱歉, %{brand_name}需要取消你的訂單
+      目前餐廳有大量訂單, 需要大量時間處理, 不想令你久等。
+      立即尋找其他美食!
+
+      honestbee團隊
+      訂單編號%{order_number}
+
+
+      此為系統發送簡訊，請勿直接回覆
+    greeting: 您好，%{customer_name}，
+    order_number: 訂單 %{order_number}
+    verification_token_message: "%{token} 是你的 honestbee 驗證碼。"
+  stripe:
+    errors:
+      " missing_payment_device": 很抱歉，似乎有遺失或不正確的資訊。請重新輸入您的付款資料並檢查帳單地址。
+      missing_payment_device: Missing payment devices
+  support:
+    array:
+      last_word_connector: 和
+      two_words_connector: 和
+      words_connector: "、"
+  time:
+    am: 上午
+    formats:
+      date_format: "%Y年%b%d日,(%a) %P%l時%M分"
+      date_format2: "%A, %d %b, %Y, %l %P"
+      date_format_detail: "%Y年%b%d日, (%a) %l:%M%P"
+      default: "%Y年%b%d日 %A %H:%M:%S %Z"
+      delivery_time: "%Y年%b%d日 %H:%M"
+      long: "%Y年%b%d日 %H:%M"
+      short: "%b%d日 %H:%M"
+      time_format: "%-l時%M分"
+    pm: 下午
+  validators:
+    bee_status_update:
+      responses:
+        cannot_update_status_for_cancelled_fulfillment: 訂單已經被取消。
+        wrong_status: 更改前 %{role} 狀態必須為 %{status}.
+    credit_account_application:
+      responses:
+        depleted_credit_account: 對不起，該優惠券已被使用過了。
+        discount_minimum_spend_not_met: 您需要至少最低消費%{amount}來使用此優惠券。
+        expired_credit_account: 很抱歉，此優惠券已過了有效日期。
+        free_delivery_minimum_spend_not_met: 您需要在每個商店至少最低消費%{amount}來使用此優惠券。
+        incorrect_order_status: 抱歉，只有還沒做出調整的訂單才能追加使用優惠券。
+        invalid_brand_specific_coupon: 此優惠券需從以下商店%{brands}購買總額滿 %{min_spending} 才可生效：
+        invalid_coupon_override: 抱歉，請以更佳折扣的優惠券取代
+        invalid_zone: 對不起，此優惠代碼不能在這個地區使用。
+        no_matching_country_credit_type: 對不起，此優惠券在這個國家無法使用。
+        required_credit_card: 你需要使用信用卡支付才可以使用此優惠劵
+        required_variables: 對不起，該優惠券無法使用。
+    order_fulfillment_cancellation:
+      confirm_responses:
+        food:
+          general_title: 想取消你從%{brand}的訂單?
+        general_desc: 我們有關取消訂單的政策在每間商戶中都可能會有不同
+        general_title: 想取消你在%{brand}的訂單? 我們會想念你的
+        with_coupon_desc: 你的優惠劵會被移除, 而且有機會不能重用。我們有關取消的政策在不同店鋪會有所不同
+      responses:
+        cancel_max_time_not_met_desc: 直至送貨日前一日的%{time} (星期二至五), 你可以取消你的訂咡
+        cancel_max_time_not_met_title: 我們不能取消你在%{brand}的訂單, 因為我們的專員已經在處理訂單
+        cancel_min_hours_not_met_desc: 如果送貨時間時在%{hours}或之後, 你可以取消從超市購買之訂單
+        cancel_min_hours_not_met_title: 我們未能取消你從%{brand}的訂單, 我們的團隊已經在準備訂單
+        cannot_cancel_brand_order_title: 我們不能取消%{brand}的訂單
+        cannot_cancel_bulk_order_desc: 當您購買 20 件或以上同樣的產品時，我們會請 %{brand} 特別為您預先準備，確保您得到所需的數量。
+        cannot_cancel_bulk_order_title: 我們不能取消這張訂單
+        cannot_cancel_food_already_preparing_desc: 你只可以在我們尚未開姑準備訂單前取消
+        cannot_cancel_food_already_preparing_title: 我們不能取消你的訂單%{brand}, 廚師經已在準備食物
+        cannot_cancel_generic_title: 我們不能取消在%{brand}的訂單
+        cannot_cancel_seasonal_store_order_title: 我們不能取消%{brand}的訂單

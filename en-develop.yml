@@ -1,0 +1,1668 @@
+---
+en:
+  api:
+    v1:
+      application_messages:
+        bad_request: Bad Request
+        card_unavailable: Credit card payment is not available.
+        cash_order_size_exceeded: Total for cash on delivery orders must be below
+          %{amount} (inclusive of outstanding orders). Please check your pending orders
+          and cart.
+        cash_unavailable: Cash on delivery is not available. You can make a card payment.
+        conflict: Conflict
+        corporate_limit_exceeded: You have reached your credit limit. Please reduce
+          your cart size or settle the remaining balance.
+        corporate_payment_invalid: Amount entered exceeds current balance. Please
+          check input again
+        duplicate_account: 'You may have another registered account with us. Please
+          use it to log in. If you need help, don’t hesitate to contact us. '
+        forbidden: Forbidden
+        gone: Gone
+        inactive_account: User account is deleted
+        internal_server_error: Internal Server Error
+        invalid_parameters: Invalid parameters
+        missing_parameters: Missing parameters
+        not_found: Not found
+        not_implemented: Not Implemented
+        ok: Ok
+        postal_code_not_serviced: Postal code not currently serviced
+        unauthorized: Unauthorized Access
+      checkout:
+        address_length_over_sixty: Each address field must be less than 60 characters.
+        authorization:
+          delivery_timeslot_not_available: The delivery slot you've chosen is full.
+            Please pick another slot to continue.
+          invalid_account: Invalid account
+          invalid_coupon: The coupon is no longer valid and has been removed from
+            your cart. Please review your order.
+          invalid_shopping_cart: We're sorry, your shopping cart ID is invalid. Please
+            contact honestbee concierge for help.
+          missing_billing_address: Missing billing address
+          missing_payment_method: No payment method found
+          missing_shipping_address: Missing shipping address
+          not_enough_bank_account_credits: Insufficient bank account credits
+          review_cart_changes: There are item availability changes in your cart. Please
+            review your order.
+          review_delivery_fee_changes: The delivery fee has changed. Please review
+            your cart before placing the order.
+          review_item_changes: There are item availability changes in your cart. Please
+            review your order.
+        sign_user_authorization:
+          food:
+            delivery_timeslot_not_available: This restaurant just closed. Please order food from another restaurant!
+            asap:
+              delivery_timeslot_not_available: This restaurant just closed. Please order food from another restaurant!
+            scheduled:
+              delivery_timeslot_not_available: We're sorry, the delivery slot you’ve chosen
+                is full. Please pick another slot to continue.
+          delivery_timeslot_not_available: We're sorry, the delivery slot you’ve chosen
+            is full. Please pick another slot to continue.
+          invalid_delivery_type:
+            asap: Sorry, its not you, its us. Let's try that again, please re-select ASAP.
+            scheduled: Sorry, lets try that again. Please re-select the timeslot.
+            default: Sorry, we had some trouble connecting. Please re-select delivery time and try again.
+          invalid_quantity: "%{invalid_products} Please adjust the item quantity
+            in cart to continue."
+          invalid_quantity_products: "<b>%{title}</b> exceed the max quantity <b>%{max_quantity}</b><br/><br/>"
+          invalid_account: Invalid account
+          invalid_shopping_cart: We're sorry, your shopping cart ID is invalid. Please
+            contact honestbee concierge for help.
+          missing_billing_address: Missing billing address
+          missing_payment_method: No payment method found
+          missing_shipping_address: Missing shipping address
+          review_cart_changes: There are some changes to item availability. Please
+            review your cart before placing the order.
+          review_delivery_fee_changes: The delivery fee has changed. Please review
+            your cart before placing the order.
+          review_item_changes: There are item availability changes in your cart. Please
+            review your order.
+          pending_payment: There was a glitch and we’re still trying to process your previous order.
+            Please wait for a couple of minutes. If successful, you’ll see it in the Orders tab.
+        sign_user_auth_bypass_cybersource:
+          delivery_timeslot_not_available: Sorry, the delivery slot you've chosen
+            is full. Please pick another slot to continue.
+          invalid_account: Invalid account
+          invalid_coupon: The coupon is no longer valid and has been removed from
+            your cart. Please review your order.
+          invalid_shopping_cart: We're sorry, your shopping cart ID is invalid. Please
+            contact honestbee concierge for help.
+          missing_billing_address: Missing billing address
+          missing_payment_method: No payment method found
+          missing_shipping_address: Missing shipping address
+          not_enough_bank_account_credits: Insufficient bank account credits
+          review_cart_changes: There are item availability changes in your cart. Please
+            review your order.
+          review_delivery_fee_changes: The delivery fee has changed. Please review
+            your cart before placing the order.
+          review_item_changes: There are item availability changes in your cart. Please
+            review your order.
+      customer_acknowledgements:
+        create:
+          record_exists: The record already exists
+        update:
+          expiry_error: We're sorry. The link has expired
+      payment_devices:
+        destroy:
+          payment_device_in_use: You can delete this card 48 hours after you receive
+            the final receipt for your current order.
+    v2:
+      application_messages:
+        bad_request: Bad Request
+        cash_order_size_exceeded: Total for cash on delivery orders must be below
+          %{amount} (inclusive of outstanding orders). Please check your pending orders
+          and cart.
+        cash_unavailable: Cash on delivery is not available. You can make a card payment.
+        conflict: Conflict
+        corporate_limit_exceeded: You have reached your credit limit. Please reduce
+          your cart size or settle the remaining balance.
+        corporate_payment_invalid: Amount entered exceeds current balance. Please
+          check input again
+        duplicate_account: Looks like you have another registered account with us.
+          Please log in with your other registered account to proceed or contact our
+          concierge team.
+        forbidden: Forbidden
+        gone: Gone
+        inactive_account: User account is deleted
+        internal_server_error: Internal Server Error
+        invalid_parameters: Invalid parameters
+        missing_parameters: Missing parameters
+        not_found: Not found
+        not_implemented: Not Implemented
+        ok: Ok
+        postal_code_not_serviced: Postal code not currently serviced
+        unauthorized: Unauthorized Access
+      checkout:
+        authorization:
+          delivery_timeslot_not_available: The delivery slot you've chosen is full.
+            Please pick another slot to continue.
+          invalid_account: Invalid account
+          invalid_coupon: The coupon is no longer valid and has been removed from
+            your cart. Please review your order.
+          invalid_shopping_cart: We're sorry, your shopping cart ID is invalid. Please
+            contact honestbee concierge for help.
+          missing_billing_address: Missing billing address
+          missing_payment_method: No payment method found
+          missing_shipping_address: Missing shipping address
+          not_enough_bank_account_credits: Insufficient bank account credits
+          review_cart_changes: There are item availability changes in your cart. Please
+            review your order.
+          review_delivery_fee_changes: The delivery fee has changed. Please review
+            your cart before placing the order.
+          review_item_changes: There are item availability changes in your cart. Please
+            review your order.
+        sign_user_authorization:
+          delivery_timeslot_not_available: We're sorry, the delivery slot you’ve chosen
+            is full. Please pick another slot to continue.
+          invalid_account: Invalid account
+          invalid_shopping_cart: We're sorry, your shopping cart ID is invalid. Please
+            contact honestbee concierge for help.
+          missing_billing_address: Missing billing address
+          missing_payment_method: No payment method found
+          missing_shipping_address: Missing shipping address
+          review_cart_changes: There are item availability changes in your cart. Please
+            review your order.
+          review_delivery_fee_changes: The delivery fee has changed. Please review
+            your cart before placing the order.
+          review_item_changes: There are item availability changes in your cart. Please
+            review your order.
+        sign_user_auth_bypass_cybersource:
+          delivery_timeslot_not_available: The delivery slot you've chosen is full.
+            Please pick another slot to continue.
+          invalid_account: We're sorry, your checkout as a corporate account was unsuccessful.
+            Please contact honestbee concierge for help.
+          invalid_coupon: The coupon is no longer valid and has been removed from
+            your cart. Please review your order.
+          invalid_shopping_cart: We're sorry, your shopping cart ID is invalid. Please
+            contact honestbee concierge for help.
+          missing_billing_address: Missing billing address
+          missing_payment_method: No payment method found
+          missing_shipping_address: Missing shipping address
+          not_enough_bank_account_credits: Insufficient bank account credits
+          review_cart_changes: There are item availability changes in your cart. Please
+            review your order.
+          review_delivery_fee_changes: The delivery fee has changed. Please review
+            your cart before placing the order.
+          review_item_changes: There are item availability changes in your cart. Please
+            review your order.
+      customer_acknowledgements:
+        update:
+          expiry_error: We're sorry. The link has expired
+      payment_devices:
+        destroy:
+          payment_device_in_use: You can delete this card 48 hours after you receive
+            the final receipt for your current order.
+        invalid_payment_info: 'We are experiencing some issues and could not verify
+          your payment information. We''re fixing the issue. Please try again in a
+          bit. '
+      verification:
+        error_messages:
+          existing_verified_number: This number has already been registered with us.
+            Have an account with another number? Log in to continue using %{number}
+            or sign up with a new number.
+          invalid_country_code: Hmmm, doesn't look like a valid country code.
+          invalid_number: Hmmm, doesn't look like a valid phone number.
+          limit_exceeded: For security reasons we only allow three attempts. Please
+            try again in 1 day.
+          sms_count_exceeded: For security reasons we only allow three attempts. Please
+            try again in 1 day.
+          token_expired: The code has expired, tap 'Resend'. Make sure to enter it
+            within 2 minutes.
+          token_mismatch: Looks like an incorrect code. Please check the SMS.
+          verify_attempts_exceeded: For security reasons we only allow three attempts.
+            Please try again in 1 day.
+  beepay:
+    auth_sale_description: 'honestbee %{service_type} order #%{order_number}'
+    error_code:
+      '101': Seems like there is missing or incorrect information. Please re-enter
+        your payment information and review the billing address. Alternatively, use
+        a different card.
+      '102': There is missing or incorrect information. Please re-enter your payment
+        information and review the billing address.
+      '104': Sorry, it seems you tried to use this card in the past 15 minutes and
+        were unsuccessful. Please try again later or use a different card.
+      '150': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '200': Sorry, seems like some information is  incorrect. Please re-enter your
+        payment information and review the billing address.
+      '201': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '202': Sorry, it looks like your card has expired. Please verify your card information
+        and try again. Alternatively, use a different card.
+      '203': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '204': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '205': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '207': Sorry, your card's issuing bank is unavailable. Please wait for a few
+        minutes and try again.
+      '208': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '210': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '211': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '221': We're sorry, your card was declined. You may want to contact your issuing
+        bank. Please use a different card.
+      '222': We're sorry, your card was declined. You may want to contact your issuing
+        bank. Please use a different card.
+      '230': Sorry, your card details are incorrect. Please verify and try again.
+      '231': We're sorry, your card is not valid. Please use a different card.
+      '232': We're sorry, your card is not accepted by the payment processor. Please
+        use a different card.
+      '233': We're sorry, your card was declined. You may want to contact your issuing
+        bank. Please use a different card.
+      '234': We're sorry but our system is currently experiencing some issues with
+        our payment processor. Please try again later.
+      '236': We're sorry, the payment processor is experiencing some issues. Please
+        try again later.
+      '240': We're sorry, it seems like your card type does not match with your card
+        number. Our technical team has been informed of this and is looking into it.
+        Please try again later or use a different card.
+      '475': We're sorry, we were not able to authenticate your card. Our technical
+        team has been informed of this and is looking into it.
+      '476': We're sorry, it seems like your authentication was unsuccessful. Our
+        technical team has been informed of this and is looking into it.
+      '520': We're sorry, it seems like we're experiencing issues with our payment
+        processor. Please wait for a few minutes and try again.
+    refund_description: 'Refund: honestbee %{service_type} order #%{order_number}'
+  bee_rating:
+    damaged_items: Item condition
+    driver_attitude: Driver's attitude
+    freshness: Freshness
+    friendly_driver: Friendly driver
+    late_delivery: Timely delivery
+    out_of_stock: Items in stock
+    packaging: Packaging
+    slack_pretext: 'We have a new rating for %{service_type} order fulfillment <%{order_fulfillment_url}|#%{order_fulfillment_id}>
+      - Rating: %{rating}'
+    timely_delivery: Timely delivery
+    wrong_items: Item accuracy
+    zendesk_ticket_comment: 'Driver ratings: %{deliverer_rating}, Shopper Ratings:
+      %{shopper_rating}, Comment: %{comment}, Tags: %{tags}'
+    zendesk_ticket_subject: 'Bee rating feedback for order fulfillment #%{order_fulfillment_id}'
+  concerns:
+    parse_helpers:
+      customer_deliverer_message_complete: 'Woohoo, your order from %{brand_name}
+        has been delivered!  Happy with it? Tap to rate :tada:'
+      customer_deliverer_message_dropoff_start: 'Your laundry order #%{order_number}
+        will be delivered on %{delivery_date_with_year_and_weekday} between %{delivery_hour}.'
+      customer_deliverer_message_food_start: 'Your order from %{brand_name} is on
+        the way :truck:'
+      customer_deliverer_message_laundry_complete: If you have any questions about
+        your order, contact us 9 am - 10 pm, daily
+      customer_deliverer_message_medicine_complete: 'Your Health order has been delivered.
+        How was your experience? Tap to rate :tada:'
+      customer_deliverer_message_medicine_start: 'Your Health order will be at your
+        doorstep on %{delivery_date}, between %{delivery_hour}. Tap to track! :truck:'
+      customer_deliverer_message_pickup_start: 'Delivery bee will pick up your laundry
+        order #%{order_number} on %{delivery_date_with_year_and_weekday} between %{delivery_hour}.'
+      customer_deliverer_message_start: 'Your order from %{brand_name} will be at
+        your doorstep on %{delivery_date}, between %{delivery_hour}. Tap to track!
+        :truck:'
+      customer_deliverer_message_trash_start: We'll be there to collect your refuse
+        %{order_number} between %{delivery_slot}.
+      customer_order_cancelled: 'Your order #%{order_number} has been cancelled.'
+      customer_order_cancelled_medicine: 'Your Health order #%{order_number} has been
+        cancelled'
+      customer_order_cancelled_trash: 'Your collection #%{order_number} has been cancelled.'
+      customer_order_cancelled_with_brand: 'Your order #%{order_number} from %{brand_name}
+        has been cancelled.'
+      customer_order_receipt_sent: 'We’ve sent the final receipt for order #%{order_id}
+        to %{user_email} :mailbox_with_mail:'
+      non_customer_order_cancelled: We’re sorry, %{brand_name} had to cancel your
+        order. Find another great restaurant now.
+      referee_order_complete: 'You''ve earned %{amount} for your referral! Shop now!
+        :sunglasses:'
+      payment_error: It’s not you, it’s us. We couldn’t process your payment. Sorry about that.
+        Please try again.
+  countries:
+    HK:
+      company_info_html: honestbee limited, Arion Commercial Building, 2-12 Queen's
+        Road West, Unit 706 7/F, Hong Kong SAR
+      name: Hong Kong
+      operating_hours_everyday: 9am - 10pm, every day
+      service_type:
+        groceries:
+          operating_hours_everyday: 9am - 10pm, every day
+    ID:
+      consumer_web_display_url: id.honestbee.com
+      operating_hours_everyday: 12pm - 10pm
+      service_type:
+        groceries:
+          operating_hours_everyday: 12pm - 10pm
+    JP:
+      company_info_html: honestbee Japan<br>Nishiazabu ST building, 3-23-14, Nishiazabu,
+        Minato-ku, Tokyo, 106-0031, Japan
+      name: Japan
+      operating_hours_everyday: 9:30am - 10pm, every day
+      order_completed_tax_message_html: <br> <span class="info">All prices shown are
+        inclusive of Japan 8% Consumption Tax</span class="info">
+      service_type:
+        food:
+          operating_hours_everyday: 9:30am - 10pm, every day
+        groceries:
+          operating_hours_everyday: 9:30am - 10pm, every day
+    MY:
+      company_info_html: B3-1-2, Block B3, Solaris Dutamas, No.1, Jalan Dutamas, 50480
+        Kuala Lumpur
+      name: Malaysia
+      operating_hours_everyday: 9am - 10pm, every day
+      order_completed_tax_message: "(6% GST incl.)"
+      service_type:
+        groceries:
+          operating_hours_everyday: 9am - 10pm, every day
+    PH:
+      company_info_html: honestbee Philippines Inc. (Reg. no. 009-235-043-000)<br>24th
+        Flr. BGC Corporate Center 30th cor. 11th, Taguig
+      name: Philippines
+      operating_hours_everyday: 9am - 10pm, every day
+      order_completed_tax_message: "(12% VAT incl.)"
+      service_type:
+        groceries:
+          operating_hours_everyday: 9am - 10pm, every day
+    SG:
+      company_info_html: 'honestbee Pte. Ltd. (GST Reg. No. 201217834C)<br>2 Alexandra
+        Road, #04-01B Delta House, Singapore 159919'
+      name: Singapore
+      operating_hours_everyday: 9am - 10pm, every day
+      order_completed_tax_message: "(7% GST incl.)"
+      service_type:
+        food:
+          operating_hours_everyday: 9am - 10pm, every day
+        groceries:
+          operating_hours_everyday: 9am - 10pm, every day
+        laundry:
+          operating_hours_everyday: 1pm - 10pm, every day
+    TH:
+      disclaimer: The buyer can exchange or return products within 7 days of receiving
+        the products, and the seller must provide a refund in cash to the buyer within
+        15 days of receiving a letter of termination of the contract from the buyer.
+        In regard to fresh food, a buyer who is not satisfied must return the fresh
+        food to honestbee immediately, and the seller must provide a refund in cash
+        to the buyer within 15 days of receiving the returned fresh food.
+      operating_hours_everyday: 9am - 6pm, every day
+      order_completed_tax_message: "(7% VAT incl.)"
+      service_type:
+        groceries:
+          operating_hours_everyday: 9am - 6pm, every day
+    TW:
+      company_info_html: 12F, No. 200, Section 2, Fuxing South Rd, Da’an District
+        Taipei City, Taiwan (R.O.C.)
+      name: Taiwan
+      operating_hours_everyday: 9am - 10pm, everyday
+      service_type:
+        groceries:
+          operating_hours_everyday: 9am - 10pm, every day
+        laundry:
+          operating_hours_everyday: 1pm - 10pm, every day
+        trash:
+          operating_hours_everyday: 9pm - 12am, every day
+  cybersource:
+    reason_code:
+      '101': Seems like there is missing or incorrect information. Please re-enter
+        your payment information and review the billing address. Alternatively, use
+        a different card.
+      '102': There is missing or incorrect information. Please re-enter your payment
+        information and review the billing address.
+      '104': Sorry, it seems you tried to use this card in the past 15 minutes and
+        were unsuccessful. Please try again later or use a different card.
+      '150': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '200': Sorry, seems like some information is  incorrect. Please re-enter your
+        payment information and review the billing address.
+      '201': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '202': Sorry, it looks like your card has expired. Please verify your card information
+        and try again. Alternatively, use a different card.
+      '203': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '204': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '205': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '207': Sorry, your card's issuing bank is unavailable. Please wait for a few
+        minutes and try again.
+      '208': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '210': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '211': We’re sorry, the transaction was unsuccessful. Please try a different
+        payment method or contact your bank.
+      '221': We're sorry, your card was declined. You may want to contact your issuing
+        bank. Please use a different card.
+      '222': We're sorry, your card was declined. You may want to contact your issuing
+        bank. Please use a different card.
+      '230': Sorry, your card details are incorrect. Please verify and try again.
+      '231': We're sorry, your card is not valid. Please use a different card.
+      '232': We're sorry, your card is not accepted by the payment processor. Please
+        use a different card.
+      '233': We're sorry, your card was declined. You may want to contact your issuing
+        bank. Please use a different card.
+      '234': We're sorry but our system is currently experiencing some issues with
+        our payment processor. Please try again later.
+      '236': We're sorry, the payment processor is experiencing some issues. Please
+        try again later.
+      '240': We're sorry, it seems like your card type does not match with your card
+        number. Our technical team has been informed of this and is looking into it.
+        Please try again later or use a different card.
+      '475': We're sorry, we were not able to authenticate your card. Our technical
+        team has been informed of this and is looking into it.
+      '476': We're sorry, it seems like your authentication was unsuccessful. Our
+        technical team has been informed of this and is looking into it.
+      '520': We're sorry, it seems like we're experiencing issues with our payment
+        processor. Please wait for a few minutes and try again.
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    -
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    format:
+      default: "%m-%d-(%Y)"
+    formats:
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    -
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: about 1 hour
+        other: about %{count} hours
+      about_x_months:
+        one: about 1 month
+        other: about %{count} months
+      about_x_years:
+        one: about 1 year
+        other: about %{count} years
+      almost_x_years:
+        one: almost 1 year
+        other: almost %{count} years
+      half_a_minute: half a minute
+      less_than_x_minutes:
+        one: less than a minute
+        other: less than %{count} minutes
+      less_than_x_seconds:
+        one: less than 1 second
+        other: less than %{count} seconds
+      over_x_years:
+        one: over 1 year
+        other: over %{count} years
+      x_days:
+        one: 1 day
+        other: "%{count} days"
+      x_minutes:
+        one: 1 minute
+        other: "%{count} minutes"
+      x_months:
+        one: 1 month
+        other: "%{count} months"
+      x_seconds:
+        one: 1 second
+        other: "%{count} seconds"
+    prompts:
+      day: Day
+      hour: Hour
+      minute: Minute
+      month: Month
+      second: Seconds
+      year: Year
+  devise:
+    mailer:
+      reset_password_instructions:
+        subject: "[honestbee] Reset your password"
+  enums:
+    order:
+      replacement_preference:
+        call_to_confirm_replacements: Call to confirm replacements
+        no_replacements_desired: Do Not Call. Only buy items that can be fully fulfilled
+        sms_to_confirm_replacements: SMS to confirm replacements
+        suggest_anyway: Do Not Call. Buy closest product available
+    order_fulfillment:
+      waive_reason_codes:
+        bad_quality: Bad quality
+        bad_quality_damaged: Bad quality damaged
+        bad_quality_not_fresh: Bad quality not fresh
+        bad_quality_thawed: Bad quality thawed
+        did_not_agree_to_replacement: Did not agree to replacement
+        item_not_purchased: Item not purchased
+        item_purchased_but_not_delivered: Item purchased but not delivered
+        not_delivered: Not delivered
+        others: Others
+        refused_item: Refused item
+        return_request: Return request
+        wrong_item: Wrong item
+        wrong_size_or_excessive_quantity: Wrong size or excessive quantity
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: must be accepted
+      blank: can't be blank
+      confirmation: doesn't match %{attribute}
+      empty: can't be empty
+      equal_to: must be equal to %{count}
+      even: must be even
+      exclusion: is reserved
+      greater_than: must be greater than %{count}
+      greater_than_or_equal_to: must be greater than or equal to %{count}
+      inclusion: is not included in the list
+      invalid: is invalid
+      less_than: must be less than %{count}
+      less_than_or_equal_to: must be less than or equal to %{count}
+      not_an_integer: must be an integer
+      not_a_number: is not a number
+      odd: must be odd
+      other_than: must be other than %{count}
+      present: must be blank
+      record_invalid: 'Validation failed: %{errors}'
+      restrict_dependent_destroy:
+        one: Cannot delete record because a dependent %{record} exists
+      taken: has already been taken
+      too_long:
+        one: is too long (maximum is 1 character)
+        other: is too long (maximum is %{count} characters)
+      too_short:
+        one: is too short (minimum is 1 character)
+        other: is too short (minimum is %{count} characters)
+      wrong_length:
+        one: is the wrong length (should be 1 character)
+        other: is the wrong length (should be %{count} characters)
+    template:
+      body: 'There were problems with the following fields:'
+      header:
+        one: 1 error prohibited this %{model} from being saved
+        other: "%{count} errors prohibited this %{model} from being saved"
+  helpers:
+    select:
+      prompt: Please select
+    submit:
+      create: Create %{model}
+      submit: Save %{model}
+      update: Update %{model}
+  mailers:
+    bee2b_status:
+      generic:
+        delivery_details: Delivery Details
+        delivery_id: 'Delivery: %{order_id}'
+      order_at_hub:
+        customer_header_html: " arrived at our hub."
+        customer_subject: 'Bee2B - Delivery #%{order_id} has arrived at our hub!'
+        recipient_header_html: Hey <span class="highlight">%{name}</span>, your package
+          is in our hub and will be on its way to you soon!
+        recipient_subject: 'Bee2B - Your order #%{order_id} has arrived at our hub!'
+      order_completed:
+        customer_header_html: " has been completed."
+        customer_subject: 'Bee2B - Delivery #%{order_id} has been completed!'
+        recipient_header_html: <span class="highlight">%{name}</span>, your delivery
+          has been completed!
+        recipient_subject: 'Bee2B - Your Bee2B delivery #%{order_id} has been completed!'
+      order_enroute:
+        customer_header_html: " is enroute to the recipient."
+        customer_subject: 'Bee2B - Delivery #%{order_id} has is enroute to the recipient!'
+        recipient_header_html: Hey <span class="highlight">%{name}</span>, your package
+          has left our hub and it is on its way to you!
+        recipient_subject: 'Bee2B - Your order #%{order_id} is currently on its way
+          to you!'
+      order_picked_up:
+        customer_header_html: " is picked up."
+        customer_subject: 'Bee2B - Delivery #%{order_id} has been picked up!'
+        recipient_header_html: Hey <span class="highlight">%{name}</span>, your package
+          has been picked up by our delivery bee and it is on its way to our hub!
+        recipient_subject: 'Bee2B - Your order #%{order_id} has been picked up!'
+      order_processing:
+        customer_header_html: " has been processed and pending pickup."
+        customer_subject: 'Bee2B - Delivery #%{order_id} has been processed!'
+        recipient_header_html: Hey <span class="highlight">%{name}</span>, your package
+          is currently processing and will be on its way to you soon!
+        recipient_subject: 'Bee2B - Your order #%{order_id} has been processed!'
+    concierge_contact:
+      buzz_at_email_html: Give us a buzz at %{concierge_email}
+      or_phone: or %{concierge_phone}
+      question_suggestion: Got a question or suggestion?
+    contact_us:
+      contact_us_at: Need help? Simply contact us at
+      operating_hours: Operating Hours
+      operating_hours_everyday: 9am - 10pm, every day
+    coupon:
+      description: "%{coupon_value} from honestbee Concierge."
+      expiry_date: Use by %{date}
+      guide_html: In case you need a little help, here's our short <a href=https://blog.honestbee.com/how-to-use-a-coupon-code-on-honestbee/>coupon
+        guide.</a>
+      guide_url: https://blog.honestbee.com/how-to-use-a-coupon-code-on-honestbee/
+      intro: To make it up to you, we have credited your coupon wallet with %{coupon_value}.
+    generic:
+      automotive: Home & Auto
+      bee2b: Bee2b
+      copyrights: "© %{year} honestbee. All rights reserved."
+      email: Email
+      email_receipt_reason: You are receiving this email because you subscribed to
+        our mailing list.
+      food: food
+      groceries: grocery
+      laundry: laundry
+      medicine: Health
+      name: Name
+      phone: Phone
+      tickets: Tickets
+      trash: Collection
+    late_fulfillment:
+      headline:
+        html: "%{name} we're sorry for the late %{service_type} delivery."
+      headline_html: Dear <span class="highlight">%{name}</span>, we're sorry for
+        the late %{service_type} delivery.
+      message_html: It's our goal to bring customers what they need, when they need
+        it. We fell short of your expectations, as well as ours. Actions speak louder
+        than words.
+      order_date: 'Ordered on: %{order_date}'
+      order_info: "%{service_type} order #%{order_number}"
+      subject: We're sorry for the late %{service_type} delivery
+    notify_be_a_bee_submission:
+      id_number: Identification number
+      phone_model: Phone model
+      position: Position
+      preferred_working_location: Preferred working location
+      vehicle_type: Vehicle Type
+      whatsapp: Whatsapp
+    notify_contact_us_submission:
+      company_name: Company Name
+      company_website: Company Website
+      coupon_code: Coupon Code
+      delivery_timeslot: New Delivery Timeslot
+      message: Message
+      order_number: Order number
+    order_cancelled:
+      automotive:
+        auto_cancel:
+          'content ': For card payments, we will release the pre-authorised amount
+            within 48 hours. It may take up to 10 working days for it to be reflected
+            on your card statement.
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        customer_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        fraud_activity:
+          content: |-
+            We have found unusual activity on your honestbee account.As such, we will be suspending your account temporarily.<br/><br/>
+            We are doing this to protect our shopper and delivery bees and to ensure that we provide a fair service to our other customers.<br/><br/>
+            Your %{brand} order #%{order_number} has been cancelled. Rest assured, you won't be charged.<br/><br/>
+            For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement. </br></br>
+            If you would like to find out more about our policies, please read the Terms of Use published on our website <a href=https://honestbee.com/terms-of-use/>https://honestbee.com/terms-of-use</a> If you have any questions, please don’t hesitate to contact us.
+          header: Dear %{name},
+          subject: We have suspended your account due to unusual activity
+        merchant_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order"
+          subject: "%{name}, we've cancelled your %{brand} order"
+        order_number_header: 'Home & Auto Order #%{order_number}'
+        others:
+          content: |-
+            We faced some unforeseen challenges today and, unfortunately, they got the best of us.<br/><br/>
+            We have learnt valuable lessons that will help us to improve the service you receive. Give us a chance and we will do our best to prove that to you.<br/><br/>
+            For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement.
+          header: Dear %{name}, we’re sorry, we had to cancel your %{brand} order.
+          subject: "%{name}, we're sorry, we had to cancel your %{brand} order."
+        out_of_stock:
+          content: |-
+            Most of the items you had ordered are currently out of stock or of a low quality. We’ve let %{brand} know that the items need to be restocked. Rest assured, you won't be charged.<br/<br/>
+            For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement.
+          header: Dear %{name}, we’re sorry, we had to cancel your %{brand} order.
+          subject: "%{name}, we're sorry, we had to cancel your %{brand} order."
+        subject: "%{name}, we've cancelled your %{brand} order"
+      bee2b:
+        auto_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order"
+          subject: "%{name}, we've cancelled your %{brand} order"
+        customer_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order."
+        fraud_activity:
+          content: |-
+            We have found unusual activity on your honestbee account.As such, we will be suspending your account temporarily.<br/><br/>
+            We are doing this to protect our shopper and delivery bees and to ensure that we provide a fair service to our other customers.<br/><br/>
+            Your %{brand} order #%{order_number} has been cancelled. Rest assured, you won't be charged.<br/><br/>
+            For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement. <br/><br/>
+            If you would like to find out more about our policies, please read the Terms of Use published on our website <a href=https://honestbee.com/terms-of-use/>https://honestbee.com/terms-of-use</a> If you have any questions, please don’t hesitate to contact us.
+          header: Dear %{name},
+          subject: We have suspended your account due to unusual activity
+        merchant_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        others:
+          content: "We faced some unforeseen challenges today and, unfortunately,
+            they got the best of us.<br/><br/>\nWe have learnt valuable lessons that
+            will help us to improve the service you receive. Give us a chance and
+            we will do our best to prove that to you.<br/><br/>\nFor card payments,
+            we will release the pre-authorised amount within 48 hours. It may take
+            up to 10 working days for it to be reflected on your card statement. "
+          header: Dear %{name}, we’re sorry, we had to cancel your %{brand} order.
+          subject: "%{name}, we're sorry, we had to cancel your %{brand} order."
+        out_of_stock:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+      cancel_charge_note: We will only charge you for the items we will deliver from
+        %{other_brands}.
+      food:
+        auto_cancel:
+          content: |-
+            It’s rush hour at %{brand}. They don’t want to keep you waiting, so they have cancelled your order. Find great food at our other restaurants.<br><br>
+            For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement.
+          header: We're sorry, %{brand} had to cancel your order.
+          subject: We're sorry, %{brand} had to cancel your order.
+        cancelled_explanation: |-
+          It’s rush hour at %{brand_name}. They don’t want to keep you waiting, so they have cancelled your order. Find great food at our other restaurants. <br/><br/>
+          For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement.
+        customer_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        fraud_activity:
+          content: |-
+            We have found unusual activity on your honestbee account.As such, we will be suspending your account temporarily.<br/><br/>
+            We are doing this to protect our shopper and delivery bees and to ensure that we provide a fair service to our other customers.<br/><br/>
+            Your %{brand} order #%{order_number} has been cancelled. Rest assured, you won't be charged.<br/><br/>
+            For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement. <br/><br/>
+            If you would like to find out more about our policies, please read the Terms of Use published on our website <a href=https://honestbee.com/terms-of-use/>https://honestbee.com/terms-of-use</a> If you have any questions, please don’t hesitate to contact us.
+          header: Dear %{name},
+          subject: We have suspended your account due to unusual activity
+        merchant_cancel:
+          content: |-
+            It’s rush hour at %{brand}. They don’t want to keep you waiting, so they have cancelled your order. Find great food at our other restaurants.<br><br>
+            For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement.
+          header: We're sorry, %{brand} had to cancel your order.
+          subject: We're sorry, %{brand} had to cancel your order.
+        order_cancelled_note: We're sorry, %{brand} had to cancel your order.
+        order_number_header: 'Food Order #%{order_number}'
+        others:
+          content: "We faced some unforeseen challenges today and, unfortunately,
+            they got the best of us.<br/><br/>\nWe have learnt valuable lessons that
+            will help us to improve the service you receive. Give us a chance and
+            we will do our best to prove that to you.<br/><br/>\nFor card payments,
+            we will release the pre-authorised amount within 48 hours. It may take
+            up to 10 working days for it to be reflected on your card statement. "
+          header: Dear %{name}, we’re sorry, we had to cancel your %{brand} order.
+          subject: "%{name}, we're sorry, we had to cancel your %{brand} order."
+        out_of_stock:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        rejected_subject: We're sorry, %{brand} had to cancel your order.
+        subject: "%{name}, we've cancelled your %{brand} order"
+      groceries:
+        auto_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        customer_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        fraud_activity:
+          content: |-
+            We have found unusual activity on your honestbee account. As such, we will be suspending your account temporarily.<br/><br/>
+            We are doing this to protect our shopper and delivery bees and to ensure that we provide a fair service to our other customers.<br/><br/>
+            Your %{brand} order #%{order_number} has been cancelled. Rest assured, you won't be charged.<br/><br/>
+            For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement.<br/><br/>
+            If you would like to find out more about our policies, please read the Terms of Use published on our website <a href=https://honestbee.com/terms-of-use/>https://honestbee.com/terms-of-use</a> If you have any questions, please don’t hesitate to contact us.
+          header: Dear %{name},
+          subject: We have suspended your account due to unusual activity
+        merchant_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        order_number_header: 'Grocery Order #%{order_number}'
+        others:
+          content: "We faced some unforeseen challenges today and, unfortunately,
+            they got the best of us.<br/><br/>\nWe have learnt valuable lessons that
+            will help us to improve the service you receive. Give us a chance and
+            we will do our best to prove that to you.<br/><br/>\nFor card payments,
+            we will release the pre-authorised amount within 48 hours. It may take
+            up to 10 working days for it to be reflected on your card statement. "
+          header: Dear %{name}, we’re sorry, we had to cancel your %{brand} order.
+          subject: "%{name}, we're sorry, we had to cancel your %{brand} order."
+        out_of_stock:
+          content: |-
+            Most of the items you had ordered are currently out of stock or of a low quality. We’ve let %{brand} know that the items need to be restocked. Rest assured, you won't be charged.<br/><br/>
+            For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement.
+          header: Dear %{name}, we’re sorry, we had to cancel your %{brand} order.
+          subject: "%{name}, we're sorry, we had to cancel your %{brand} order."
+        subject: "%{name}, we've cancelled your %{brand} order"
+      laundry:
+        auto_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order"
+          subject: "%{name}, we've cancelled your %{brand} order"
+        customer_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        fraud_activity:
+          content: |-
+            We have found unusual activity on your honestbee account.As such, we will be suspending your account temporarily.<br/><br/>
+            We are doing this to protect our shopper and delivery bees and to ensure that we provide a fair service to our other customers.<br/><br/>
+            Your %{brand} order #%{order_number} has been cancelled. Rest assured, you won't be charged.<br/><br/>
+            For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement. <br/><br/>
+            If you would like to find out more about our policies, please read the Terms of Use published on our website <a href=https://honestbee.com/terms-of-use/>https://honestbee.com/terms-of-use</a> If you have any questions, please don’t hesitate to contact us.
+          header: Dear %{name},
+          subject: We have suspended your account due to unusual activity
+        merchant_cancel:
+          content: "We trust in our top-notch partner’s judgment and don’t want to
+            do anything that would spoil beloved items. Hence we have cancelled your
+            order. Rest assured, you won't be charged for the order or the delivery
+            and your items will be returned to you safe and sound.<br/><br/>\nFor
+            card payments, we will release the pre-authorised amount within 48 hours.
+            It may take up to 10 working days for it to be reflected on your card
+            statement. "
+          header: Dear %{name}, our partner has examined your order and, unfortunately,
+            it can't be laundered.
+          subject: Dear %{name}, we’re sorry, we had to cancel your %{brand} order.
+        order_number_header: 'Laundry Order #%{order_number}'
+        others:
+          content: "We faced some unforeseen challenges today and, unfortunately,
+            they got the best of us.<br/><br/>\nWe have learnt valuable lessons that
+            will help us to improve the service you receive. Give us a chance and
+            we will do our best to prove that to you.<br/><br/>\nFor card payments,
+            we will release the pre-authorised amount within 48 hours. It may take
+            up to 10 working days for it to be reflected on your card statement. "
+          header: Dear %{name}, we’re sorry, we had to cancel your %{brand} order.
+          subject: "%{name}, we're sorry, we had to cancel your %{brand} order."
+        out_of_stock:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        subject: "%{name}, we've cancelled your %{brand} order"
+      medicine:
+        auto_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        customer_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we're sorry, we had to cancel your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        fraud_activity:
+          content: |-
+            We have found unusual activity on your honestbee account.As such, we will be suspending your account temporarily.<br/><br/>
+            We are doing this to protect our shopper and delivery bees and to ensure that we provide a fair service to our other customers.<br/><br/>
+            Your %{brand} order #%{order_number} has been cancelled. Rest assured, you won't be charged.<br/><br/>
+            For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement. <br/><br/>
+            If you would like to find out more about our policies, please read the Terms of Use published on our website <a href=https://honestbee.com/terms-of-use/>https://honestbee.com/terms-of-use</a> If you have any questions, please don’t hesitate to contact us.
+          header: Dear %{name},
+          subject: We have suspended your account due to unusual activity
+        merchant_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        order_number_header: 'Health Order #%{order_number}'
+        others:
+          content: "We faced some unforeseen challenges today and, unfortunately,
+            they got the best of us.<br/><br/>\nWe have learnt valuable lessons that
+            will help us to improve the service you receive. Give us a chance and
+            we will do our best to prove that to you.<br/><br/>\nFor card payments,
+            we will release the pre-authorised amount within 48 hours. It may take
+            up to 10 working days for it to be reflected on your card statement. "
+          header: Dear %{name}, we’re sorry, we had to cancel your %{brand} order.
+          subject: "%{name}, we're sorry, we had to cancel your %{brand} order."
+        out_of_stock:
+          content: "Most of the items you had ordered are currently out of stock.
+            We will make sure they are restocked soon. Rest assured, you won't be
+            charged.<br/><br/>\nFor card payments, we will release the pre-authorised
+            amount within 48 hours. It may take up to 10 working days for it to be
+            reflected on your card statement. "
+          header: Dear %{name}, we’re sorry, we had to cancel your %{brand} order.
+          subject: "%{name}, we're sorry, we had to cancel your %{brand} order."
+        subject: 'Your Health order #%{order_number} has been cancelled'
+      ordered_on: 'Ordered on: %{timestamp}'
+      order_is_cancelled_note: "%{name}, we've cancelled your %{brand} order"
+      order_now: ORDER NOW
+      out_of_stock:
+        greeting_html: <span class="highlight">%{name}</span>, we're sorry, we had
+          to cancel your grocery order from %{brand}.
+        grocery_order: 'Grocery order #%{order_number}'
+        reason: 'Most of the items you had ordered are currently out of stock or of
+          low quality. We have let %{brand} know that the items need to be restocked.
+          Rest assured, you won''t be charged. '
+        remedy: To make it up to you, we have credited your coupon wallet with %{coupon_value}.
+        subject: 'We had to cancel you grocery order #%{order_number}'
+      release_funds_note: For card payments, we will release the pre-authorised amount
+        within 48 hours. It may take up to 10 working days for it to be reflected
+        on your card statement.
+      subject: "%{name}, we've cancelled your %{brand} order"
+      trash:
+        auto_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order"
+          subject: "%{name}, we've cancelled your %{brand} order"
+        customer_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order.."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        fraud_activity:
+          content: |-
+            We have found unusual activity on your honestbee account. As such, we will be suspending your account temporarily.<br/><br/>
+            We are doing this to protect our shopper and delivery bees and to ensure that we provide a fair service to our other customers.<br/><br/>
+            Your %{brand} order #%{order_number} has been cancelled. Rest assured, you won't be charged.<br/><br/>
+            For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement. <br/><br/>
+            If you would like to find out more about our policies, please read the Terms of Use published on our website <a href=https://honestbee.com/terms-of-use/>https://honestbee.com/terms-of-use</a> If you have any questions, please don’t hesitate to contact us.
+          header: Dear %{name},
+          subject: We have suspended your account due to unusual activity
+        merchant_cancel:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        order_number_header: 'Collection Order #%{order_number}'
+        others:
+          content: |-
+            We faced some unforeseen challenges today and, unfortunately, they got the best of us.<br/><br/>
+            We have learnt valuable lessons that will help us to improve the service you receive. Give us a chance and we will do our best to prove that to you.<br/><br/>
+            For card payments, we will release the pre-authorised amount within 48 hours. It may take up to 10 working days for it to be reflected on your card statement.
+          header: Dear %{name}, we’re sorry, we had to cancel your %{brand} order.
+          subject: "%{name}, we're sorry, we had to cancel your %{brand} order."
+        out_of_stock:
+          content: For card payments, we will release the pre-authorised amount within
+            48 hours. It may take up to 10 working days for it to be reflected on
+            your card statement.
+          header: "%{name}, we've cancelled your %{brand} order."
+          subject: "%{name}, we've cancelled your %{brand} order"
+        subject: "%{name}, we've cancelled your %{brand} order"
+    order_completed:
+      final_receipt_survey_button:
+        groceries: 'Rate your order %{order_number}'
+        food: 'Rate your order %{order_number}'
+        default: 'Rate your order %{order_number}'
+      final_receipt_survey_title:
+        groceries: How did we do?
+        food: How did we do?
+        default: How did we do?
+      adjustment: Adjustment
+      automotive:
+        order_delivered_html: All done—delivered right to your doorstep!
+        order_delivered_interim_html: "All done—delivered right to your doorstep!"
+        subject: 'All done — here’s the final receipt for your %{service_type} order
+          #%{order_number}'
+        subject_interim: 'All done—here’s the receipt for your %{service_type} order
+          #%{order_number}'
+      cash_refund: 'Cash Refund: %{amount}'
+      concierge_fee: Concierge Fee
+      credit: Credit
+      delivery_fee: Delivery Fee
+      minimum_spend_extra_fee: 'Min. spend not met'
+      discount: 'Reward applied'
+      final_total_disclaimer: 'Please note: the final price does not include external
+        fees that may be charged by your bank. For any enquiries, please contact your
+        bank directly.'
+      food:
+        order_delivered_html: We hope that tasted great!
+        order_delivered_interim_html: 'We hope that tasted great!'
+        subject: 'All done—here’s the final receipt for your %{service_type} order
+          #%{order_number}'
+        subject_interim: 'All done—here’s the receipt for your %{service_type} order
+          #%{order_number}'
+      fulfilled_items: Fulfilled Items
+      groceries:
+        order_delivered_html: All done—delivered fresh, fast and without the heavy
+          lifting!
+        order_delivered_interim_html: 'All done—delivered fresh, fast and without the heavy lifting!'
+        subject: 'All done—here’s the final receipt for your %{service_type} order
+          #%{order_number}'
+        subject_interim: 'All done—here’s the receipt for your %{service_type} order
+          #%{order_number}'
+      inclusive_of_tax: "(Inclusive of tax)"
+      laundry:
+        order_delivered_html: All done—delivered right to your doorstep!
+        order_delivered_interim_html: 'All done—delivered right to your doorstep!'
+        subject: 'All done—here’s the final receipt for your %{service_type} order
+          #%{order_number}'
+        subject_interim: 'All done—here’s the receipt for your %{service_type} order
+          #%{order_number}'
+      medicine:
+        order_delivered_html: All done—delivered right to your doorstep!
+        order_delivered_interim_html: 'All done—delivered right to your doorstep!'
+        subject: 'All done—here’s the final receipt for your %{service_type} order
+          #%{order_number}'
+        subject_interim: 'All done—here’s the receipt for your %{service_type} order
+          #%{order_number}'
+      oos_items: Out-of-stock Items
+      order_delivered_html: "%{name}, here's your final receipt for the items we delivered."
+      order_refunded_update: We will refund %{refund} to your card.
+      order_waived_html: <span class="highlight">%{name}</span>, your receipt has
+        been updated.
+      order_waived_update: You will not be charged %{refund} for waived items.
+      receipt_note: Your card hasn't been charged yet. The final receipt will be sent
+        within %{days} days.
+      refund_amount: 'Refund to %{card}:'
+      refund_subject: 'Your updated receipt for order #%{order_number}'
+      replaced_items: Replaced Items
+      service: Service
+      store_price: In-store price
+      subject: 'All done—here’s the final receipt for your %{service_type} order #%{order_number}'
+      subject_interim: 'All done—here’s the receipt for your %{service_type} order
+        #%{order_number}'
+      subtotal: Subtotal
+      tax: Tax
+      total: FINAL TOTAL
+      total_interim: TOTAL
+      trash:
+        order_delivered_html: 'All done!! Here’s the final receipt for %{service_type}
+          #%{order_number}'
+        order_delivered_interim_html: "All done!! Here’s the receipt for %{service_type} #%{order_number}"
+        subject: 'All done—here’s the final receipt for your %{service_type} order
+          #%{order_number}'
+        subject_interim: 'All done—here’s the receipt for your %{service_type} order
+          #%{order_number}'
+      waived: Amount Waived
+      waived_amount: Waived amount
+      waived_items: Waived/Refunded Items
+      web_price: Web price
+    order_delivering:
+      automotive:
+        subject: 'Your order #%{order_number} will be delivered on %{delivery_slot}'
+      food:
+        subject: 'Your order #%{order_number} will be delivered on %{delivery_slot}'
+      greeting_html: <span class="highlight">%{name}</span>, your order will be at
+        your doorstep on %{delivery_slot}
+      greeting_html_2: your order will be at your doorstep on %{delivery_slot}
+      groceries:
+        subject: 'Your order #%{order_number} will be delivered on %{delivery_slot}'
+      laundry:
+        subject: 'Your order #%{order_number} will be delivered on %{delivery_slot}'
+      medicine:
+        subject: Your Health order will be at your doorstep today between %{delivery_slot}.
+      note_on_final_receipt: You only pay after we’ve delivered your order. This allows
+        us to adjust your final receipt for substitutes and out of stock items, as
+        applicable.
+      subject: 'Your order #%{order_number} will be delivered on %{delivery_slot}'
+      trash:
+        subject: 'Your order #%{order_number} will be delivered on %{delivery_slot}'
+    order_laundry_processing:
+      delivery: Delivery
+      no_extra_fee: There is no extra fee if you reschedule your pickup or delivery
+        4 hours in advance.
+      no_rescheduling_fee: No rescheduling fee
+      pickup: Pickup
+      subject: "%{name}, your laundry pickup #%{order_number} has been confirmed"
+      subtotal: Subtotal
+      thank_you_for_shopping_html: '<span class="highlight">%{name}</span>, your laundry
+        pickup #%{order_number} has been confirmed'
+    order_processing:
+      automotive:
+        delivery_note: Collection instructions
+        deliver_to: Collection address
+        order_date: Order date
+        store_subtotal: Subtotal
+        subject: 'Nicely done! We’ve received your %{service_type} order #%{order_number}'
+        thank_you_for_shopping_html: 'Hi <span class="highlight">%{name}</span>, nicely
+          done! Our bees are ready to take care of your order #%{order_number}.'
+      can_replace_with: Can be replaced with
+      concierge_fee: Concierge Fee
+      contact_number: Contact number
+      credit_card_charge_time_html: Your credit card is <span class="highlight">charged
+        after delivery</span>.
+      customer_note: Note
+      delivery_fee: Delivery Fee
+      minimum_spend_extra_fee: 'Min. spend not met'
+      delivery_note: Delivery note
+      deliver_to: Deliver to
+      food:
+        delivery_note: Delivery instructions
+        deliver_to: Delivery address
+        order_date: Order placed
+        store_subtotal: Store subtotal
+        subject: 'Nicely done! Your %{service_type} order #%{order_number} has been
+          confirmed'
+        thank_you_for_shopping_html: <span class="highlight">%{name}</span>, your
+          food order has been confirmed
+      groceries:
+        delivery_note: Delivery note
+        deliver_to: Deliver to
+        order_date: Order date
+        store_subtotal: Store subtotal
+        subject: 'Nicely done! We’ve received your %{service_type} order #%{order_number}'
+        thank_you_for_shopping_html: 'Hi <span class="highlight">%{name}</span>, nicely
+          done! Our bees are ready to take care of your order #%{order_number}.'
+      inclusive_of_tax: "(Inclusive of tax)"
+      laundry:
+        delivery_note: Delivery note
+        deliver_to: Deliver to
+        order_date: Order date
+        store_subtotal: Subtotal
+        subject: 'Nicely done! Your %{service_type} pickup #%{order_number} has been
+          confirmed'
+        thank_you_for_shopping_html: Hi <span class="highlight">%{name}</span>, nicely
+          done! Our bees are ready to take care of your order.
+      medicine:
+        delivery_note: Delivery note
+        deliver_to: Deliver to
+        order_date: Order date
+        store_subtotal: Store subtotal
+        subject: 'Nicely done! We’ve received your %{service_type} order #%{order_number}'
+        thank_you_for_shopping_html: 'Hi <span class="highlight">%{name}</span>, nicely
+          done! Our bees are ready to take care of your order #%{order_number}.'
+      no_customer_note: No customer note
+      no_replacement: No substitute
+      order_date: Order date
+      order_number: Order number
+      store_subtotal: Store subtotal
+      subject: We've received your order
+      thank_you_for_shopping_html: 'Hi <span class="highlight">%{name}</span>, nicely
+        done! Our bees are ready to take care of your order #%{order_number}.'
+      total: TOTAL
+      total_disclaimer: All prices shown are inclusive of Japan 8% Consumption Tax.
+      trash:
+        delivery_note: Collection instructions
+        deliver_to: Collection address
+        order_date: Order date
+        store_subtotal: Subtotal
+        subject: 'Nicely done! Your %{service_type} #%{order_number} has been confirmed.'
+        thank_you_for_shopping_html: 'Hi <span class="highlight">%{name}</span>, nicely
+          done! Your %{service_type} #%{order_number} has been confirmed.'
+      upfront_payment_christmas: However, upfront payment is required for Christmas
+        Stores only.
+      upfront_payment_seasonal: However, upfront payment is required for seasonal
+        stores only.
+    order_review:
+      disclaimer: Your concierge shopper, %{shopper_name}, will not buy them without
+        your approval. Thank you!
+      heading: "%{customer_name}, please review the changes to your %{brand_name}
+        order."
+      ps: P.s. We've also sent you an SMS with the link to %{phone_number}
+      request: Kindly review your items within %{time_limit}.
+      review_button: Review changes
+      subject: Please review changes to your %{brand_name} order within %{time_limit}
+        minutes
+    referee_order_complete:
+      share_email_subject: "Yay! %{name} just sent you an honestbee coupon"
+      coupon_credited: We have credited your account with a coupon worth %{discount}!
+      earned_discount: You've earned %{discount} for your referral!
+      friend_completed_order: Your friend %{name} just completed an order!
+      made_first_order: "%{name} made a first order."
+      refer_and_earn: Refer as many friends as you can and earn %{discount} in shopping
+        credits.
+      refer_and_earn_separate: Refer as many friends as you can and earn %{discount}
+        for every successful referral.
+      share_honestbee_text: Here's %{discount} off %{minimum_spending} on me. Use this link to sign up for an honestbee account %{referral_link} to redeem the coupon.
+      share_on: Share on %{platform}
+      share_signup_link: 'Share your own sign up link with your friends:'
+      use_code_as_discount_html: Or get your friends to use your code <b>%{referral_code}</b>
+        as a coupon with their first order to save %{discount}.
+      why_stop: Why stop here?
+    reset_password:
+      alternative_link_instruction: 'If the button above does not work for your mail
+        client, please copy and paste the following URL into your browser instead:'
+      click_to_reset: Please click the button below if you wish to reset your password.
+      ignore_if_not_applicable: If you do not wish to change your password, simply
+        ignore this message.
+      let_us_help: Let us help you!
+      link_valid_for_html: This link is valid for <strong>%{time_in_words}</strong>
+      reset_password: Reset Password
+    sign_up:
+      benefits_of_shopping: Benefits of shopping on honestbee
+      concierge_shopper_handpicked_html: Get ready to enjoy the freshest groceries,
+        handpicked by your concierge shopper, with honestbee's quality assurance.
+      delivery_promise_html: "<b>Fast:</b><br/> Same-day, 1-hour delivery"
+      find_out_how: How we work
+      first_value_prop_html: "<b>Effortless</b><br/>Let our experts handle your chores"
+      HK:
+        benefits_of_shopping: Life's easier with honestbee
+        concierge_shoppers_html: <span class="highlight">Concierge shoppers</span>
+          handpick the freshest items for just HK$25
+        concierge_shopper_handpicked_html: Life's going to be easier now with the
+          help of honestbee's concierge and delivery services. Get ready to enjoy
+          the freshest groceries handpicked by your concierge shopper.
+        first_value_prop_html: "<b>Effortless</b><br/>Let our experts handle your
+          chores"
+        second_value_prop_html: "<b>Convenient</b><br/>We pick up and deliver to your
+          doorstep"
+        third_value_prop_html: "<b>Fast</b><br/> Same-day, 1-hour grocery delivery"
+      JP:
+        concierge_shopper_handpicked_html: Get ready to enjoy the freshest groceries
+          and delicious food delivered to your doorstep.
+      MY:
+        concierge_shopper_handpicked_html: Life's going to be easier now with the
+          help of honestbee's concierge and delivery services. Get ready to enjoy
+          the freshest groceries handpicked by your concierge shopper.
+        please_forward_email_html: "<p>Please forward this email to bee@honestbee.my
+          in order to activate your account. Once your account is activated, we’ll
+          send you a confirmation email.</p> <p>We can’t accept mobile orders at the
+          moment, as we’re currently upgrading our mobile apps. Don’t worry, we’ll
+          be back on mobile soon!</p>"
+        welcome_to_honestbee: Welcome to honestbee’s exclusive launch, %{name}
+      second_value_prop_html: "<b>Convenient</b><br/>We pick up and deliver to your
+        doorstep"
+      SG:
+        benefits_of_shopping: Life's easier with honestbee
+        concierge_shoppers_html: "<b>Personalised:</b><br/>Professional concierge
+          shoppers"
+        concierge_shopper_handpicked_html: Life's going to be easier now with the
+          help of honestbee's concierge and delivery services. Get your groceries
+          fresh and fast, and your laundry done by specialists.
+        first_value_prop_html: "<b>Effortless</b><br/>Let our experts handle your
+          chores"
+        second_value_prop_html: "<b>Convenient</b><br/>We pick up and deliver to your
+          doorstep"
+        start_shopping: Start now
+        third_value_prop_html: "<b>Fast</b><br/> Same-day, 1-hour grocery delivery"
+        welcome_to_honestbee: "%{name}, you are one smart cookie. Know why?"
+      shop_skucount_html: <b>Convenient:</b><br/>Over <span class="highlight">%{sku_count}</span>
+        products online
+      start_shopping: Start Now
+      third_value_prop_html: "<b>Fast</b><br/> Same-day, 1-hour grocery delivery"
+      TW:
+        benefits_of_shopping: Life's easier with honestbee
+        concierge_shoppers_html: <span class="highlight">Concierge shoppers</span>
+          handpick the freshest items for just NT$100
+        concierge_shopper_handpicked_html: Life's going to be easier now with the
+          help of honestbee's concierge and delivery services. Get ready to enjoy
+          the freshest groceries handpicked by your concierge shopper.
+        first_value_prop_html: "<b>Effortless</b><br/>Let our experts handle your
+          chores"
+        second_value_prop_html: "<b>Convenient</b><br/>We pick up and deliver to your
+          doorstep"
+        third_value_prop_html: "<b>Fast</b><br/>Same-day, 1-hour grocery delivery"
+        welcome_to_honestbee: "%{name}, you are one smart cookie. Know why?"
+      welcome_to_honestbee: "%{name}, you are one smart cookie. Know why?"
+  merchant_app:
+    push_notification:
+      notify_deliverer:
+        deliverer_pending_acceptance_message: 'Please accept order #%{order_number}-%{store_id}!'
+        deliverer_pending_start_message: 'Please start delivering order #%{order_number}-%{store_id}!'
+        deliverer_picked_up_message: 'Please deliver order #%{order_number}-%{store_id}
+          on-time or inform the customer if you will be delayed.'
+        deliverer_started_message: 'You need to pick up order #%{order_number}-%{store_id}
+          to avoid late delivery'
+        message: You have a deliverer job waiting!
+        order_handed_over: 'Order #%{order_number}-%{store_id} is now ready for pick-up'
+      notify_partner:
+        message: 'You have new order #%{order_number}-%{store_id} incoming!'
+        notify_auto_cancelled_order_fulfillment: 'Your order #%{order_number}-%{store_id}
+          was automatically cancelled because you did not accept within %{mins_buffer}
+          mins.'
+        notify_cancelled_order_fulfillment: 'Order # %{id} is cancelled'
+      notify_shopper:
+        message: You have a shopper job waiting!
+        shopper_pending_acceptance_message: 'Please accept order #%{order_number}-%{store_id}!'
+        shopper_pending_start_message: 'Please start shopping for order #%{order_number}-%{store_id}!'
+        shopper_started_message: 'Complete shopping for order #%{order_number}-%{store_id}
+          soon!'
+  mobile:
+    checkout:
+      authorize_payment:
+        accept_card_warning: Kindly note that our site does not accept CIMB debit
+          cards and HSBC credit cards for now - but we are working on a fix for this!
+          We apologise for the inconvenience caused and please try an alternate card
+          with us. Thank you
+        address_line_1: Address line 1
+        address_line_2: Address line 2
+        add_new_card: Add New Card
+        apartment_unit_bldg_floor_etc: Apartment, unit, bldg, floor, etc.
+        billing_address: Billing Address
+        bill_to_address_postal_code: Postal code
+        cardholder_name: Cardholder name
+        card_information: Card information
+        card_number: Card number
+        ccv_cvv: CCV/CVV
+        city: City
+        country: Country
+        expiration_date: Expiration date
+        invalid_details: Sorry, the %{invalid_fields} is/are invalid.
+        no_credit_card_details_required: No Credit Card Details Required
+        payment_methods: Payment Methods
+        pay_securely: PAY SECURELY
+        pay_with_credits: PAY IN FULL WITH CREDIT
+        pay_with_secured_transaction: Pay with Credit Card secured transaction
+        place_order: Place order
+        refund_policy: FAQs
+        security_code: Security code
+        state: State
+        street_company_etc: Street address, company name, etc.
+        terms_condition: Terms of Use
+        your_credits_deducted_html: Your <span class='bank-credits-explain--amount'>%{amount}</span>
+          credit will be deducted.
+        zip: Postal Code
+      authorize_payment_js:
+        HK:
+          default_city: Hong Kong Island
+        invalid_details: Sorry, the %{invalid_fields} is/are invalid.
+        missing_fields: Please check for missing fields.
+        new_card_not_valid_for_discount: Sorry, your card is not valid for the discount
+          coupon.
+        pay_securely: PAY %{amount} SECURELY
+        pay_with_credits: PAY IN FULL WITH CREDIT
+        place_order: Place order
+        selected_cardnot_valid_for_discount: The coupon you’ve applied does not work
+          with this payment method. Not to worry! Just check the promotion for details
+          and change the payment method.
+        select_payment_method: Please select a payment method
+        SG:
+          default_city: Singapore
+        submitting_order_html: Submitting Order <i class="fa fa-spinner fa-spin"></i>
+        TW:
+          default_city: Taipei
+        unable_accept_amex: Sorry, we're unable to accept American Express cards in
+          %{country}
+      cash:
+        cash_payment_header: Cash on delivery
+        cash_payment_subheader: No card required! Pay us in cash when you receive
+          your order.
+      corporate_account_credit:
+        corporate_payment_header: Corporate Payments
+        corporate_payment_subheader: Purchases made under the corporate payment program
+          would be directly billed to your company HQ
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: Billion
+          million: Million
+          quadrillion: Quadrillion
+          thousand: Thousand
+          trillion: Trillion
+      format:
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        format: "%n%"
+  pundit:
+    default: You cannot perform this action.
+    user_policy:
+      create?: You do not have permission to create users!
+      index?: You do not have permission to view a list of users!
+      update?: You cannot edit this user!
+  reject_reasons:
+    food:
+      main_dish_is_out_of_stock: Main dish is out of stock
+      most_items_are_out_of_stock: Most items are out of stock
+      no_reason: No reason
+      other_reason: Other reason
+      too_many_orders_currently: Too many orders currently
+    groceries:
+      most_items_are_out_of_stock: Most items are out of stock
+      no_reason: No reason
+      other_reason: Other reason
+      too_many_orders_currently: Too many orders currently
+    laundry:
+      no_reason: No reason
+      other_reason: Other reason
+      service_not_available: Service not available
+      too_many_orders_currently: Too many orders currently
+  services:
+    brand_validation:
+      brand_not_available: This brand is no longer available
+      brand_not_served: This brand does not served in your area
+    product_validation:
+      product_not_available: This product is no longer available
+      product_not_served: This product is not served in your area
+    promotion_code_redemption:
+      first_purchase_invalid_response: This coupon is for first time customers
+      invalid_code_response: 'Please check that you''ve entered a valid coupon code. '
+      multiple_packages_not_supported_response: Multi-package promo code is not valid
+      not_active_response: This coupon is currently not in use
+      not_in_redeem_range_response: Life is a race! This coupon can be redeemed from
+        %{start_date} to %{end_date}.
+      not_on_redeem_day_response: This coupon can be redeemed on the %{date}.
+      redeemed_before_response: 'The coupon has been redeemed. '
+      used_up_response: Sigh...this coupon has been fully redeemed.
+      wrong_service_response: This coupon is for honestbee %{service_type}.
+      wrong_zone_response: Sorry, this coupon cannot be applied in this zone
+      wrong_trademark_response: To use this coupon you need to have at least one item from %{trademarks} in your cart.
+      wrong_trademark_with_min_amount_response: To use this coupon you need to have items from %{trademarks} worth $%{min_amount} or more in your cart.
+    reorder:
+      different_zone_response: Sorry, your current delivery address is not the same
+        as the delivery address for this order. Please reorder from <strong>%{address}</strong>
+        for these items.
+      item_unavailable: Sorry, this product is unavailable now.
+      products_unavailable: 'Sorry, these products are unavailable now: %{products}'
+    service_types:
+      automotive: Home & Auto
+      bee2b: Bee2b
+      food: Food
+      groceries: Groceries
+      home: Home
+      laundry: Laundry
+      medicine: Health
+      tickets: Tickets
+      trash: Collection
+  sms:
+    bee_signature: honestbee concierge
+    can_not_reply: (You cannot reply to this SMS)
+    customer_acknowledgement_message: |-
+      Hi %{customer_name}, kindly review your items within %{time_limit} minutes by clicking on this link %{url}. I will not buy them without your approval. Thank you!
+      %{sender}, honestbee concierge shopper Order %{order_number} You cannot reply to this SMS
+    customer_order_cancellation:
+      " groceries": |-
+        Hi %{customer_name}, we have to cancel your %{brand_name} order because most items are currently out of stock.
+        To make it up to you, we’ll add a coupon to your wallet on honestbee.
+        %{shopper_name}, honestbee concierge shopper
+        Order %{order_number}
+        (You cannot reply to this SMS)
+      body:
+        automotive: We are sorry, we had to cancel your %{brand_name} order. Rest
+          assured, you will not be charged. If you have any questions please contact
+          us www.honestbee.com/contact-us
+        bee2b: We’ve cancelled your %{brand_name} order. Rest assured, you won’t be
+          charged. If you have any questions, contact us via https://honestbee.com/contact-us
+        food: "We are sorry, %{brand_name} had to cancel your order. It is rush hour
+          and they do not want to keep you waiting. \nFind great food at our other
+          restaurants.  "
+        groceries: We are sorry, we had to cancel your %{brand_name} order. Rest assured,
+          you will not be charged. If you have any questions please contact us www.honestbee.com/contact-us
+        laundry: We’ve cancelled your %{brand_name} order. Rest assured, you won’t
+          be charged. If you have any questions, contact us via https://honestbee.com/contact-us
+        medicine: We are sorry, we had to cancel your %{brand_name} order. Rest assured,
+          you will not be charged. If you have any questions please contact us www.honestbee.com/contact-us
+        trash: We’ve cancelled your %{brand_name} order. Rest assured, you won’t be
+          charged. If you have any questions, contact us via https://honestbee.com/contact-us
+      template: |-
+        %{greeting} %{body}
+        %{bee_signature}
+        %{order_number}
+        %{can_not_reply}
+    customer_order_cancellation_message: |-
+      We are sorry, %{brand_name} had to cancel your order. It is rush hour and they do not want to keep you waiting. Find great food at our other restaurants.
+      honestbee concierge
+      Order %{order_number}
+      (You cannot reply to this SMS)
+    greeting: Hi %{customer_name},
+    order_number: Order %{order_number}
+    verification_token_message: "%{token} is your honestbee verification code."
+  stripe:
+    errors:
+      " missing_payment_device": Seems like there is missing or incorrect information.
+        Please re-enter your payment information and review the billing address. Alternatively,
+        use a different card.
+      missing_payment_device: Missing payment devices
+  support:
+    array:
+      last_word_connector: ", and "
+      two_words_connector: " and "
+      words_connector: ", "
+  time:
+    am: am
+    formats:
+      date_format: "%b %d, %Y (%a) %l:%M%P"
+      date_format2: "%A, %d %b, %Y, %l %P"
+      date_format_detail: "%b %d, %Y (%a) %l:%M%P"
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      delivery_time: "%d %b %Y %H:%M"
+      long: "%a, %-d %b %Y, %H:%M"
+      short: "%a, %-d %b %Y"
+      time_format: "%-l:%M%P"
+    pm: pm
+  validators:
+    bee_status_update:
+      responses:
+        cannot_update_status_for_cancelled_fulfillment: Order has been cancelled.
+        wrong_status: Status of %{role} must be %{status}.
+    credit_account_application:
+      responses:
+        depleted_credit_account: Sorry, this coupon cannot be applied as it is used
+          up.
+        discount_minimum_spend_not_met: A minimum spend of %{amount} is required to
+          use this coupon.
+        expired_credit_account: Sorry, this coupon cannot be applied as it has expired.
+        free_delivery_minimum_spend_not_met: A minimum spend of %{amount} for each
+          store is required use this coupon.
+        incorrect_order_status: Sorry, only orders before reconciliation status can
+          have a coupon added.
+        invalid_brand_specific_coupon: 'This coupon requires a total minimum spending
+          of %{min_spending} in these stores: %{brands}'
+        invalid_coupon_override: Sorry, please override a coupon with better discount
+        invalid_zone: Sorry, this coupon cannot be applied in this zone.
+        no_matching_country_credit_type: Sorry, this coupon cannot be applied in this
+          country.
+        required_credit_card: 'You need to pay with a credit or a debit card to use
+          this coupon. '
+        required_variables: Sorry, this coupon cannot be applied as the request is
+          not well-formed.
+    order_fulfillment_cancellation:
+      confirm_responses:
+        food:
+          general_desc: Find delicious food at our other restaurants.
+          general_title: Want to cancel your order from %{brand}?
+        general_desc: Our cancellation policy may vary from store to store.
+        general_title: Want to cancel your %{brand} order? We’ll miss you!
+        with_coupon_desc: Your coupon will be removed and may not be reused. Our cancellation
+          policy may vary from store to store.
+        with_trait_title: Want to cancel your Farm to Table order from %{brand}? We’ll
+          miss you!
+      responses:
+        cancel_max_time_not_met_desc: You can cancel orders from Farm to Table stores
+          up until %{time} the day before delivery (Tuesday to Friday).
+        cancel_max_time_not_met_title: We can't cancel your %{brand} order. Our bees
+          are already working on it.
+        cancel_min_hours_not_met_desc: You can cancel orders from Supermarkets and
+          Specialty stores if delivery is more than %{hours} hours away.
+        cancel_min_hours_not_met_title: We can't cancel your %{brand} order. Our bees
+          are already working on it.
+        cannot_cancel_brand_order_desc: We pre-order items from pop-up stores.
+        cannot_cancel_brand_order_title: We can't cancel orders from %{brand}.
+        cannot_cancel_bulk_order_desc: 'When you order 20 or more of the same item,
+          we ask %{brand} to stock especially for you, to make sure you get the quantity
+          you need. '
+        cannot_cancel_bulk_order_title: We can't cancel this order.
+        cannot_cancel_food_already_preparing_desc: You can only cancel orders before
+          we have started preparing.
+        cannot_cancel_food_already_preparing_title: We can't cancel your %{brand}
+          order. Chefs are already preparing it.
+        cannot_cancel_generic_title: We can't cancel orders from %{brand}
+        cannot_cancel_seasonal_store_order_desc: We pre-order items from pop-up stores.
+        cannot_cancel_seasonal_store_order_title: We can't cancel orders from %{brand}.
