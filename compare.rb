@@ -1,5 +1,5 @@
-LOCALE_1 = "en-develop.yml"
-LOCALE_2 = "en-new.yml"
+LOCALE_1 = "zh-TW-develop.yml"
+LOCALE_2 = "zh-TW-new.yml"
 
 require 'yaml'
 
